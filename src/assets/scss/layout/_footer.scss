@@ -1,0 +1,31 @@
+.footer-copyright-text {
+  font-size: 14px;
+  line-height: 1.3;
+
+  span {
+    font-weight: 700;
+
+    color: $black--two;
+  }
+}
+.footer-social-icons {
+  ul {
+    li {
+      display: inline-block;
+
+      margin-right: 20px;
+      a {
+        color: $black--two;
+
+        i,
+        svg {
+          font-size: 15px;
+        }
+
+        &:hover {
+          color: $black--two;
+        }
+      }
+    }
+  }
+}
