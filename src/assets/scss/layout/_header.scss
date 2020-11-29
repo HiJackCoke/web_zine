@@ -1,0 +1,24 @@
+.header-content {
+
+  &__icons {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 30px;
+
+        button {
+          padding: 0;
+          border: none;
+          background: none;
+          position: relative;
+
+          svg {
+            font-size: 20px;
+
+            fill: $black--two;
+          }
+        }
+      }
+    }
+  }
+}
