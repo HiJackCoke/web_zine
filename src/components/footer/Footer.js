@@ -1,9 +1,32 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import {Tooltip} from 'react-tippy';
+import { IoIosArrowRoundUp } from "react-icons/io";
+import {animateScroll} from 'react-scroll';
 
 
 const Footer = () => {
+
+    const [scroll, setScroll] = useState(0)
+    const [top, setTop] = useState(0)
+
+    useEffect(() => {
+        setTop(100);
+        window.addEventListener("scroll", handScroll)
+        return () => {
+            window.removeEventListener("scroll", handScroll)
+        }
+    }, [])
+
+    const scrollToTop = () => {
+        animateScroll.scrollToTop();
+    }
+
+    const handScroll = () => {
+        setScroll(window.scrollY)
+    }
+
     return (
         <footer
             className="space-pt--50 space-pb--50"
@@ -33,21 +56,46 @@ const Footer = () => {
                         <div className="footer-social-icons space-mb--20">
                             <ul>
                                 <li>
-                                    <a href="/">
-                                        <FaFacebookF />
-                                    </a>
-
+                                    <Tooltip
+                                        title="Facebook"
+                                        position="top"
+                                        trigger="mouseenter"
+                                        animation="shift"
+                                        arrow={true}
+                                        duration={200}
+                                    >
+                                        <a href="https://www.facebook.com">
+                                            <FaFacebookF />
+                                        </a>
+                                    </Tooltip>
                                 </li>
                                 <li>
-                                    <a href="/">
-                                        <FaInstagram />
-                                    </a>
-
+                                    <Tooltip
+                                        title="Instagram"
+                                        position="top"
+                                        trigger="mouseenter"
+                                        animation="shift"
+                                        arrow={true}
+                                        duration={200}
+                                    >
+                                        <a href="https://www.instagram.com" >
+                                            <FaInstagram />
+                                        </a>
+                                    </Tooltip>
                                 </li>
                                 <li>
-                                    <a href="/">
-                                        <FaYoutube />
-                                    </a>
+                                    <Tooltip
+                                        title="Youtube"
+                                        position="top"
+                                        trigger="mouseenter"
+                                        animation="shift"
+                                        arrow={true}
+                                        duration={200}
+                                    >
+                                        <a href="https://www.youtube.com">
+                                            <FaYoutube />
+                                        </a>
+                                    </Tooltip>
                                 </li>
                             </ul>
                         </div>
@@ -55,6 +103,12 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
+            <button
+                className={`scroll-top ${scroll > top ? "show" : ""}`}
+                onClick={() => scrollToTop()}
+            >
+                <IoIosArrowRoundUp />
+            </button>
         </footer>
     );
 };

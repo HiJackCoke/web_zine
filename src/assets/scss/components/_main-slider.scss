@@ -1,0 +1,45 @@
+.main-slider {
+  overflow-x: hidden;
+  &__wraper {
+    .swiper-container {
+      overflow: visible;
+      .ht-swiper-button-nav {
+        visibility: hidden;
+
+        padding: 0;
+
+        transition: $transition--default;
+
+        opacity: 0;
+        color: $grey--three;
+        border: none;
+        background: none;
+
+
+        &:hover {
+          color: $black--two;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &.swiper-button-next {
+          right: -120px;
+        }
+
+        &.swiper-button-prev {
+          left: -120px;
+        }
+      }
+    }
+  }
+  &__slide {
+    position: relative;
+    .slider-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
