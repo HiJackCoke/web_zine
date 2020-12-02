@@ -3,7 +3,8 @@ import SwiperCore, {EffectFade, Navigation, Pagination, Autoplay} from 'swiper'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Container } from "react-bootstrap";
 
-import img from '../../assets/images/main2.png'
+import img from '../../assets/images/main.png'
+import img2 from '../../assets/images/main2.png'
 
 import Main from '../data/sliderImages/Main.json'
 

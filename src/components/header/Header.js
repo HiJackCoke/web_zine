@@ -7,9 +7,12 @@ import {
     IoIosMenu
 } from 'react-icons/io';
 
+import SearchOverlay from "./elements/SearchOverlay";
+
 const Header = () => {
 
 
+    const [ offCanvasSearch, setOffCanvasSearch ] = useState(false)
 
     const printWindow = () => {
         document.getElementById('print-area'.innerHTML)
@@ -46,6 +49,7 @@ const Header = () => {
                                 <li>
                                     <button
                                         onClick={() => {
+                                            setOffCanvasSearch(true)
                                             document
                                                 .querySelector("body")
                                                 .classList.add("overflow-hidden")
@@ -83,6 +87,11 @@ const Header = () => {
                     </div>
                 </Container>
             </header>
+
+            <SearchOverlay
+                active={offCanvasSearch}
+                setActive={setOffCanvasSearch}
+            />
         </Fragment>
     );
 };
