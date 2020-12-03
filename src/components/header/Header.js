@@ -32,7 +32,7 @@ const Header = () => {
                         style={{height: "100px"}}
                     >
                         {/* logo */}
-                        <div className="header-content d-flex align-items-center space-pr--15">
+                        <div className="header-content__logo d-flex align-items-center space-pr--15">
 
                             <Link
                                 to="/"
@@ -42,6 +42,8 @@ const Header = () => {
                                 </div>
                             </Link>
                         </div>
+
+                        <div>Logo</div>
 
                         {/* icons */}
                         <div className="header-content__icons space-pl--15">
