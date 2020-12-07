@@ -8,11 +8,13 @@ import {
 } from 'react-icons/io';
 
 import SearchOverlay from "./elements/SearchOverlay";
+import MenuOverlay from "./elements/MenuOverlay";
 
 const Header = () => {
 
 
     const [ offCanvasSearch, setOffCanvasSearch ] = useState(false)
+    const [ offCanvasMenu, setOffCanvasMenu ] = useState(false);
 
     const printWindow = () => {
         document.getElementById('print-area'.innerHTML)
@@ -75,6 +77,7 @@ const Header = () => {
                                 <li>
                                     <button
                                         onClick={() => {
+                                            setOffCanvasMenu(true)
                                             document
                                                 .querySelector("body")
                                                 .classList.add('overflow-hidden')
@@ -93,6 +96,11 @@ const Header = () => {
             <SearchOverlay
                 active={offCanvasSearch}
                 setActive={setOffCanvasSearch}
+            />
+
+            <MenuOverlay
+                active={offCanvasMenu}
+                setActive={setOffCanvasMenu}
             />
         </Fragment>
     );
