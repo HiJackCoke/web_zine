@@ -5,54 +5,56 @@ import {Swiper, SwiperSlide} from "swiper/react";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import Three from '../../data/sliderImages/Three.json'
+import Monthly from '../../data/sliderData/Monthly.json'
+import img from "../../../assets/images/one2.jpg";
+import img2 from "../../../assets/images/one4.jpg"
 
 SwiperCore.use([Navigation])
 
 
-const SlideThree = ({ spaceBottomClass }) => {
+const MonthlySlide = ({ spaceBottomClass }) => {
 
     return (
         <div
-            className={`slider-three ${spaceBottomClass ? spaceBottomClass : ""}`}
+            className={`slider-one ${spaceBottomClass ? spaceBottomClass : ""}`}
         >
             <Container>
                 <Row className="align-items-center">
                     <Col lg={3}>
                         <div className="sub-intro space-mb-mobile-only--30">
-                            <h2>INSIDE</h2>
+                            <h2>Monthly Story</h2>
                             <p>
-                                전쟁, 그리고... / 문화속 전쟁
+                                평화의 뿌리를 튼튼하게 하는 것 살아남은 이들의 책임 / 6.25전쟁 참전용사들의 손녀, 캠벨 에이시아
                             </p>
-                            <Link
-                                to="/"
-                                className="twm-button twm-button--medium"
-                            >
-                                view all
-                            </Link>
+                            {/*<Link*/}
+                            {/*    to="/monthly"*/}
+                            {/*    className="twm-button twm-button--medium"*/}
+                            {/*>*/}
+                            {/*    view all*/}
+                            {/*</Link>*/}
                         </div>
                     </Col>
                     <Col lg={9}>
                         <div className="sub-slider-container">
                             <Swiper
-                                slidesPerView={4}
+                                slidesPerView={2}
                                 spaceBetween={30}
                             >
-                                {Three &&
-                                Three.map((three, i) => {
+                                {Monthly &&
+                                Monthly.map((slide, i) => {
                                     return (
                                         <SwiperSlide>
                                             <div className="sub-grid-post" key={i}>
                                                 <div className="sub-grid-post__image space-mb--30">
                                                     <Link
-                                                        to="/"
+                                                        to="/monthly"
                                                     >
                                                         <img
-                                                            src={three.images}
+                                                            src={slide.images[0]}
                                                             className="img-fluid"
                                                             alt=""
                                                         />
-                                                        {three.images.length > 1 ? (
+                                                        {slide.images.length > 1 ? (
                                                             <img
                                                                 className="img-fluid"
                                                                 src=""
@@ -65,12 +67,12 @@ const SlideThree = ({ spaceBottomClass }) => {
                                                     </Link>
                                                 </div>
                                                 <div className="sub-grid-post__content">
-                                                    <Link to="/">
+                                                    <Link to="/monthly">
                                                         <h2 className="post-title">
                                                             <Link
-                                                                to="/"
+                                                                to="/monthly"
                                                             >
-                                                                {three.title}
+                                                                {slide.title}
                                                             </Link>
                                                         </h2>
                                                         <p className="post-excerpt">
@@ -92,4 +94,4 @@ const SlideThree = ({ spaceBottomClass }) => {
     );
 };
 
-export default SlideThree;
+export default MonthlySlide;

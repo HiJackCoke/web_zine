@@ -6,15 +6,9 @@ import { Container } from "react-bootstrap";
 import img from '../../assets/images/main.png'
 import img2 from '../../assets/images/main2.png'
 
-import Main from '../data/sliderImages/Main.json'
+import Main from '../data/sliderData/Main.json'
 
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay])
-
-// <div
-// className="hero-slider-six__slide"
-// style={{backgroundImage: `url(${img2})`}}
-// key={i}
-//     >
 
 const SliderMain = () => {
 

@@ -5,41 +5,27 @@ import {Swiper, SwiperSlide} from "swiper/react";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import Four from '../../data/sliderImages/Four.json'
+import Event from '../../data/sliderData/Event.json'
 
 SwiperCore.use([Navigation])
 
 
-const SlideFour = ({ spaceBottomClass }) => {
+const EventSlide = ({ spaceBottomClass }) => {
 
     return (
         <div
-            className={`slider-four ${spaceBottomClass ? spaceBottomClass : ""}`}
+            className={`slider-five ${spaceBottomClass ? spaceBottomClass : ""}`}
         >
             <Container>
                 <Row className="align-items-center">
-                    <Col lg={3}>
-                        <div className="sub-intro space-mb-mobile-only--30">
-                            <h2>특집</h2>
-                            <p>
-                                박문관 탐방 / 뉴스 브리핑
-                            </p>
-                            <Link
-                                to="/"
-                                className="twm-button twm-button--medium"
-                            >
-                                view all
-                            </Link>
-                        </div>
-                    </Col>
-                    <Col lg={9}>
+                    <Col lg={12}>
                         <div className="sub-slider-container">
                             <Swiper
-                                slidesPerView={4}
+                                slidesPerView={2}
                                 spaceBetween={30}
                             >
-                                {Four &&
-                                Four.map((four, i) => {
+                                {Event &&
+                                Event.map((slide, i) => {
                                     return (
                                         <SwiperSlide>
                                             <div className="sub-grid-post" key={i}>
@@ -48,11 +34,11 @@ const SlideFour = ({ spaceBottomClass }) => {
                                                         to="/"
                                                     >
                                                         <img
-                                                            src={four.images}
+                                                            src={slide.images}
                                                             className="img-fluid"
                                                             alt=""
                                                         />
-                                                        {four.images.length > 1 ? (
+                                                        {slide.images.length > 1 ? (
                                                             <img
                                                                 className="img-fluid"
                                                                 src=""
@@ -66,11 +52,13 @@ const SlideFour = ({ spaceBottomClass }) => {
                                                 </div>
                                                 <div className="sub-grid-post__content">
                                                     <Link to="/">
+
+
                                                         <h2 className="post-title">
                                                             <Link
                                                                 to="/"
                                                             >
-                                                                {four.title}
+                                                                {slide.title}
                                                             </Link>
                                                         </h2>
                                                         <p className="post-excerpt">
@@ -92,4 +80,4 @@ const SlideFour = ({ spaceBottomClass }) => {
     );
 };
 
-export default SlideFour;
+export default EventSlide;

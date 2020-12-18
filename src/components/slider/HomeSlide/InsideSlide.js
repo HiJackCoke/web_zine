@@ -5,27 +5,41 @@ import {Swiper, SwiperSlide} from "swiper/react";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import Five from '../../data/sliderImages/Five.json'
+import Inside from '../../data/sliderData/Inside.json'
 
 SwiperCore.use([Navigation])
 
 
-const SlideFive = ({ spaceBottomClass }) => {
+const InsideSlide = ({ spaceBottomClass }) => {
 
     return (
         <div
-            className={`slider-five ${spaceBottomClass ? spaceBottomClass : ""}`}
+            className={`slider-two ${spaceBottomClass ? spaceBottomClass : ""}`}
         >
             <Container>
                 <Row className="align-items-center">
-                    <Col lg={12}>
+                    <Col lg={3}>
+                        <div className="sub-intro space-mb-mobile-only--30">
+                            <h2>INSIDE</h2>
+                            <p>
+                                전쟁, 그리고... / 문화속 전쟁
+                            </p>
+                            {/*<Link*/}
+                            {/*    to="/"*/}
+                            {/*    className="twm-button twm-button--medium"*/}
+                            {/*>*/}
+                            {/*    view all*/}
+                            {/*</Link>*/}
+                        </div>
+                    </Col>
+                    <Col lg={9}>
                         <div className="sub-slider-container">
                             <Swiper
-                                slidesPerView={2}
+                                slidesPerView={3}
                                 spaceBetween={30}
                             >
-                                {Five &&
-                                Five.map((five, i) => {
+                                {Inside &&
+                                Inside.map((slide, i) => {
                                     return (
                                         <SwiperSlide>
                                             <div className="sub-grid-post" key={i}>
@@ -34,11 +48,11 @@ const SlideFive = ({ spaceBottomClass }) => {
                                                         to="/"
                                                     >
                                                         <img
-                                                            src={five.images}
+                                                            src={slide.images}
                                                             className="img-fluid"
                                                             alt=""
                                                         />
-                                                        {five.images.length > 1 ? (
+                                                        {slide.images.length > 1 ? (
                                                             <img
                                                                 className="img-fluid"
                                                                 src=""
@@ -52,13 +66,11 @@ const SlideFive = ({ spaceBottomClass }) => {
                                                 </div>
                                                 <div className="sub-grid-post__content">
                                                     <Link to="/">
-
-
                                                         <h2 className="post-title">
                                                             <Link
                                                                 to="/"
                                                             >
-                                                                {five.title}
+                                                                {slide.title}
                                                             </Link>
                                                         </h2>
                                                         <p className="post-excerpt">
@@ -80,4 +92,4 @@ const SlideFive = ({ spaceBottomClass }) => {
     );
 };
 
-export default SlideFive;
+export default InsideSlide;

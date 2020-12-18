@@ -1,11 +1,10 @@
 import React from 'react';
 import Layout from "../components/layout/Layout";
 import SliderMain from "../components/slider/SliderMain";
-import SlideOne from "../components/slider/HomeSlide/SlideOne";
-import SlideTwo from "../components/slider/HomeSlide/SlideTwo";
-import SlideThree from "../components/slider/HomeSlide/SlideThree";
-import SlideFour from "../components/slider/HomeSlide/SlideFour";
-import SlideFive from "../components/slider/HomeSlide/SlideFIve";
+import MonthlySlide from "../components/slider/HomeSlide/MonthlySlide";
+import InsideSlide from "../components/slider/HomeSlide/InsideSlide";
+import SpecialSlide from "../components/slider/HomeSlide/SpecialSlide";
+import EventSlide from "../components/slider/HomeSlide/EventSlide";
 
 const Home = () => {
     return (
@@ -16,19 +15,16 @@ const Home = () => {
                 <SliderMain
                     spaceBottomClass="space-mb--r100"
                 />
-                <SlideOne
+                <MonthlySlide
                     spaceBottomClass="space-mb--r100"
                 />
-                <SlideTwo
+                <InsideSlide
                     spaceBottomClass="space-mb--r100"
                 />
-                <SlideThree
+                <SpecialSlide
                     spaceBottomClass="space-mb--r100"
                 />
-                <SlideFour
-                    spaceBottomClass="space-mb--r100"
-                />
-                <SlideFive
+                <EventSlide
                     spaceBottomClass="space-mb--r100"
                 />
             </Layout>

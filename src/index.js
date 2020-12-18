@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 
 import App from './App';
+import Monthly from "./screen/Monthly";
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
     <BrowserRouter>
-        <Route path="/" exact render={props => <App {...props}/> } />
+        <Switch>
+            <Route path="/" exact render={props => <App {...props}/> } />
+
+            <Route path="/monthly" render={props => <Monthly {...props}/> } />
+            <Redirect to="/"/>
+        </Switch>
+
     </BrowserRouter>,
 
   document.getElementById('root')

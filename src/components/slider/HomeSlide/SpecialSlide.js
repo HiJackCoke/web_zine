@@ -5,45 +5,41 @@ import {Swiper, SwiperSlide} from "swiper/react";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import Two from '../../data/sliderImages/Two.json'
-import img from '../../../assets/images/Two/Two1.jpg'
-import img2 from '../../../assets/images/Two/Two2.jpg'
-import img3 from '../../../assets/images/Two/Two3.jpg'
-import img4 from '../../../assets/images/Two/Two4.jpg'
+import Special from '../../data/sliderData/Special.json'
 
 SwiperCore.use([Navigation])
 
 
-const SlideTwo = ({ spaceBottomClass }) => {
+const SpecialSlide = ({ spaceBottomClass }) => {
 
     return (
         <div
-            className={`slider-two ${spaceBottomClass ? spaceBottomClass : ""}`}
+            className={`slider-four ${spaceBottomClass ? spaceBottomClass : ""}`}
         >
             <Container>
                 <Row className="align-items-center">
                     <Col lg={3}>
                         <div className="sub-intro space-mb-mobile-only--30">
-                            <h2>INSIDE</h2>
+                            <h2>특집</h2>
                             <p>
-                                전쟁, 그리고... / 문화속 전쟁
+                                박문관 탐방 / 뉴스 브리핑
                             </p>
-                            <Link
-                                to="/"
-                                className="twm-button twm-button--medium"
-                            >
-                                view all
-                            </Link>
+                            {/*<Link*/}
+                            {/*    to="/"*/}
+                            {/*    className="twm-button twm-button--medium"*/}
+                            {/*>*/}
+                            {/*    view all*/}
+                            {/*</Link>*/}
                         </div>
                     </Col>
                     <Col lg={9}>
                         <div className="sub-slider-container">
                             <Swiper
-                                slidesPerView={4}
+                                slidesPerView={2}
                                 spaceBetween={30}
                             >
-                                {Two &&
-                                Two.map((two, i) => {
+                                {Special &&
+                                Special.map((slide, i) => {
                                     return (
                                         <SwiperSlide>
                                             <div className="sub-grid-post" key={i}>
@@ -52,11 +48,11 @@ const SlideTwo = ({ spaceBottomClass }) => {
                                                         to="/"
                                                     >
                                                         <img
-                                                            src={two.images}
+                                                            src={slide.images}
                                                             className="img-fluid"
                                                             alt=""
                                                         />
-                                                        {two.images.length > 1 ? (
+                                                        {slide.images.length > 1 ? (
                                                             <img
                                                                 className="img-fluid"
                                                                 src=""
@@ -74,7 +70,7 @@ const SlideTwo = ({ spaceBottomClass }) => {
                                                             <Link
                                                                 to="/"
                                                             >
-                                                                {two.title}
+                                                                {slide.title}
                                                             </Link>
                                                         </h2>
                                                         <p className="post-excerpt">
@@ -96,4 +92,4 @@ const SlideTwo = ({ spaceBottomClass }) => {
     );
 };
 
-export default SlideTwo;
+export default SpecialSlide;
