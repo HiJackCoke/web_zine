@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 
 import App from './App';
-import Monthly from "./screen/Monthly";
+import MonthlyPage from "./screen/MonthlyPage";
 
 import reportWebVitals from './reportWebVitals';
 
@@ -11,7 +11,7 @@ ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <Route path="/" exact render={props => <App {...props}/> } />
-            <Route path="/monthly/:id" render={props => <Monthly {...props}/> } />
+            <Route path="/monthly/:id" render={props => <MonthlyPage {...props}/> } />
             <Redirect to="/"/>
         </Switch>
 

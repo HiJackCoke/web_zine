@@ -6,8 +6,6 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Monthly from '../../data/sliderData/Monthly.json'
-import img from "../../../assets/images/one2.jpg";
-import img2 from "../../../assets/images/one4.jpg"
 
 SwiperCore.use([Navigation])
 

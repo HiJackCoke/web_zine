@@ -1,9 +1,7 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 
-import Monthly from '../data/monthly/One.json'
-
-const MonthlyOne = () => {
+const Monthly = ({Monthly}) => {
     return (
         <div className="space-mb--r100 space-mt--r100">
             <Container>
@@ -16,29 +14,31 @@ const MonthlyOne = () => {
                                 >
                                     <div className="monthly-grid-post__title space-mb--r100">
                                         <h2>MONTHLY</h2>
-                                        <h4>평화의 뿌리를 튼튼하게 하는 것은 살아남은 이들의 책임</h4>
+                                        <h4>{Monthly.title}</h4>
                                     </div>
-                                    {Monthly &&
-                                    Monthly.map((monthly, i) => (
-                                        <div key={i}>
-                                            <div className="monthly-grid-post__image space-mb--r100">
+
+                                    {Monthly.images &&
+                                    Monthly.images.map((monthly, i) => (
+                                        <div>
+                                            <div key={i} className="monthly-grid-post__image space-mb--r100 space-mt--r100">
                                                 <img
                                                     className="img-fluid"
-                                                    src={monthly.images}
+                                                    src={monthly.url}
                                                 />
                                             </div>
 
-                                            {/*<div className="monthly-grid-post__content">*/}
-                                            {/*    <h2>*/}
-                                            {/*        {monthly.title}*/}
-                                            {/*    </h2>*/}
-                                            {/*</div>*/}
-                                            {/*<p>*/}
-                                            {/*    {monthly.des}*/}
-                                            {/*</p>*/}
+                                            <div className="monthly-grid-post__content">
+                                                <h2>
+                                                    {monthly.subTitle}
+                                                </h2>
+                                            </div>
+                                            <p>
+                                                {monthly.description}
+                                            </p>
                                         </div>
                                         )
                                     )}
+
                                 </div>
                             </Col>
                         </Row>
@@ -50,4 +50,4 @@ const MonthlyOne = () => {
     );
 };
 
-export default MonthlyOne;
+export default Monthly;
