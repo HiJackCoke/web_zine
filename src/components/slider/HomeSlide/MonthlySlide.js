@@ -43,11 +43,11 @@ const MonthlySlide = ({ spaceBottomClass }) => {
                                 {Monthly &&
                                 Monthly.map((slide, i) => {
                                     return (
-                                        <SwiperSlide>
-                                            <div className="sub-grid-post" key={i}>
+                                        <SwiperSlide key={i}>
+                                            <div className="sub-grid-post" >
                                                 <div className="sub-grid-post__image space-mb--30">
                                                     <Link
-                                                        to="/monthly"
+                                                        to={`/monthly/${slide.id}`}
                                                     >
                                                         <img
                                                             src={slide.images[0]}

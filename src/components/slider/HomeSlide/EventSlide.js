@@ -27,8 +27,8 @@ const EventSlide = ({ spaceBottomClass }) => {
                                 {Event &&
                                 Event.map((slide, i) => {
                                     return (
-                                        <SwiperSlide>
-                                            <div className="sub-grid-post" key={i}>
+                                        <SwiperSlide key={i}>
+                                            <div className="sub-grid-post">
                                                 <div className="sub-grid-post__image space-mb--30">
                                                     <Link
                                                         to="/"

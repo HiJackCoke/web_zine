@@ -11,8 +11,7 @@ ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <Route path="/" exact render={props => <App {...props}/> } />
-
-            <Route path="/monthly" render={props => <Monthly {...props}/> } />
+            <Route path="/monthly/:id" render={props => <Monthly {...props}/> } />
             <Redirect to="/"/>
         </Switch>
 
