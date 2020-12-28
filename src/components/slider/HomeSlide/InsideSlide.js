@@ -45,7 +45,7 @@ const InsideSlide = ({ spaceBottomClass }) => {
                                             <div className="sub-grid-post">
                                                 <div className="sub-grid-post__image space-mb--30">
                                                     <Link
-                                                        to="/"
+                                                        to={`/inside/${slide.id}`}
                                                     >
                                                         <img
                                                             src={slide.images}
@@ -68,7 +68,7 @@ const InsideSlide = ({ spaceBottomClass }) => {
                                                     <Link to="/">
                                                         <h2 className="post-title">
                                                             <Link
-                                                                to="/"
+                                                                to={`/inside${slide.id}`}
                                                             >
                                                                 {slide.title}
                                                             </Link>

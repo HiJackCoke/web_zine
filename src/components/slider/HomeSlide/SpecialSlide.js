@@ -24,12 +24,6 @@ const SpecialSlide = ({ spaceBottomClass }) => {
                             <p>
                                 박문관 탐방 / 뉴스 브리핑
                             </p>
-                            {/*<Link*/}
-                            {/*    to="/"*/}
-                            {/*    className="twm-button twm-button--medium"*/}
-                            {/*>*/}
-                            {/*    view all*/}
-                            {/*</Link>*/}
                         </div>
                     </Col>
                     <Col lg={9}>
@@ -45,7 +39,7 @@ const SpecialSlide = ({ spaceBottomClass }) => {
                                             <div className="sub-grid-post">
                                                 <div className="sub-grid-post__image space-mb--30">
                                                     <Link
-                                                        to="/"
+                                                        to={`/special/${slide.id}`}
                                                     >
                                                         <img
                                                             src={slide.images}
@@ -68,7 +62,7 @@ const SpecialSlide = ({ spaceBottomClass }) => {
                                                     <Link to="/">
                                                         <h2 className="post-title">
                                                             <Link
-                                                                to="/"
+                                                                to={`/special/${slide.id}`}
                                                             >
                                                                 {slide.title}
                                                             </Link>
