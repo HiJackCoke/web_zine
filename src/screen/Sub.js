@@ -1,22 +1,14 @@
 import React from 'react';
 import Layout from "../components/layout/Layout";
 
+import insideData from '../components/data/inside/insideData.json';
 import {Col, Container, Row} from "react-bootstrap";
 
-const Event = ({match}) => {
+const Sub = ({match}) => {
 
-    const events = [
-        {
-            id: "1",
-            title: "1sdffff"
-        },
-        {
-            id: "2",
-            title: "asdfasdf"
-        }
-    ]
 
-    const event = events.find((p) => p.id === match.params.id)
+
+    const inside = insideData.find((p) => p.id === match.params.id)
 
     return (
         <div
@@ -33,33 +25,29 @@ const Event = ({match}) => {
                                             className="monthly-grid-post"
                                         >
                                             <div className="monthly-grid-post__title space-mb--r100">
-                                                <h2>MONTHLY</h2>
-                                                <h4>{event.title}</h4>
-                                            </div>
+                                                <h2>INSIDE</h2>
+                                                <h4>{inside.title}</h4>
 
-                                            {event.images &&
-                                            event.images.map((event, i) => (
+                                                {inside.context &&
+                                                inside.context.map((inside, i) => (
                                                     <div key={i}>
-                                                        <div className="monthly-grid-post__image space-mb--r100 space-mt--r100">
+                                                        <div className="monthly-grid-post__image space-mb--50 space-mt--50">
                                                             <img
+                                                                src={inside.image}
                                                                 className="img-fluid"
-                                                                src={event.url}
                                                             />
                                                         </div>
-
                                                         <div className="monthly-grid-post__content">
                                                             <h2>
-                                                                {event.subTitle}
+                                                                {inside.subtitle}
                                                             </h2>
                                                             <p className="post-excerpt">
-                                                                {event.description}
+                                                                {inside.description}
                                                             </p>
                                                         </div>
-
                                                     </div>
-                                                )
-                                            )}
-
+                                                ))}
+                                            </div>
                                         </div>
                                     </Col>
                                 </Row>
@@ -72,4 +60,4 @@ const Event = ({match}) => {
     );
 };
 
-export default Event;
+export default Sub;

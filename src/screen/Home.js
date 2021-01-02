@@ -2,14 +2,16 @@ import React from 'react';
 import Layout from "../components/layout/Layout";
 import SliderMain from "../components/slider/SliderMain";
 import MonthlySlide from "../components/slider/HomeSlide/MonthlySlide";
-import InsideSlide from "../components/slider/HomeSlide/InsideSlide";
+import SubSlide from "../components/slider/HomeSlide/SubSlide";
 import SpecialSlide from "../components/slider/HomeSlide/SpecialSlide";
-import EventSlide from "../components/slider/HomeSlide/EventSlide";
+import SubSlideTwo from "../components/slider/HomeSlide/SubSlideTwo";
+
+// #FFD1E8
 
 const Home = () => {
     return (
         <div
-            style={{ backgroundColor: "#DDCDA1" }}
+            style={{ backgroundColor: "#FFD1E8" }}
         >
             <Layout>
                 <SliderMain
@@ -18,13 +20,14 @@ const Home = () => {
                 <MonthlySlide
                     spaceBottomClass="space-mb--r100"
                 />
-                <InsideSlide
+                <SubSlide
                     spaceBottomClass="space-mb--r100"
                 />
+                {/*<SubSlideTwo*/}
+                {/*    spaceBottomClass="space-mb--r100"*/}
+                {/*/>*/}
+
                 <SpecialSlide
-                    spaceBottomClass="space-mb--r100"
-                />
-                <EventSlide
                     spaceBottomClass="space-mb--r100"
                 />
             </Layout>
