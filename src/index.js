@@ -4,9 +4,10 @@ import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 
 import App from './App';
 import Monthly from "./screen/Monthly";
-import Inside from "./screen/Inside";
+import Sub from "./screen/Sub";
+
+
 import Special from "./screen/Special";
-import Event from "./screen/Event";
 
 import reportWebVitals from './reportWebVitals';
 
@@ -15,9 +16,9 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact render={props => <App {...props}/> } />
             <Route path="/monthly/:id" render={props => <Monthly {...props}/> } />
-            <Route path="/inside/:id" render={props => <Inside {...props}/> } />
+            <Route path="/sub/:id" render={props => <Sub {...props}/> } />
             <Route path="/special/:id" render={props => <Special {...props}/> } />
-            <Route path="/event/:id" render={props => <Event {...props}/> } />
+
             <Redirect to="/"/>
         </Switch>
 
