@@ -67,7 +67,7 @@ const MonthlySlide = ({ spaceBottomClass }) => {
                                     return (
                                         <SwiperSlide key={i}>
                                             <div className="sub-grid-post">
-                                                <Link to={`/sub/${slide.id}`}>
+                                                <Link to={`/monthly/${slide.id}`}>
                                                     <div className="sub-grid-post__bg space-mb--30 bg-img"
                                                          style={{ backgroundImage: `url(${slide.images})`}}
                                                     >
