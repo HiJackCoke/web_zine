@@ -1,12 +1,26 @@
 import React from 'react';
 import Layout from "../components/layout/Layout";
 
-import monthlyData from '../components/data/monthly/monthlyData.json'
 import {Col, Container, Row} from "react-bootstrap";
+import img from "../assets/images/Main/main1.png";
+import img2 from "../assets/images/Main/main2.jpg";
 
 const Monthly = ({match}) => {
 
-    const monthly = monthlyData.find((p) => p.id === match.params.id)
+    const Monthly = [
+        {
+            "id": "1",
+            "images": img,
+            "title": ""
+        },
+        {
+            "id": "2",
+            "images": img2,
+            "title": ""
+        }
+    ]
+
+    const monthly = Monthly.find((p) => p.id === match.params.id)
 
     return (
         <div
