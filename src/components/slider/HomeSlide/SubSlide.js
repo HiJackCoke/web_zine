@@ -8,7 +8,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import img from "../../../assets/images/Sub/sub1.png";
 import img2 from "../../../assets/images/Sub/sub2.png";
 import img3 from "../../../assets/images/Sub/sub3.png";
-import img4 from "../../../assets/images/Sub/sub4.jpg";
+import img4 from "../../../assets/images/Sub/sub4.png";
 import img5 from "../../../assets/images/Sub/sub5.png";
 import img6 from "../../../assets/images/Sub/sub6.png";
 import img7 from "../../../assets/images/Sub/sub7.png";
@@ -65,12 +65,12 @@ const SubSlide = ({ spaceBottomClass }) => {
             "title": "흥미로운 무기 개발사",
             "desc": "대한민국 소총 연대기 - M1 소총부터 K2C1 자동소총까지"
         },
-        {
-            "id": "8",
-            "images": img8,
-            "title": "뉴스 브리핑",
-            "desc": "헬기 동산 개막식 개최 / 전쟁기념관 가족친화 우수기관 획득 / 온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’"
-        }
+        // {
+        //     "id": "8",
+        //     "images": img8,
+        //     "title": "뉴스 브리핑",
+        //     "desc": "헬기 동산 개막식 개최 / 전쟁기념관 가족친화 우수기관 획득 / 온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’"
+        // }
         // {
         //     "id": "9",
         //     "images": img9,

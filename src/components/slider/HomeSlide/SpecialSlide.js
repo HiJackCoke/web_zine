@@ -7,6 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import img1 from '../../../assets/images/Spe/spe1.png';
 import img2 from '../../../assets/images/Spe/spe2.png';
+import img3 from "../../../assets/images/Spe/spe3.png";
 
 
 SwiperCore.use([Navigation])
@@ -17,12 +18,18 @@ const SubSlideTwo = ({ spaceBottomClass }) => {
     const Spec = [
         {
             "id": "1",
+            "images": img3,
+            "title": "뉴스 브리핑",
+            "desc": "헬기 동산 개막식 개최 / 전쟁기념관 가족친화 우수기관 획득 / 온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’"
+        },
+        {
+            "id": "2",
             "images": img1,
             "title": "기념관 이슈",
             "desc": "호국인물총서 2 『유방백세, 어둠 속에서도 눈감지 않은 사람들』 발간"
         },
         {
-            "id": "2",
+            "id": "3",
             "images": img2,
             "title": "2021년 이달 호국인물 선정",
             "desc": ""
