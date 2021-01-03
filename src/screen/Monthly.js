@@ -9,7 +9,7 @@ import img4 from "../assets/images/Monthly/monthly4.1.png";
 
 const Monthly = ({match}) => {
 
-    const desc2 = (
+    const summ2 = (
         <h5>
             광해군이 폐위되고 인조가 즉위한 1623년, 인조반정이 성공하면서 조정의 외교 정책에도 큰 변화가 이루어졌다.
             명과 후금 사이에서 실리적인 입장을<br/> 취한 광해군의 중립외교 정책 대신에 친명배금(親明排金) 정책이 외교의 기본 방향이 되었고, 이것은 신흥 군사
@@ -119,7 +119,7 @@ const Monthly = ({match}) => {
             "id": "2",
             "title": "story",
             "sub": "병자호란의 치욕이 주는 역사적 교훈",
-            "summary": desc2,
+            "summary": summ2,
             "contents": [
                 {
                     "id": "1",
