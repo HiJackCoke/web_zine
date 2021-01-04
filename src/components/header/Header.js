@@ -9,12 +9,16 @@ import {
 
 import SearchOverlay from "./elements/SearchOverlay";
 import MenuOverlay from "./elements/MenuOverlay";
+import MobileMenu from "./elements/MobileMenu";
 
 const Header = () => {
 
 
     const [ offCanvasSearch, setOffCanvasSearch ] = useState(false)
     const [ offCanvasMenu, setOffCanvasMenu ] = useState(false);
+    const [ offCanvasMobileMenu, setOffCanvasMobileMenu ] = useState(false);
+
+
 
     const printWindow = () => {
         document.getElementById('print-area'.innerHTML)
@@ -78,12 +82,21 @@ const Header = () => {
                                     <button
                                         onClick={() => {
                                             setOffCanvasMenu(true)
+                                            document
+                                                .querySelector("body")
+                                                .classList.add("overflow-hidden");
                                         }}
                                     >
                                         <IoIosMenu />
                                     </button>
                                 </li>
-
+                            </ul>
+                            <ul className="d-block d-lg-none">
+                                <li>
+                                    <button onClick={() => setOffCanvasMobileMenu(true)}>
+                                        <IoIosMenu />
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -98,6 +111,11 @@ const Header = () => {
             <MenuOverlay
                 active={offCanvasMenu}
                 setActive={setOffCanvasMenu}
+            />
+
+            <MobileMenu
+                active={offCanvasMobileMenu}
+                getActive={setOffCanvasMobileMenu}
             />
         </Fragment>
     );

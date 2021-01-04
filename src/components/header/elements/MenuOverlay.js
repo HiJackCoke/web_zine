@@ -4,6 +4,7 @@ import {GiClick} from 'react-icons/gi'
 import {Link} from "react-router-dom";
 
 const MenuOverlay = ({ active, setActive}) => {
+
     return (
         <div className={`menu-overlay ${active ? "active" : ""}`}>
             <button
@@ -33,98 +34,109 @@ const MenuOverlay = ({ active, setActive}) => {
                                 </div>
                                 <ul className="sub-menu sub-menu--mega sub-menu--mega--column-4">
                                     <li className="sub-menu--mega__title">
-                                        <Link to="/">
+                                        <p>
                                             Monthly Story
-                                        </Link>
+                                        </p>
                                         <ul className="sub-menu--mega__list">
                                             <li>
-                                                <Link to="/">
-                                                    Story1
-                                                </Link>
+                                                <a href="/monthly/1">
+                                                    신년사
+                                                </a>
                                                 <img/>
                                             </li>
                                             <li>
-                                                <Link to='/'>
-                                                    Story2
-                                                </Link>
+                                                <a href='/monthly/2'>
+                                                    Story
+                                                </a>
                                                 <img/>
                                             </li>
                                         </ul>
                                     </li>
 
                                     <li className="sub-menu--mega__title">
-                                        <Link to="/">
-                                            Inside
-                                        </Link>
+                                        <p>
+                                            MEMORIAL STORY
+                                        </p>
                                         <ul className="sub-menu--mega__list">
                                             <li>
-                                                <Link to="/">
-                                                    전쟁, 그리고...
-                                                </Link>
+                                                <a href="/sub/1">
+                                                    전쟁과 문화
+                                                </a>
                                             </li>
                                             <li>
-                                                <Link to='/'>
-                                                    문화 속 전쟁
-                                                </Link>
+                                                <a href="/sub/2">
+                                                    기념관 이야기 1
+                                                </a>
                                             </li>
                                             <li>
-                                                <Link to='/'>
-                                                    기념관 이야기.1
-                                                </Link>
+                                                <a href="/sub/3">
+                                                    기념관 이야기 2
+                                                </a>
                                             </li>
                                             <li>
-                                                <Link to='/'>
-                                                    기념관 이야기.2
-                                                </Link>
+                                                <a href="/sub/4">
+                                                    기념관 이야기 3
+                                                </a>
                                             </li>
                                             <li>
-                                                <Link to='/'>
+                                                <a href="/sub/5">
                                                     역사의 순간
-                                                </Link>
+                                                </a>
                                             </li>
                                             <li>
-                                                <Link to='/'>
-                                                    호국 현장
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li className="sub-menu--mega__title">
-                                        <Link to="/">
-                                            특집
-                                        </Link>
-                                        <ul className="sub-menu--mega__list">
-                                            <li>
-                                                <Link to="/">
+                                                <a href="/sub/6">
                                                     박물관 탐방
-                                                </Link>
+                                                </a>
                                             </li>
                                             <li>
-                                                <Link to='/'>
-                                                    뉴스 브리핑
-                                                </Link>
+                                                <a href="/sub/7">
+                                                    흥미로운 무기 개발사
+                                                </a>
                                             </li>
                                         </ul>
                                     </li>
 
                                     <li className="sub-menu--mega__title">
-                                        <Link to="/">
-                                            11월!
-                                        </Link>
+                                        <p>
+                                            SPECIAL
+                                        </p>
                                         <ul className="sub-menu--mega__list">
                                             <li>
-                                                <Link to="/">
-                                                    퀴즈 이벤트
-                                                </Link>
+                                                <a href="/special/1">
+                                                    뉴스 브리핑
+                                                </a>
                                             </li>
                                             <li>
-                                                <Link to='/'>
-                                                    11월의 호국의 인물
-                                                </Link>
+                                                <a href="/special/2">
+                                                    기념관 이슈
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/special/3">
+                                                    2021년 이달의 호국인물 선정
+                                                </a>
                                             </li>
                                         </ul>
                                     </li>
+
+                                    <li className="sub-menu--mega__title">
+                                        <p>
+                                            SNS
+                                        </p>
+                                        <ul className="sub-menu--mega__list">
+                                            <li>
+                                                <a href="/">
+                                                    SNS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href='/'>
+                                                    SNS
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
                                 </ul>
                             </li>
                         </ul>
