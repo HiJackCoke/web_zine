@@ -54,7 +54,9 @@ const Header = () => {
                             lg={4}
                             className="text-center"
                         >
-                            <img src={img2}/>
+                            <Link to="/">
+                                <img src={img2} className="img-fluid"/>
+                            </Link>
                             {/*<div className="text-center">Logo</div>*/}
                         </Col>
 

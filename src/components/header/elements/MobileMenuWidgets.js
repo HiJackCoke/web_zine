@@ -2,7 +2,7 @@ import React from 'react'
 import {
   IoIosPhonePortrait,
   IoMdMail,
-  IoLogoTwitter,
+  IoLogoYoutube,
   IoLogoFacebook,
   IoLogoInstagram,
 } from "react-icons/io";
@@ -26,14 +26,14 @@ const MobileMenuWidgets = () => {
       </div>
 
       <div className="social-widget">
-        <a href="https://www.twitter.com" target="_blank">
-          <IoLogoTwitter />
+        <a href="https://www.facebook.com/warmemo.korea" target="_blank">
+          <IoLogoFacebook />
         </a>
-        <a href="https://www.instagram.com" target="_blank">
+        <a href="https://www.instagram.com/warmemorialofkorea/" target="_blank">
           <IoLogoInstagram />
         </a>
-        <a href="https://www.facebook.com" target="_blank">
-          <IoLogoFacebook />
+        <a href="https://www.youtube.com/channel/UClEbJ_3EMk26pJ3Qun7QRMw?view_as=subscriber" target="_blank">
+          <IoLogoYoutube/>
         </a>
       </div>
     </div>
