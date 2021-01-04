@@ -42,13 +42,13 @@ const MenuOverlay = ({ active, setActive}) => {
                                                 <a href="/monthly/1">
                                                     신년사
                                                 </a>
-                                                <img/>
+                                                {/*<img/>*/}
                                             </li>
                                             <li>
                                                 <a href='/monthly/2'>
                                                     Story
                                                 </a>
-                                                <img/>
+                                                {/*<img/>*/}
                                             </li>
                                         </ul>
                                     </li>

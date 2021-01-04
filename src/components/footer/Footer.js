@@ -43,7 +43,7 @@ const Footer = () => {
                             style={{justifyContent: "space-around"}}
                         >
                             {/*&copy; {new Date().getFullYear() + "The War Memorial of Korea All rights reserved."}*/}
-                            <img src={img} className="img-fluid"/>
+                            <img src={img} alt="/" className="img-fluid"/>
 
                             <div style={{alignSelf: "center"}}>
                                 04353 서울특별시 용산구 이태원로 29(용산동 1가 8번지) / Tel : 02-709-3114 / Fax 02-709-3100
@@ -64,7 +64,11 @@ const Footer = () => {
                                         arrow={true}
                                         duration={200}
                                     >
-                                        <a href="https://www.facebook.com/warmemo.korea" target="_blank">
+                                        <a
+                                            href="https://www.facebook.com/warmemo.korea"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
                                             <FaFacebookF />
                                         </a>
                                     </Tooltip>
@@ -78,7 +82,11 @@ const Footer = () => {
                                         arrow={true}
                                         duration={200}
                                     >
-                                        <a href="https://www.instagram.com/warmemorialofkorea/" target="_blank">
+                                        <a
+                                            href="https://www.instagram.com/warmemorialofkorea/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
                                             <FaInstagram />
                                         </a>
                                     </Tooltip>
@@ -92,7 +100,11 @@ const Footer = () => {
                                         arrow={true}
                                         duration={200}
                                     >
-                                        <a href="https://www.youtube.com/channel/UClEbJ_3EMk26pJ3Qun7QRMw?view_as=subscriber" target="_blank">
+                                        <a
+                                            href="https://www.youtube.com/channel/UClEbJ_3EMk26pJ3Qun7QRMw?view_as=subscriber"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
                                             <FaYoutube />
                                         </a>
                                     </Tooltip>

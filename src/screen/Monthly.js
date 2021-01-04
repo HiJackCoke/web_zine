@@ -2,10 +2,15 @@ import React from 'react';
 import Layout from "../components/layout/Layout";
 
 import {Col, Container, Row} from "react-bootstrap";
-import img1 from "../assets/images/Monthly/monthly1.png";
-import img2 from "../assets/images/Monthly/monthly2.png";
-import img3 from '../assets/images/Monthly/monthly3.png';
-import img4 from "../assets/images/Monthly/monthly4.1.png";
+
+import newImg from '../assets/images/Monthly/page/new.jpg'
+
+import story1 from "../assets/images/Monthly/monthly2.jpg";
+import story2 from '../assets/images/Monthly/page/story2.jpg'
+import story3 from '../assets/images/Monthly/page/story3.jpg'
+import story4 from '../assets/images/Monthly/page/story4.png';
+
+
 
 const Monthly = ({match}) => {
 
@@ -109,7 +114,7 @@ const Monthly = ({match}) => {
             "contents": [
                 {
                     "id": "1",
-                    "images": img1,
+                    "images": newImg,
                     "htext": "",
                     "btext": btext
                 }
@@ -123,19 +128,23 @@ const Monthly = ({match}) => {
             "contents": [
                 {
                     "id": "1",
-                    "images": img2,
+                    "images": story1,
                     "htext": "병자호란의 전초전, 정묘호란",
                     "btext": btext2
                 },
                 {
                     "id": "2",
-                    "images": img3,
+                    "images": story2,
                     "htext": "1636년 12월 병자호란의 시작",
                     "btext": btext3
                 },
                 {
                     "id": "3",
-                    "images": img4,
+                    "images": story3
+                },
+                {
+                    "id": "4",
+                    "images": story4,
                     "htext": "삼전도의 굴욕과 병자호란의 교훈",
                     "btext": btext4
                 }
@@ -178,19 +187,24 @@ const Monthly = ({match}) => {
                                             {monthly.contents &&
                                             monthly.contents.map((monthly, i) => (
                                                 <div key={i}>
-                                                    <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
+                                                    <div
+                                                        className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100"
+                                                        style={ monthly.htext || monthly.btext ? {} : {marginBottom: "-100px"}}
+                                                    >
                                                         <img
                                                             className="img-fluid"
                                                             src={monthly.images}
+                                                            alt="/"
                                                         />
                                                     </div>
 
-                                                    <div className="monthly-grid-post__content">
-                                                        <h2>
-                                                            {monthly.htext}
-                                                        </h2>
-                                                        {monthly.btext}
-                                                    </div>
+                                                        <div className="monthly-grid-post__content">
+                                                            <h2>
+                                                                {monthly.htext}
+                                                            </h2>
+                                                                {monthly.btext}
+                                                        </div>
+
                                                 </div>
                                             ))}
                                         </div>

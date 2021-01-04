@@ -173,6 +173,7 @@ const Special = ({match}) => {
                                                             <img
                                                                 className="img-fluid"
                                                                 src={special.images}
+                                                                alt="/"
                                                             />
                                                         </div> : ""
                                                     }

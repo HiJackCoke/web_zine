@@ -5,8 +5,8 @@ import {Swiper, SwiperSlide} from "swiper/react";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import img from "../../../assets/images/Monthly/monthly1.png";
-import img2 from "../../../assets/images/Monthly/monthly2.png";
+import img from "../../../assets/images/Monthly/monthly1.jpg";
+import img2 from "../../../assets/images/Monthly/monthly2.jpg";
 
 SwiperCore.use([Navigation])
 
@@ -87,51 +87,6 @@ const MonthlySlide = ({ spaceBottomClass }) => {
                 </Row>
             </Container>
         </div>
-
-        // <div
-        //     className={`slider-one ${spaceBottomClass ? spaceBottomClass : ""}`}
-        // >
-        //     <Container>
-        //         <Row className="align-items-center">
-        //             <Col lg={3}>
-        //                 <div className="sub-intro space-mb-mobile-only--30">
-        //                     <h2>MONTHLY</h2>
-        //                     <p>
-        //                         신년사 / STORY
-        //                     </p>
-        //                 </div>
-        //             </Col>
-        //             <Col lg={9}>
-        //                 <div className="sub-slider-container">
-        //                     <Swiper
-        //                         slidesPerView={2}
-        //                         spaceBetween={30}
-        //                     >
-        //                         {Monthly &&
-        //                         Monthly.map((slide, i) => {
-        //                             return (
-        //                                 <SwiperSlide key={i}>
-        //                                     <div className="sub-grid-post">
-        //                                         <Link to={`/monthly/${slide.id}`}>
-        //                                             <div className="sub-grid-post__monthly-bg space-mb--30 bg-img"
-        //                                                  style={{ backgroundImage: `url(${slide.images})`}}
-        //                                             >
-        //                                             </div>
-        //                                             <div className="sub-caption">
-        //                                                 <h2 className="name">{slide.title}</h2>
-        //                                                 <span className="subtext">{slide.desc}</span>
-        //                                             </div>
-        //                                         </Link>
-        //                                     </div>
-        //                                 </SwiperSlide>
-        //                             );
-        //                         })}
-        //                     </Swiper>
-        //                 </div>
-        //             </Col>
-        //         </Row>
-        //     </Container>
-        // </div>
     );
 };
 

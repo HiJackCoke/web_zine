@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Fragment} from 'react';
+import React, {useState, Fragment} from 'react';
 import {Container, Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import {
@@ -45,7 +45,7 @@ const Header = () => {
                             <div className="header-content__logo d-flex align-items-center space-pr--15">
 
                                 <a href="https://www.warmemo.or.kr/front/main.do#">
-                                    <img src={img} className="img-fluid"/>
+                                    <img src={img} alt="/" className="img-fluid"/>
                                 </a>
                             </div>
                         </Col>
@@ -55,7 +55,7 @@ const Header = () => {
                             className="text-center"
                         >
                             <Link to="/">
-                                <img src={img2} className="img-fluid"/>
+                                <img src={img2} alt="/" className="img-fluid"/>
                             </Link>
                             {/*<div className="text-center">Logo</div>*/}
                         </Col>

@@ -4,9 +4,8 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 
-import img from '../../assets/images/Main/main1.png'
+import img from '../../assets/images/Main/main.jpg'
 import img2 from '../../assets/images/Main/main2.jpg'
-
 
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay])
 
@@ -88,50 +87,6 @@ const SliderMain = ({spaceBottomClass}) => {
                 </div>
             </Container>
         </div>
-
-    //     <div className="main-slider space-mb--r100">
-    //         <Container>
-    //             <div className="main-slider__wrapper">
-    //                 <Swiper
-    //                     watchSlidesVisibility
-    //                     loop
-    //                     spaceBetween={260}
-    //                     effect="fade"
-    //                     autoplay
-    //                     pagination
-    //                 >
-    //                     {Main &&
-    //                     Main.map((main) => {
-    //                         return (
-    //                             <SwiperSlide
-    //                                 key={main.id}
-    //                             >
-    //                                 <div
-    //                                     className="main-slider__slide swiper-slide"
-    //
-    //                                 >
-    //                                     <div className="slider-image"
-    //                                          style={{ backgroundImage: `url(${main.images})`, backgroundSize: "cover"}}
-    //                                     >
-    //                                         <img
-    //                                             src={main.images}
-    //                                             className="img-fluid"
-    //                                             alt=""
-    //                                         />
-    //                                     </div>
-    //                                 </div>
-    //                             </SwiperSlide>
-    //                         );
-    //                     })}
-    //                 </Swiper>
-    //             </div>
-    //         </Container>
-    //     </div>
-    //
-    //
-
-
-
     );
 };
 
