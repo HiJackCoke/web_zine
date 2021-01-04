@@ -11,6 +11,7 @@ const SearchOverlay = ({active, setActive}) => {
                 className="search-overlay__close-icon"
                 onClick={() => {
                     setActive(false)
+                    document.querySelector("body").classList.remove("overflow-hidden");
                 }}
             >
                 <MdClose/>

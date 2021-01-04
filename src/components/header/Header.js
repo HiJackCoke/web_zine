@@ -78,9 +78,6 @@ const Header = () => {
                                     <button
                                         onClick={() => {
                                             setOffCanvasMenu(true)
-                                            document
-                                                .querySelector("body")
-                                                .classList.add('overflow-hidden')
                                         }}
                                     >
                                         <IoIosMenu />
