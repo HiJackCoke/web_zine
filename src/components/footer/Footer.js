@@ -5,6 +5,7 @@ import {Tooltip} from 'react-tippy';
 import { IoIosArrowRoundUp } from "react-icons/io";
 import {animateScroll} from 'react-scroll';
 
+import img from '../../assets/images/logo-gray.png';
 
 const Footer = () => {
 
@@ -42,9 +43,10 @@ const Footer = () => {
                             style={{justifyContent: "space-around"}}
                         >
                             {/*&copy; {new Date().getFullYear() + " "}*/}
-                            <div style={{textAlign: "center"}}>
-                                전쟁기념관 <br/> The War Memorial of Korea
-                            </div>
+                            <img src={img}/>
+                            {/*<div style={{textAlign: "center"}}>*/}
+                            {/*    전쟁기념관 <br/> The War Memorial of Korea*/}
+                            {/*</div>*/}
                             <div style={{alignSelf: "center"}}>
                                 04353 서울특별시 용산구 이태원로 29(용산동 1가 8번지) / Tel : 02-709-3114 / Fax 02-709-3100
                                 <br/> © 2018 The War Memorial of Korea All rights reserved.
@@ -64,7 +66,7 @@ const Footer = () => {
                                         arrow={true}
                                         duration={200}
                                     >
-                                        <a href="https://www.facebook.com">
+                                        <a href="https://www.facebook.com/warmemo.korea">
                                             <FaFacebookF />
                                         </a>
                                     </Tooltip>
@@ -78,7 +80,7 @@ const Footer = () => {
                                         arrow={true}
                                         duration={200}
                                     >
-                                        <a href="https://www.instagram.com" >
+                                        <a href="https://www.instagram.com/warmemorialofkorea/" >
                                             <FaInstagram />
                                         </a>
                                     </Tooltip>
@@ -92,7 +94,7 @@ const Footer = () => {
                                         arrow={true}
                                         duration={200}
                                     >
-                                        <a href="https://www.youtube.com">
+                                        <a href="https://www.youtube.com/channel/UClEbJ_3EMk26pJ3Qun7QRMw?view_as=subscriber">
                                             <FaYoutube />
                                         </a>
                                     </Tooltip>

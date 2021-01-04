@@ -1,5 +1,5 @@
 import React, {useState, useEffect, Fragment} from 'react';
-import {Container} from 'react-bootstrap'
+import {Container, Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import {
     IoIosSearch,
@@ -10,6 +10,9 @@ import {
 import SearchOverlay from "./elements/SearchOverlay";
 import MenuOverlay from "./elements/MenuOverlay";
 import MobileMenu from "./elements/MobileMenu";
+
+import img from '../../assets/images/logo-black.png'
+import img2 from '../../assets/images/logo-center.png'
 
 const Header = () => {
 
@@ -38,67 +41,78 @@ const Header = () => {
                         style={{height: "100px"}}
                     >
                         {/* logo */}
-                        <div className="header-content__logo d-flex align-items-center space-pr--15">
+                        <Col lg={4}>
+                            <div className="header-content__logo d-flex align-items-center space-pr--15">
 
-                            <Link
-                                to="/"
-                            >
-                                <div>
-                                    전쟁기념관 <br/> The War Memorial of Korea
-                                </div>
-                            </Link>
-                        </div>
+                                <a href="https://www.warmemo.or.kr/front/main.do#">
+                                    <img src={img} className="img-fluid"/>
+                                </a>
+                            </div>
+                        </Col>
 
-                        <div>Logo</div>
+                        <Col
+                            lg={4}
+                            className="text-center"
+                        >
+                            <img src={img2}/>
+                            {/*<div className="text-center">Logo</div>*/}
+                        </Col>
+
+
 
                         {/* icons */}
-                        <div className="header-content__icons space-pl--15">
-                            <ul className="d-none d-lg-block">
-                                <li>
-                                    <button
-                                        onClick={() => {
-                                            setOffCanvasSearch(true)
-                                            document
-                                                .querySelector("body")
-                                                .classList.add("overflow-hidden")
-                                        }}
-                                    >
-                                        <IoIosSearch />
-                                    </button>
-                                </li>
+                        <Col lg={4}>
+                            <div
+                                className="header-content__icons space-pl--15"
+                                style={{textAlign: "end"}}
+                            >
+                                <ul className="d-none d-lg-block">
+                                    <li>
+                                        <button
+                                            onClick={() => {
+                                                setOffCanvasSearch(true)
+                                                document
+                                                    .querySelector("body")
+                                                    .classList.add("overflow-hidden")
+                                            }}
+                                        >
+                                            <IoIosSearch />
+                                        </button>
+                                    </li>
 
 
-                                <li>
-                                    <button
-                                        onClick={() => {
-                                            printWindow()
-                                        }}
-                                    >
-                                        <IoIosPrint />
-                                    </button>
-                                </li>
+                                    <li>
+                                        <button
+                                            onClick={() => {
+                                                printWindow()
+                                            }}
+                                        >
+                                            <IoIosPrint />
+                                        </button>
+                                    </li>
 
-                                <li>
-                                    <button
-                                        onClick={() => {
-                                            setOffCanvasMenu(true)
-                                            document
-                                                .querySelector("body")
-                                                .classList.add("overflow-hidden");
-                                        }}
-                                    >
-                                        <IoIosMenu />
-                                    </button>
-                                </li>
-                            </ul>
-                            <ul className="d-block d-lg-none">
-                                <li>
-                                    <button onClick={() => setOffCanvasMobileMenu(true)}>
-                                        <IoIosMenu />
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
+                                    <li>
+                                        <button
+                                            onClick={() => {
+                                                setOffCanvasMenu(true)
+                                                document
+                                                    .querySelector("body")
+                                                    .classList.add("overflow-hidden");
+                                            }}
+                                        >
+                                            <IoIosMenu />
+                                        </button>
+                                    </li>
+                                </ul>
+                                <ul className="d-block d-lg-none">
+                                    <li>
+                                        <button onClick={() => setOffCanvasMobileMenu(true)}>
+                                            <IoIosMenu />
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </Col>
                     </div>
                 </Container>
             </header>
