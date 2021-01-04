@@ -1,7 +1,6 @@
 import React from 'react';
 import { MdClose } from 'react-icons/md'
 import {GiClick} from 'react-icons/gi'
-import {Link} from "react-router-dom";
 
 const MenuOverlay = ({ active, setActive}) => {
 

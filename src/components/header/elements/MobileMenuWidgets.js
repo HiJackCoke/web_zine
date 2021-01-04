@@ -7,8 +7,6 @@ import {
   IoLogoInstagram,
 } from "react-icons/io";
 
-import {Link} from 'react-router-dom';
-
 const MobileMenuWidgets = () => {
   return (
     <div className="offcanvas-mobile-menu__widgets">
