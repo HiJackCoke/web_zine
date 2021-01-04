@@ -2,6 +2,7 @@ import React from 'react';
 import { IoIosClose } from 'react-icons/io';
 import MobileMenuNav from "./MobileMenuNav";
 import MobileMenuSearch from "./MobileMenuSearch";
+import MobileMenuWidgets from "./MobileMenuWidgets";
 
 const MobileMenu = ({ active, getActive }) => {
     return (
@@ -18,24 +19,15 @@ const MobileMenu = ({ active, getActive }) => {
                     <IoIosClose />
                 </button>
                 <div className="offcanvas-mobile-menu__content-wrapper">
-                    <div className="offcanvas-mobile-menu__content">
-
+                    <div
+                        className="offcanvas-mobile-menu__content"
+                        style={{ backgroundColor: "#FFD1E8" }}
+                    >
                         <MobileMenuSearch/>
+
                         <MobileMenuNav getActiveStatus={getActive}/>
 
-                        <div className="offcanvas-mobile-menu__middle">
-                            <div className="lang-curr-style">
-                                <span className="title">
-                                    Choose Language
-                                </span>
-                                <select>
-                                    <option value="ko">Korean</option>
-                                    <option value="en">English</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        {/*Widget*/}
+                        <MobileMenuWidgets/>
                     </div>
                 </div>
             </div>

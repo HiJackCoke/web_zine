@@ -47,47 +47,18 @@ const MobileMenuNav = ({getActiveStatus}) => {
             <ul>
                 <li className="menu-item-has-children">
                     <Link to="/">
-                        Home
+                        Monthly Story
                     </Link>
                     <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
                             <Link to="/">
-                                Home Group
-                            </Link>
-                            {/*<ul className="mobile-sub-menu">*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            One*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            two*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            three*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*</ul>*/}
-                        </li>
-
-                        <li className="menu-item-has-children">
-                            <Link to="/">
-                                Home Group2
+                                신년사
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
                             <Link to="/">
-                                Home Group3
-                            </Link>
-                        </li>
-
-                        <li className="menu-item-has-children">
-                            <Link to="/">
-                                Home Group4
+                                Story
                             </Link>
                         </li>
                     </ul>
@@ -95,47 +66,49 @@ const MobileMenuNav = ({getActiveStatus}) => {
 
                 <li className="menu-item-has-children">
                     <Link to="/">
-                        Home
+                        Memorial Story
                     </Link>
                     <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
                             <Link to="/">
-                                Home Group
+                                전쟁과 문화
                             </Link>
-                            {/*<ul className="mobile-sub-menu">*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            One*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            two*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            three*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*</ul>*/}
+
                         </li>
 
                         <li className="menu-item-has-children">
                             <Link to="/">
-                                Home Group2
+                                기념관 이야기 1
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
                             <Link to="/">
-                                Home Group3
+                                기념관 이야기 2
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
                             <Link to="/">
-                                Home Group4
+                                기념관 이야기 3
+                            </Link>
+                        </li>
+
+                        <li className="menu-item-has-children">
+                            <Link to="/">
+                                역사의 순간
+                            </Link>
+                        </li>
+
+                        <li className="menu-item-has-children">
+                            <Link to="/">
+                                박물관 탐방
+                            </Link>
+                        </li>
+
+                        <li className="menu-item-has-children">
+                            <Link to="/">
+                                흥미로운 무기 개발사
                             </Link>
                         </li>
                     </ul>
@@ -143,95 +116,24 @@ const MobileMenuNav = ({getActiveStatus}) => {
 
                 <li className="menu-item-has-children">
                     <Link to="/">
-                        Home
+                        Special
                     </Link>
                     <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
                             <Link to="/">
-                                Home Group
-                            </Link>
-                            {/*<ul className="mobile-sub-menu">*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            One*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            two*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            three*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*</ul>*/}
-                        </li>
-
-                        <li className="menu-item-has-children">
-                            <Link to="/">
-                                Home Group2
+                                뉴스 브리핑
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
                             <Link to="/">
-                                Home Group3
+                                기념관 이슈
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
                             <Link to="/">
-                                Home Group4
-                            </Link>
-                        </li>
-                    </ul>
-                </li>
-
-                <li className="menu-item-has-children">
-                    <Link to="/">
-                        Home
-                    </Link>
-                    <ul className="mobile-sub-menu">
-                        <li className="menu-item-has-children">
-                            <Link to="/">
-                                Home Group
-                            </Link>
-                            {/*<ul className="mobile-sub-menu">*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            One*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            two*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <Link to='/'>*/}
-                            {/*            three*/}
-                            {/*        </Link>*/}
-                            {/*    </li>*/}
-                            {/*</ul>*/}
-                        </li>
-
-                        <li className="menu-item-has-children">
-                            <Link to="/">
-                                Home Group2
-                            </Link>
-                        </li>
-
-                        <li className="menu-item-has-children">
-                            <Link to="/">
-                                Home Group3
-                            </Link>
-                        </li>
-
-                        <li className="menu-item-has-children">
-                            <Link to="/">
-                                Home Group4
+                                2021년 이달의 호국인물 선정
                             </Link>
                         </li>
                     </ul>

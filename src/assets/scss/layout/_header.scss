@@ -234,8 +234,9 @@ header {
 
   &__content {
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
+
     transform: translate(-50%, -50%);
 
     form {
@@ -246,10 +247,36 @@ header {
         border-bottom: 2px solid $black--two;
         background: none;
 
+        @include respond(extra-large-mobile) {
+          font-size: 40px;
+        }
+
+        @include respond(large-mobile) {
+          font-size: 40px;
+        }
+
+        @include respond(small-mobile) {
+          font-size: 30px;
+        }
+
+        @include respond(extra-small-mobile) {
+          font-size: 20px;
+        }
       }
       ::placeholder {
-        opacity: 1;
+        opacity: 1; /* Firefox */
 
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $grey--nine;
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $grey--nine;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
         color: $grey--nine;
       }
     }
