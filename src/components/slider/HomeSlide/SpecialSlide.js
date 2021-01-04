@@ -75,7 +75,7 @@ const SubSlideTwo = ({ spaceBottomClass }) => {
                                     return (
                                         <SwiperSlide key={i}>
                                             <div className="sub-grid-post">
-                                                <Link to={`/sub/${slide.id}`}>
+                                                <Link to={`/special/${slide.id}`}>
                                                     <div className="sub-grid-post__bg space-mb--30 bg-img"
                                                          style={{ backgroundImage: `url(${slide.images})`}}
                                                     >
