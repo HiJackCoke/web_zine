@@ -2,7 +2,6 @@ import React from "react";
 import SwiperCore, {EffectFade, Navigation, Pagination, Autoplay} from 'swiper'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from 'react-router-dom';
 
 import img from '../../assets/images/Main/main.jpg'
 import img2 from '../../assets/images/Main/main2.jpg'
