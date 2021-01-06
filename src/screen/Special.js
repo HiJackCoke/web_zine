@@ -3,17 +3,17 @@ import Layout from "../components/layout/Layout";
 
 import {Col, Container, Row} from "react-bootstrap";
 
-import img from '../assets/images/Spe/page/spe1.png'
-import img4 from '../assets/images/Spe/page/spe1.1.png'
-import img5 from '../assets/images/Spe/page/spe1.2.png'
-import img6 from '../assets/images/Spe/page/spe1.3.png'
-import img7 from '../assets/images/Spe/page/spe1.4.png'
-import img8 from '../assets/images/Spe/page/spe1.5.png'
-import img9 from '../assets/images/Spe/page/spe1.6.png'
+import news from '../assets/images/Spe/special1.JPG'
+import news2 from '../assets/images/Spe/special102.jpg'
+import news3 from '../assets/images/Spe/special103.png'
+import news4 from '../assets/images/Spe/special104.jpg'
+import news5 from '../assets/images/Spe/special105.png'
+import news6 from '../assets/images/Spe/special106.png';
+import news7 from '../assets/images/Spe/special107.png'
 
+import tm from '../assets/images/Spe/special201.png';
 
-import img2 from '../assets/images/Spe/page/spe2.png'
-import img3 from '../assets/images/Spe/page/spe3.png'
+import man from '../assets/images/Spe/special3.png'
 
 const Special = ({match}) => {
 
@@ -34,7 +34,7 @@ const Special = ({match}) => {
             "contents": [
                 {
                     "id": "1",
-                    "images": img,
+                    "images": news,
                     "htext": "헬기 동산 개막식 개최",
                     "btext": "2020년 11월 26일 어린이박물관 옥상에 헬기 동산이 새롭게 조성되어 조촐한 개막식 이 열렸다. " +
                         "이곳에는 6·25전쟁 당시 운용했던 기종부터 현대 국군이 사용했던 기종의 헬기들을 역동적인 형태로 전시하고 있는데," +
@@ -42,7 +42,7 @@ const Special = ({match}) => {
                 },
                 {
                     "id": "2",
-                    "images": img4,
+                    "images": news2,
                     "htext": "전쟁기념관 가족친화 우수기관 획득",
                     "btext": "전쟁기념관은 2021년 여성가족부가 인증하는 ‘가족친화 우수기관’에 선정됐다. 가족친화 인증제도는 직원들이 일과 가정을 양립할 수 있도록 " +
                         "지원하기 위해 가족친화 제도 를 모범적으로 운영하는 기업과 공공기관을 대상으로 인증하는 제도이다. " +
@@ -51,7 +51,7 @@ const Special = ({match}) => {
                 },
                 {
                     "id": "3",
-                    "images": img5,
+                    "images": news3,
                     "htext": "온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’",
                     "btext": "15회 차 영상으로 제작된 ‘죽음도 갈라놓지 못한 사랑’ 전시해설 콘텐츠는 3층 유엔실 에 전시되어 있는 유엔군 묘지에 대한 이야기를 주제로, " +
                         "제목에서도 느낄 수 있듯이 애 절한 부부의 사연을 담고 있다. 6·25전쟁에 참전했다가 전사한 호주 군인 케네스 존 휴머스턴 대위와 간호장교였던 그의 부인 낸시의 " +
@@ -59,7 +59,7 @@ const Special = ({match}) => {
                 },
                 {
                     "id": "4",
-                    "images": img6,
+                    "images": news4,
                     "htext": "온라인 콘텐츠 <유물을 만나다>: 故 이건희 회장 기증 권총",
                     "btext": "전쟁기념관 온라인 콘텐츠 <유물을 만나다> 제3탄은 故 이건희 회장 기증 권총 영상을 제작하여 좋 은 반응을 얻고 있다." +
                         " 이번 영상의 주인공은 미국 재향군인회가 6·25전쟁 참전 기념으로 당시 사용 된 M1911A1 권총 모델을 토대로 특별 제작한" +
@@ -71,7 +71,7 @@ const Special = ({match}) => {
                 },
                 {
                     "id": "5",
-                    "images": img7,
+                    "images": news5,
                     "htext": "이동전시모듈 ‘6·25전쟁과 무공훈장-가슴에 단 명예’ 순회전시",
                     "btext": "전쟁군사박물관 협력망 활성화를 위해 2020년 1월 제작한 이동전시모듈 ‘6·25전 쟁과 무공훈장-가슴에 단 명예’는" +
                         " 12월 10일부터 2021년 1월 말까지 경남 창녕 박 진전쟁기념관에서 전시된다. 무공훈장의 제정과 수여에 관련된 이야기부터 " +
@@ -80,13 +80,13 @@ const Special = ({match}) => {
                 },
                 {
                     "id": "6",
-                    "images": img8,
+                    "images": news6,
                     "htext": "소중한 유물을 기증해주셔서 감사합니다(2020년 7~12월)",
                     "btext": ""
                 },
                 {
                     "id": "7",
-                    "images": img9,
+                    "images": news7,
                     "htext": "전쟁·군사 도서 및 기록물 기증받습니다",
                     "btext": "전쟁기념관은 전쟁·군사 관련 문화예술의 허브 역할을 위한 복합문화플랫폼 구축을 추진하고 있습니다. 전쟁·군사 주제를 다룬 다양한 분야의 국내외 도서와 기록물 등을 기증받고 있으니 많은 관심과 참여를 부탁드립니다.\n" +
                         "* 문의: 02-709-3227"
@@ -101,7 +101,7 @@ const Special = ({match}) => {
             "contents": [
                 {
                     "id": "1",
-                    "images": img2,
+                    "images": tm,
                     "htext": "",
                     "btext": "전쟁기념관 호국인물총서 시리즈의 두 번째 권으로 『유방백세: 어둠 속에서도 눈감지 않은 사람들』이 발간되 었다. 이는 2020년 봉오동·청산리전투 100주년을 기념하여, 암흑과도 같았던 일제강점기 속에서 독립을 위해 목숨 바쳐 투쟁한 호국인물 26명이 걸어간 위대한 발자취를 다루고 있다."
 
@@ -128,7 +128,7 @@ const Special = ({match}) => {
             "contents": [
                 {
                     "id": "1",
-                    "images": img3,
+                    "images": man,
                 }
             ]
         }

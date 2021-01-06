@@ -157,12 +157,17 @@
     }
   }
   &__content {
+
+    margin: 0px 80px;
+
     @include respond(extra-large-mobile) {
       position: static;
 
       width: 100%;
 
       text-align: center;
+
+      margin: 0px;
     }
 
     @include respond(large-mobile) {
@@ -171,6 +176,8 @@
       width: 100%;
 
       text-align: center;
+
+      margin: 0px;
     }
 
     & > * {

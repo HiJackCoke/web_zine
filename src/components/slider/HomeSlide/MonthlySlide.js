@@ -36,7 +36,7 @@ const MonthlySlide = ({ spaceBottomClass }) => {
                 <Row className="align-items-center">
                     <Col lg={3}>
                         <div className="sub-intro space-mb-mobile-only--30">
-                            <h2>MONTHLY STORY</h2>
+                            <h2 className="title-name" >MONTHLY STORY</h2>
                             {/*<p>*/}
                             {/*    전쟁, 그리고... / 문화속 전쟁*/}
                             {/*</p>*/}
