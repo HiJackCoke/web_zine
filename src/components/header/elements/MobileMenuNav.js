@@ -51,13 +51,13 @@ const MobileMenuNav = ({getActiveStatus}) => {
                     </Link>
                     <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/monthly/1">
                                 신년사
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/monthly/2">
                                 Story
                             </Link>
                         </li>
@@ -70,44 +70,44 @@ const MobileMenuNav = ({getActiveStatus}) => {
                     </Link>
                     <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/sub/1">
                                 전쟁과 문화
                             </Link>
 
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/sub/2">
                                 기념관 이야기 1
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/sub/3">
                                 기념관 이야기 2
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/sub/4">
                                 기념관 이야기 3
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/sub/5">
                                 역사의 순간
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/sub/6">
                                 박물관 탐방
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/sub/7">
                                 흥미로운 무기 개발사
                             </Link>
                         </li>
@@ -120,19 +120,19 @@ const MobileMenuNav = ({getActiveStatus}) => {
                     </Link>
                     <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/special/1">
                                 뉴스 브리핑
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/special/2">
                                 기념관 이슈
                             </Link>
                         </li>
 
                         <li className="menu-item-has-children">
-                            <Link to="/">
+                            <Link to="/special/3">
                                 2021년 이달의 호국인물 선정
                             </Link>
                         </li>

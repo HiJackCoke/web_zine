@@ -38,7 +38,6 @@ const Header = () => {
                 <Container className="wide">
                     <div
                         className="header-content d-flex align-items-center justify-content-between position-relative"
-                        style={{height: "100px"}}
                     >
                         {/* logo */}
                         <Col lg={4}>

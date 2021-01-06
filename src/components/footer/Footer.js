@@ -35,26 +35,28 @@ const Footer = () => {
         >
             <Container>
                 <Row>
-                    <Col lg={9} md={12}>
+                    <Col lg={9} md={9}>
 
                         {/*=======  copyright text  =======*/}
                         <div className="footer-copyright-text d-flex">
                             {/*&copy; {new Date().getFullYear() + "The War Memorial of Korea All rights reserved."}*/}
-                            <Col lg={3}>
-                                <img src={img} alt="/" className="img-fluid"/>
-                            </Col>
+                            <Row>
+                                <Col lg={3} md={3} xs={12}>
+                                    <img src={img} alt="/" className="img-fluid"/>
+                                </Col>
 
 
-                            <Col lg={9}>
-                                <div className="footer-postal">
-                                    우 04353 서울특별시 용산구 이태원로 29(용산동 1가 8번지) / Tel : 02-709-3114 / Fax 02-709-3100
-                                    <br/> © 2018 The War Memorial of Korea All rights reserved.
-                                </div>
-                            </Col>
+                                <Col lg={9} md={9} xs={12}>
+                                    <div className="footer-postal">
+                                        우 04353 서울특별시 용산구 이태원로 29(용산동 1가 8번지) / Tel : 02-709-3114 / Fax 02-709-3100
+                                        <br/> © 2018 The War Memorial of Korea All rights reserved.
+                                    </div>
+                                </Col>
+                            </Row>
 
                         </div>
                     </Col>
-                    <Col lg={3} md={12} className="text-right text-lg-right">
+                    <Col lg={3} md={3} className="text-right text-lg-right">
                         {/*=======  social icons  =======*/}
                         <div
                             className="footer-social-icons space-mb--20">

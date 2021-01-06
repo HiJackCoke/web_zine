@@ -18,7 +18,12 @@ header {
 }
 
 .header-content {
+  height: 100px;
 
+  @media (max-width: 425px) {
+    height: 70px;
+  }
+  //@include respond ()
   &__logo {
 
   }
