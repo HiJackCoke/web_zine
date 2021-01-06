@@ -3,33 +3,32 @@ import Layout from "../components/layout/Layout";
 
 
 import {Col, Container, Row} from "react-bootstrap";
-import img1 from "../assets/images/Sub/page/sub1.png";
+import img1 from "../assets/images/Sub/sub101.png";
+import img2 from "../assets/images/Sub/sub102.jpg";
 
-import img2 from "../assets/images/Sub/page/sub2.png";
-import img3 from "../assets/images/Sub/page/sub2.1.png";
-import img4 from '../assets/images/Sub/page/sub2.2.png';
-import img5 from '../assets/images/Sub/page/sub2.3.png';
+import img3 from "../assets/images/Sub/sub2.png";
+import img4 from '../assets/images/Sub/sub201.png';
+import img5 from '../assets/images/Sub/sub202.JPG';
 
-import story2 from '../assets/images/Sub/story201.jpg';
+import story2 from '../assets/images/Sub/sub301.jpg';
 
-
-import story301 from '../assets/images/Sub/story301.png'
-import story302 from '../assets/images/Sub/story302.jpg'
-import story303 from '../assets/images/Sub/story303.jpg'
-import story304 from '../assets/images/Sub/story304.jpg'
-import story305 from '../assets/images/Sub/story305.jpg'
+import story301 from '../assets/images/Sub/sub401.png'
+import story302 from '../assets/images/Sub/sub402.jpg'
+import story303 from '../assets/images/Sub/sub403.jpg'
+import story304 from '../assets/images/Sub/sub404.jpg'
+import story305 from '../assets/images/Sub/sub405.jpg'
 
 import war from '../assets/images/Sub/sub5.jpg'
-import war2 from '../assets/images/Sub/page/sub5.1.png'
-import war3 from '../assets/images/Sub/page/sub5.2.png'
-import war4 from '../assets/images/Sub/page/sub5.3.png'
+import war2 from '../assets/images/Sub/sub501.png'
+import war3 from '../assets/images/Sub/sub502.png'
+import war4 from '../assets/images/Sub/sub503.png'
 
-import mobile from '../assets/images/Sub/sub6-1.png';
+import mobile from '../assets/images/Sub/sub601.png';
 
-import gun1 from '../assets/images/Sub/gun1.JPG';
-import gun2 from '../assets/images/Sub/gun2.png';
-import gun3 from '../assets/images/Sub/gun3.jpg';
-import gun4 from '../assets/images/Sub/gun4.png';
+import gun1 from '../assets/images/Sub/sub7.JPG';
+import gun2 from '../assets/images/Sub/sub701.png';
+import gun3 from '../assets/images/Sub/sub702.jpg';
+import gun4 from '../assets/images/Sub/sub703.png';
 
 const Sub = ({match}) => {
 

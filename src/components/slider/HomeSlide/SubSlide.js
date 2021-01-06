@@ -7,11 +7,11 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import img from "../../../assets/images/Sub/sub1.png";
 import img2 from "../../../assets/images/Sub/sub2.png";
-import img3 from "../../../assets/images/Sub/story2.jpg";
-import img4 from "../../../assets/images/Sub/story3.jpg";
+import img3 from "../../../assets/images/Sub/sub3.jpg";
+import img4 from "../../../assets/images/Sub/sub4.jpg";
 import img5 from "../../../assets/images/Sub/sub5.jpg";
 import img6 from "../../../assets/images/Sub/sub6.png";
-import sub7 from '../../../assets/images/Sub/gun1.JPG'
+import sub7 from '../../../assets/images/Sub/sub7.JPG'
 
 SwiperCore.use([Navigation])
 

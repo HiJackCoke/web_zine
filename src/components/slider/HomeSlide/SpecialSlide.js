@@ -7,7 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import img1 from '../../../assets/images/Spe/special1.JPG';
 import img2 from '../../../assets/images/Spe/speical2.png';
-import img3 from "../../../assets/images/Spe/spe3.png";
+import img3 from "../../../assets/images/Spe/special3.png";
 
 
 SwiperCore.use([Navigation])

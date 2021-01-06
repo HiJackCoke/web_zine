@@ -69,18 +69,18 @@ const Header = () => {
                                 style={{textAlign: "end"}}
                             >
                                 <ul className="d-none d-lg-block">
-                                    <li>
-                                        <button
-                                            onClick={() => {
-                                                setOffCanvasSearch(true)
-                                                document
-                                                    .querySelector("body")
-                                                    .classList.add("overflow-hidden")
-                                            }}
-                                        >
-                                            <IoIosSearch />
-                                        </button>
-                                    </li>
+                                    {/*<li>*/}
+                                    {/*    <button*/}
+                                    {/*        onClick={() => {*/}
+                                    {/*            setOffCanvasSearch(true)*/}
+                                    {/*            document*/}
+                                    {/*                .querySelector("body")*/}
+                                    {/*                .classList.add("overflow-hidden")*/}
+                                    {/*        }}*/}
+                                    {/*    >*/}
+                                    {/*        <IoIosSearch />*/}
+                                    {/*    </button>*/}
+                                    {/*</li>*/}
 
 
                                     <li>

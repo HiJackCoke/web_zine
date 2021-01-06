@@ -3,9 +3,9 @@ import Layout from "../components/layout/Layout";
 
 import {Col, Container, Row} from "react-bootstrap";
 
-import newImg from '../assets/images/Monthly/page/new.jpg'
+import newImg from '../assets/images/Monthly/page/news.jpg'
 
-import story1 from "../assets/images/Monthly/monthly2.jpg";
+import story1 from "../assets/images/Monthly/page/story1.jpg";
 import story2 from '../assets/images/Monthly/page/story2.jpg'
 import story3 from '../assets/images/Monthly/page/story3.jpg'
 import story4 from '../assets/images/Monthly/page/story4.png';
