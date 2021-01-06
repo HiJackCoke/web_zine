@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoIosClose } from 'react-icons/io';
 import MobileMenuNav from "./MobileMenuNav";
-import MobileMenuSearch from "./MobileMenuSearch";
+// import MobileMenuSearch from "./MobileMenuSearch";
 import MobileMenuWidgets from "./MobileMenuWidgets";
 
 const MobileMenu = ({ active, getActive }) => {

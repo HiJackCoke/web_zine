@@ -2,7 +2,7 @@ import React, {useState, Fragment} from 'react';
 import {Container, Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import {
-    IoIosSearch,
+    // IoIosSearch,
     IoIosPrint,
     IoIosMenu
 } from 'react-icons/io';
