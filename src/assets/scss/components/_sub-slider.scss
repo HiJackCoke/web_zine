@@ -5,6 +5,14 @@
     padding-right: 30px;
     padding-left: 30px;
 
+    @include respond(large-mobile) {
+      margin-right: 0px;
+      margin-left: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
+
+    }
+
     .ht-swiper-button-nav {
       font-size: 40px;
 
@@ -128,7 +136,15 @@
     }
 
     @include respond (extra-small-mobile) {
-      height: 253px !important;
+      height: 236px !important;
+    }
+
+    @include respond (iphone-x) {
+      height: 210px !important;
+    }
+
+    @include respond (iphone-5) {
+      height: 173.32px !important;
     }
   }
 
@@ -300,7 +316,15 @@
   }
 
   @include respond (extra-small-mobile) {
-    width: 209.5px !important;
+    width: 177px !important;
+  }
+
+  @include respond (iphone-x) {
+    width: 157.5px !important;
+  }
+
+  @include respond (iphone-5) {
+    width: 130px !important;
   }
 
   .name {
