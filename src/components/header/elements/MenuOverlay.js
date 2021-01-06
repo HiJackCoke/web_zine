@@ -1,6 +1,11 @@
 import React from 'react';
 import { MdClose } from 'react-icons/md'
 import {GiClick} from 'react-icons/gi'
+import {
+    IoLogoYoutube,
+    IoLogoFacebook,
+    IoLogoInstagram,
+} from "react-icons/io"
 
 const MenuOverlay = ({ active, setActive}) => {
 
@@ -124,13 +129,30 @@ const MenuOverlay = ({ active, setActive}) => {
                                         </p>
                                         <ul className="sub-menu--mega__list">
                                             <li>
-                                                <a href="/">
-                                                    SNS
+                                                <a
+                                                    href="https://www.facebook.com/warmemo.korea"
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    <IoLogoFacebook />
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href='/'>
-                                                    SNS
+                                                <a
+                                                    href="https://www.instagram.com/warmemorialofkorea/"
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    <IoLogoInstagram/>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.youtube.com/channel/UClEbJ_3EMk26pJ3Qun7QRMw?view_as=subscriber"
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    <IoLogoYoutube/>
                                                 </a>
                                             </li>
                                         </ul>

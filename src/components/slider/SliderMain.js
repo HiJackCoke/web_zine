@@ -59,7 +59,7 @@ const SliderMain = ({spaceBottomClass}) => {
                                         >
                                             <Row className="align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start h-100">
                                                 <Col lg={6} className="order-2 order-lg-1">
-                                                    <div className="main-slider__content">
+                                                    <div className="main-s lider__content">
                                                         <h1
                                                             className="title text-white font-weight-bold"
                                                         >
