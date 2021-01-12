@@ -6,6 +6,7 @@ import { IoIosArrowRoundUp } from "react-icons/io";
 import {animateScroll} from 'react-scroll';
 
 import img from '../../assets/images/logo-gray.png';
+import arrow from '../../assets/images/arrow.png'
 
 const Footer = () => {
 
@@ -121,15 +122,17 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-            <div
-                style={{
-                    textAlignLast: "center"
-                }}>
+            <div >
                 <button
                     className={`scroll-top ${scroll > top ? "show" : ""}`}
                     onClick={() => scrollToTop()}
+                    style={{
+                        backgroundColor: ""
+                    }}
                 >
-                    <IoIosArrowRoundUp />
+                    <img src={arrow}
+                        className="img-fluid"
+                    />
                 </button>
             </div>
         </footer>
