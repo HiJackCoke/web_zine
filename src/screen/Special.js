@@ -138,7 +138,7 @@ const Special = ({match}) => {
 
     return (
         <div
-            style={{ backgroundColor: "#DDCDA1" }}
+            style={{ backgroundColor: "#FFD1E8" }}
         >
             <Layout>
                 <div className="space-mb--r100 space-mt--r100">

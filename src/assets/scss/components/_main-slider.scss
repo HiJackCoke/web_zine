@@ -109,11 +109,11 @@
     height: 690px !important;
 
     @include respond (large-desktop) {
-      height: 550px !important;
+      height: 690px !important;
     }
 
     @include respond (small-desktop) {
-      height: 450px !important;
+      height: 550px !important;
     }
 
     @include respond (extra-large-mobile) {

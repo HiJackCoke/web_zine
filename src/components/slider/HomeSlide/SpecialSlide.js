@@ -2,13 +2,13 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import SwiperCore, {Navigation} from 'swiper';
 import {Swiper, SwiperSlide} from "swiper/react";
-
 import { Container, Row, Col } from "react-bootstrap";
+
+import {trimText} from '../../../utils'
 
 import img1 from '../../../assets/images/Spe/special1.JPG';
 import img2 from '../../../assets/images/Spe/speical2.png';
 import img3 from "../../../assets/images/Spe/special3.png";
-
 
 SwiperCore.use([Navigation])
 
@@ -41,58 +41,59 @@ const SubSlideTwo = ({ spaceBottomClass }) => {
             className={`${spaceBottomClass ? spaceBottomClass : ""}`}
         >
             <Container>
-                <Row className="align-items-center">
-                    <Col lg={3}>
-                        <div className="sub-intro space-mb-mobile-only--30">
-                            <h2>기념관이슈</h2>
-                            {/*<p>*/}
-                            {/*    전쟁, 그리고... / 문화속 전쟁*/}
-                            {/*</p>*/}
-                        </div>
-                    </Col>
-                    <Col lg={9}>
-                        <div className="sub-slider-container">
-                            <Swiper
-                                slidesPerView={3}
-                                spaceBetween={30}
-                                breakpoints={{
-                                    1024: {
-                                        slidesPerView: 3
-                                    },
-                                    768: {
-                                        slidesPerView: 2
-                                    },
-                                    640: {
-                                        slidesPerView: 2
-                                    },
-                                    320: {
-                                        slidesPerView: 2
-                                    }
-                                }}
-                            >
-                                {Spec &&
-                                Spec.map((slide, i) => {
-                                    return (
-                                        <SwiperSlide key={i}>
-                                            <div className="sub-grid-post">
-                                                <Link to={`/special/${slide.id}`}>
-                                                    <div className="sub-grid-post__bg space-mb--30 bg-img"
-                                                         style={{ backgroundImage: `url(${slide.images})`}}
-                                                    >
-                                                    </div>
-                                                    <div className="sub-caption">
-                                                        <h2 className="name">{slide.title}</h2>
-                                                        <span className="subtext">{slide.desc}</span>
-                                                    </div>
-                                                </Link>
-                                            </div>
-                                        </SwiperSlide>
-                                    );
-                                })}
-                            </Swiper>
-                        </div>
-                    </Col>
-                </Row>
+                <div style={{backgroundColor: "rgba(0, 0, 0, 0.15)"}}>
+                    <Row className="align-items-center">
+                        <Col lg={3}>
+                            <div className="sub-intro space-mb-mobile-only--30">
+                                <h2>기념관 <br/> 이슈</h2>
+                            </div>
+                        </Col>
+                        <Col lg={9}>
+                            <div className="sub-slider-container">
+                                <Swiper
+                                    slidesPerView={3}
+                                    spaceBetween={30}
+                                    breakpoints={{
+                                        1024: {
+                                            slidesPerView: 3
+                                        },
+                                        768: {
+                                            slidesPerView: 2
+                                        },
+                                        640: {
+                                            slidesPerView: 2
+                                        },
+                                        320: {
+                                            slidesPerView: 2
+                                        }
+                                    }}
+                                >
+                                    {Spec &&
+                                    Spec.map((slide, i) => {
+                                        return (
+                                            <SwiperSlide key={i}>
+                                                <div className="sub-grid-post">
+                                                    <Link to={`/special/${slide.id}`}>
+                                                        <div className="sub-grid-post__bg bg-img"
+                                                             style={{ backgroundImage: `url(${slide.images})`}}
+                                                        >
+                                                        </div>
+                                                        <div className="sub-caption">
+                                                            <h2 className="name">{slide.title}</h2>
+                                                            <span className="subtext">
+                                                                {trimText(slide.desc, 28)}
+                                                            </span>
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                            </SwiperSlide>
+                                        );
+                                    })}
+                                </Swiper>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
             </Container>
         </div>
     );

@@ -7,12 +7,14 @@
       font-weight: bold;
       line-height: 1;
       color: #000;
-      font-size: 40px;
+      font-size: 35px;
       border-bottom: 1px solid #777777;
     }
   }
 
   &__summary {
+    line-height: 24px;
+    color: black;
     margin-top: 60px;
     border-bottom: 1px solid #777777;
     border-top: 1px solid #777777;
@@ -69,7 +71,8 @@
 
         margin-bottom: 15px;
 
-        color: $grey--seven;
+        //color: $grey--seven;
+        color: $black--two;
       }
     }
 

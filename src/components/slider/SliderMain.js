@@ -3,7 +3,7 @@ import SwiperCore, {EffectFade, Navigation, Pagination, Autoplay} from 'swiper'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Container, Row, Col } from "react-bootstrap";
 
-import img from '../../assets/images/Main/main.jpg'
+import img from '../../assets/images/Main/thumb.png'
 import img2 from '../../assets/images/Main/main2.jpg'
 
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay])
@@ -34,14 +34,16 @@ const SliderMain = ({spaceBottomClass}) => {
         <div
             className={`main-slider ${spaceBottomClass ? spaceBottomClass : ""}`}
         >
-            <Container className="full">
+            <Container>
                 <div className="main-slider__wrapper">
                     <Swiper
                         watchSlidesVisibility
                         loop
                         spaceBetween={260}
                         // effect="fade"
-                        autoplay
+                        // autoplay={{
+                        //     delay: 5000
+                        // }}
                         pagination
                         grabCursor={true}
                     >
@@ -50,7 +52,7 @@ const SliderMain = ({spaceBottomClass}) => {
                                 <SwiperSlide>
 
                                     <div
-                                        className="main-slider__slide bg-img overlay "
+                                        className="main-slider__slide bg-img"
                                         style={{ backgroundImage: `url(${main.images})`}}
                                         key={i}
                                     >
@@ -60,12 +62,12 @@ const SliderMain = ({spaceBottomClass}) => {
                                             <Row className="align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start h-100">
                                                 <Col lg={6} className="order-2 order-lg-1">
                                                     <div className="main-s lider__content">
-                                                        <h1
-                                                            className="title text-white font-weight-bold"
-                                                        >
-                                                            {main.title}
-                                                        </h1>
-                                                        <h5 className="sub-title text-white font-weight-bold">{main.desc}</h5>
+                                                        {/*<h1*/}
+                                                        {/*    className="title text-white font-weight-bold"*/}
+                                                        {/*>*/}
+                                                        {/*    {main.title}*/}
+                                                        {/*</h1>*/}
+                                                        {/*<h5 className="sub-title text-white font-weight-bold">{main.desc}</h5>*/}
                                                         <div className="slider-link">
                                                             {/*<Link*/}
                                                             {/*    href={single.url}*/}

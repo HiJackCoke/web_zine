@@ -35,7 +35,7 @@ const Header = () => {
                 className="topbar-shadow"
                 style={{backgroundColor: "#D0BEE6"}}
             >
-                <Container className="wide">
+                <Container className="">
                     <div
                         className="header-content d-flex align-items-center justify-content-between position-relative"
                     >

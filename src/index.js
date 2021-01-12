@@ -5,14 +5,14 @@ import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 import App from './App';
 import Monthly from "./screen/Monthly";
 import Sub from "./screen/Sub";
-
-
 import Special from "./screen/Special";
+import ScrollToTop from "./components/scrollToTop";
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
     <BrowserRouter>
+        <ScrollToTop/>
         <Switch>
             <Route path="/" exact render={props => <App {...props}/> } />
             <Route path="/monthly/:id" render={props => <Monthly {...props}/> } />

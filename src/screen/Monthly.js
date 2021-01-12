@@ -157,7 +157,7 @@ const Monthly = ({match}) => {
 
     return (
         <div
-            style={{ backgroundColor: "#DDCDA1" }}
+            style={{ backgroundColor: "#FFD1E8" }}
         >
             <Layout>
                 <div className="space-mb--r100 space-mt--r100">
@@ -201,7 +201,10 @@ const Monthly = ({match}) => {
                                                             <h2>
                                                                 {monthly.htext}
                                                             </h2>
+                                                            <p>
                                                                 {monthly.btext}
+                                                            </p>
+
                                                         </div>
 
                                                 </div>
