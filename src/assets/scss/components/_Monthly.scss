@@ -3,12 +3,12 @@
     text-align: center;
 
     span {
-      font-family: Work Sans;
       font-weight: bold;
       line-height: 1;
       color: #000;
-      font-size: 35px;
+      font-size: 32px;
       border-bottom: 1px solid #777777;
+
     }
   }
 
@@ -31,6 +31,9 @@
   }
 
   &__content {
+
+    letter-spacing: 1px;
+
     .post-date {
       margin-bottom: 15px;
       a {
@@ -67,7 +70,7 @@
     p {
       &.post-excerpt {
         font-size: 15px;
-        line-height: 24px;
+        line-height: 28px;
 
         margin-bottom: 15px;
 

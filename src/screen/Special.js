@@ -152,11 +152,11 @@ const Special = ({match}) => {
                                         >
                                             <div className="monthly-grid-post__title space-mb--r50">
                                                 <span>{special.title}</span>
-                                                <h2
+                                                <h3
                                                     className="mt-3"
                                                 >
                                                     {special.sub}
-                                                </h2>
+                                                </h3>
                                                 {special.summary
                                                     ?
                                                     <div className="monthly-grid-post__summary">

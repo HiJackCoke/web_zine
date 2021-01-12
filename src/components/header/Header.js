@@ -12,7 +12,8 @@ import MenuOverlay from "./elements/MenuOverlay";
 import MobileMenu from "./elements/MobileMenu";
 
 import img from '../../assets/images/logo-black.png'
-import img2 from '../../assets/images/logo-center.png'
+// import img2 from '../../assets/images/logo-center.png'
+
 
 const Header = () => {
 
@@ -33,7 +34,9 @@ const Header = () => {
         <Fragment>
             <header
                 className="topbar-shadow"
-                style={{backgroundColor: "#D0BEE6"}}
+                style={{
+                    backgroundColor: "#D0BEE6"
+                }}
             >
                 <Container className="">
                     <div
@@ -43,21 +46,31 @@ const Header = () => {
                         <Col lg={4}>
                             <div className="header-content__logo d-flex align-items-center space-pr--15">
 
-                                <a href="https://www.warmemo.or.kr/front/main.do#">
+                                <Link to="/">
                                     <img src={img} alt="/" className="img-fluid"/>
-                                </a>
+                                </Link>
                             </div>
                         </Col>
 
-                        <Col
-                            lg={4}
-                            className="text-center"
-                        >
-                            <Link to="/">
-                                <img src={img2} alt="/" className="img-fluid"/>
-                            </Link>
-                            {/*<div className="text-center">Logo</div>*/}
-                        </Col>
+
+                        {/*<Col lg={4}>*/}
+                        {/*    <div className="header-content__logo d-flex align-items-center space-pr--15">*/}
+
+                        {/*        <a href="https://www.warmemo.or.kr/front/main.do#">*/}
+                        {/*            <img src={img} alt="/" className="img-fluid"/>*/}
+                        {/*        </a>*/}
+                        {/*    </div>*/}
+                        {/*</Col>*/}
+
+                        {/*<Col*/}
+                        {/*    lg={4}*/}
+                        {/*    className="text-center"*/}
+                        {/*>*/}
+                        {/*    <Link to="/">*/}
+                        {/*        <img src={img2} alt="/" className="img-fluid"/>*/}
+                        {/*    </Link>*/}
+                        {/*    /!*<div className="text-center">Logo</div>*!/*/}
+                        {/*</Col>*/}
 
 
 

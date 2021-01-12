@@ -4,7 +4,7 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import { Container, Row, Col } from "react-bootstrap";
 
 import img from '../../assets/images/Main/thumb.png'
-import img2 from '../../assets/images/Main/main2.jpg'
+import img2 from '../../assets/images/Main/thumb2.png'
 
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay])
 

@@ -25,7 +25,7 @@ const MonthlySlide = ({ spaceBottomClass }) => {
             "id": "2",
             "images": img2,
             "title": "story",
-            "desc": "병자호란의 치욕이 주는 역사적 교훈\n"
+            "desc": " 병자호란의 치욕이 주는 역사적 교훈"
         }
     ]
 
@@ -39,9 +39,6 @@ const MonthlySlide = ({ spaceBottomClass }) => {
                         <Col lg={3}>
                             <div className="sub-intro space-mb-mobile-only--30">
                                 <h2 className="title-name" >MONTHLY STORY</h2>
-                                {/*<p>*/}
-                                {/*    전쟁, 그리고... / 문화속 전쟁*/}
-                                {/*</p>*/}
                             </div>
                         </Col>
                         <Col lg={9}>
@@ -49,6 +46,7 @@ const MonthlySlide = ({ spaceBottomClass }) => {
                                 <Swiper
                                     slidesPerView={3}
                                     spaceBetween={30}
+                                    navigation
                                     breakpoints={{
                                         1024: {
                                             slidesPerView: 3

@@ -75,9 +75,6 @@ const SubSlide = ({ spaceBottomClass }) => {
                         <Col lg={3}>
                             <div className="sub-intro space-mb-mobile-only--30">
                                 <h2>MEMORIAL STORY</h2>
-                                {/*<p>*/}
-                                {/*    전쟁, 그리고... / 문화속 전쟁*/}
-                                {/*</p>*/}
                             </div>
                         </Col>
                         <Col lg={9}>
@@ -85,6 +82,7 @@ const SubSlide = ({ spaceBottomClass }) => {
                                 <Swiper
                                     slidesPerView={3}
                                     spaceBetween={30}
+                                    navigation
                                     breakpoints={{
                                         1024: {
                                             slidesPerView: 3

@@ -45,7 +45,7 @@ const SubSlideTwo = ({ spaceBottomClass }) => {
                     <Row className="align-items-center">
                         <Col lg={3}>
                             <div className="sub-intro space-mb-mobile-only--30">
-                                <h2>기념관 <br/> 이슈</h2>
+                                <h2>기념관 이슈</h2>
                             </div>
                         </Col>
                         <Col lg={9}>
@@ -53,6 +53,7 @@ const SubSlideTwo = ({ spaceBottomClass }) => {
                                 <Swiper
                                     slidesPerView={3}
                                     spaceBetween={30}
+                                    navigation
                                     breakpoints={{
                                         1024: {
                                             slidesPerView: 3
