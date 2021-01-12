@@ -121,7 +121,10 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-            <div style={{alignItems: "center", justifyContent: "center"}}>
+            <div
+                style={{
+                    textAlignLast: "center"
+                }}>
                 <button
                     className={`scroll-top ${scroll > top ? "show" : ""}`}
                     onClick={() => scrollToTop()}
