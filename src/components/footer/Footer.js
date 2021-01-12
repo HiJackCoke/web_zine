@@ -126,12 +126,10 @@ const Footer = () => {
                 <button
                     className={`scroll-top ${scroll > top ? "show" : ""}`}
                     onClick={() => scrollToTop()}
-                    style={{
-                        backgroundColor: ""
-                    }}
                 >
                     <img src={arrow}
                         className="img-fluid"
+                         alt="/"
                     />
                 </button>
             </div>
