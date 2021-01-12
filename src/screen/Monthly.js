@@ -187,16 +187,15 @@ const Monthly = ({match}) => {
                                             {monthly.contents &&
                                             monthly.contents.map((monthly, i) => (
                                                 <div key={i}>
-                                                    <div
-                                                        className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100"
-                                                        style={ monthly.htext || monthly.btext ? {} : {marginBottom: "-100px"}}
-                                                    >
-                                                        <img
-                                                            className="img-fluid"
-                                                            src={monthly.images}
-                                                            alt="/"
-                                                        />
-                                                    </div>
+                                                    {monthly.images ?
+                                                        <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
+                                                            <img
+                                                                className="img-fluid"
+                                                                src={monthly.images}
+                                                                alt="/"
+                                                            />
+                                                        </div> : ""
+                                                    }
 
                                                         <div className="monthly-grid-post__content">
                                                             <h2>
