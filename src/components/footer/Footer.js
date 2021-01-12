@@ -121,13 +121,14 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-            <button
-                className={`scroll-top ${scroll > top ? "show" : ""}`}
-                onClick={() => scrollToTop()}
-                style={{alignItems: "center", justifyContent: "center"}}
-            >
-                <IoIosArrowRoundUp />
-            </button>
+            <div style={{alignItems: "center", justifyContent: "center"}}>
+                <button
+                    className={`scroll-top ${scroll > top ? "show" : ""}`}
+                    onClick={() => scrollToTop()}
+                >
+                    <IoIosArrowRoundUp />
+                </button>
+            </div>
         </footer>
     );
 };
