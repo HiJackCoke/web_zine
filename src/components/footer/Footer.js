@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import {Tooltip} from 'react-tippy';
-import { IoIosArrowRoundUp } from "react-icons/io";
 import {animateScroll} from 'react-scroll';
 
 import img from '../../assets/images/logo-gray.png';
