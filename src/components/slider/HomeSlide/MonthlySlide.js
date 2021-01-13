@@ -14,18 +14,37 @@ SwiperCore.use([Navigation])
 
 const MonthlySlide = ({ spaceBottomClass }) => {
 
+    const desc = [
+        (
+            // 1
+            <div>
+                새로운 패러다임을 선도하고
+                <br/>
+                변화와 혁신을 구현하는 전쟁기념관
+            </div>
+        ),
+        (
+            // 2
+            <div>
+                병자호란의 치욕이 주는
+                <br/>
+                역사적 교훈
+            </div>
+        )
+    ]
+
     const Monthly = [
         {
             "id": "1",
             "images": img,
             "title": "신년사",
-            "desc": "새로운 패러다임을 선도하고 변화와 혁신을 구현하는 전쟁기념관"
+            "desc": desc[0]
         },
         {
             "id": "2",
             "images": img2,
-            "title": "story",
-            "desc": " 병자호란의 치욕이 주는 역사적 교훈"
+            "title": "Story",
+            "desc": desc[1]
         }
     ]
 
@@ -46,7 +65,6 @@ const MonthlySlide = ({ spaceBottomClass }) => {
                                 <Swiper
                                     slidesPerView={3}
                                     spaceBetween={30}
-                                    navigation
                                     breakpoints={{
                                         1024: {
                                             slidesPerView: 3

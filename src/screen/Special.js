@@ -11,17 +11,22 @@ import news5 from '../assets/images/Spe/special105.png'
 import news6 from '../assets/images/Spe/special106.png';
 import news7 from '../assets/images/Spe/special107.png'
 
-import tm from '../assets/images/Spe/special201.png';
+import tm from '../assets/images/Spe/special2.png';
+import tm2 from '../assets/images/Spe/special202.jpg';
+import tm3 from '../assets/images/Spe/special203.png';
 
 import man from '../assets/images/Spe/special3.png'
 
+
 const Special = ({match}) => {
 
-    const summ2 = (
-        <h5>
+    const summ8 = (
+        <h5 className="summ">
             호국인물총서 2
             <br/>『유방백세(遺芳百世), 어둠 속에서도 눈감지 않은 사람들』 발간
-            <br/><br/>글 이재민_전쟁기념관 학예연구사
+            <div className="writer">
+                <br/><br/>글 이재민_전쟁기념관 학예연구사
+            </div>
         </h5>
     )
 
@@ -97,7 +102,7 @@ const Special = ({match}) => {
             "id": "2",
             "title": "기념관 이슈",
             "sub": "",
-            "summary": summ2,
+            "summary": summ8,
             "contents": [
                 {
                     "id": "1",
@@ -108,12 +113,14 @@ const Special = ({match}) => {
                 },
                 {
                     "id": "2",
+                    "images": tm2,
                     "btext": "‘꽃다운 이름 백세토록 전하리’라는 뜻을 지닌 제2권의 제목 ‘유방백세(遺芳百世)’는 독립운동가들이 먼저 간 동지들을 떠올릴 때 종종 인용했던 표현이다. 1948년 김구가 직접 쓴 것으로 현재 효창공원 내 삼의사 묘 기단에 새겨져있다.네글자는 한글자씩 각장의 맨 앞에 배치하여 " +
                         "장의 시작을 알림과 동시에 호국인물들의 희생과 헌신을 영원히 기억하겠다는 의미를 담고 있다. 호국인물총서 2에서 눈에 띄는 두드러진 특징은 최신의 연구 성과는 물론, 기존에 많이 알려지지 않았던 자료 및 고지도·위성지도 등을 참고하여 호국인물들의 공적을 집대성했다는 점이다. " +
                         "국내의 경우, 각종 고지도와 당시 신문기사, 현재의 표석 등 여러 자료를 활용하여 주요 공적을 입체적으로 확인할 수 있도록 했다. 국외의경우, 익숙지 않은 중국 동북 지역의 지도 자료를 제시함으로써 어렴풋이 알고 있었던 항일독립전쟁의 모습을 한눈에 파악할 수 있도록 심혈을 기울였다."
                 },
                 {
                     "id": '3',
+                    "images": tm3,
                     "btext": "1년 가까이 자료를 조사하고 공적을 연구하고 호국인물 한분 한분의 삶을 재 조명하면서, 그들의 숭고한 희생 정신에 절로 고개가 숙여지고 감사했다. 모쪼록 이 책을 접하는 많은 사람이 호국인물들의 헌신과, 이를 바탕으로 오늘의 평화와 번영이 꽃피울 수 있었음을 기억 해주었으면 한다."
                 }
             ]

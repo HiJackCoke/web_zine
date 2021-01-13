@@ -13,7 +13,7 @@ import MobileMenu from "./elements/MobileMenu";
 
 
 import img from '../../assets/images/logo-black.png'
-// import img2 from '../../assets/images/logo-center.png'
+import img2 from '../../assets/images/logo-center.png'
 
 
 const Header = () => {
@@ -21,8 +21,27 @@ const Header = () => {
 
     const [ offCanvasMenu, setOffCanvasMenu ] = useState(false);
     const [ offCanvasMobileMenu, setOffCanvasMobileMenu ] = useState(false);
-
-
+    // const [scroll, setScroll] = useState(0);
+    // const [headerTop, setHeaderTop] = useState(0);
+    // const [headerHeight, setHeaderHeight] = useState(0);
+    //
+    //
+    // useEffect(() => {
+    //     const header = document.querySelector("header");
+    //     setHeaderTop(header.offsetTop);
+    //     setHeaderHeight(header.offsetHeight);
+    //     window.addEventListener("scroll", handleScroll);
+    //     scroll > headerTop
+    //         ? (document.body.style.paddingTop = `${headerHeight}px`)
+    //         : (document.body.style.paddingTop = 0);
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
+    //
+    // const handleScroll = () => {
+    //     setScroll(window.scrollY);
+    // };
 
     const printWindow = () => {
         document.getElementById('print-area'.innerHTML)
@@ -32,42 +51,43 @@ const Header = () => {
 
     return (
         <Fragment>
-            <header
-                className="topbar-shadow"
-            >
+            <header className="topbar-shadow">
+            {/*<header*/}
+            {/*    className={`topbar-shadow ${scroll > headerTop ? "is-sticky" : ""}`}*/}
+            {/*>*/}
                 <Container className="">
                     <div
                         className="header-content d-flex align-items-center justify-content-between position-relative"
                     >
                         {/* logo */}
-                        <Col lg={4}>
-                            <div className="header-content__logo d-flex align-items-center space-pr--15">
-
-                                <Link to="/">
-                                    <img src={img} alt="/" className="img-fluid"/>
-                                </Link>
-                            </div>
-                        </Col>
-
-
                         {/*<Col lg={4}>*/}
                         {/*    <div className="header-content__logo d-flex align-items-center space-pr--15">*/}
 
-                        {/*        <a href="https://www.warmemo.or.kr/front/main.do#">*/}
+                        {/*        <Link to="/">*/}
                         {/*            <img src={img} alt="/" className="img-fluid"/>*/}
-                        {/*        </a>*/}
+                        {/*        </Link>*/}
                         {/*    </div>*/}
                         {/*</Col>*/}
 
-                        {/*<Col*/}
-                        {/*    lg={4}*/}
-                        {/*    className="text-center"*/}
-                        {/*>*/}
-                        {/*    <Link to="/">*/}
-                        {/*        <img src={img2} alt="/" className="img-fluid"/>*/}
-                        {/*    </Link>*/}
-                        {/*    /!*<div className="text-center">Logo</div>*!/*/}
-                        {/*</Col>*/}
+
+                        <Col lg={4}>
+                            <div className="header-content__logo d-flex align-items-center space-pr--15">
+
+                                <a href="https://www.warmemo.or.kr/front/main.do#">
+                                    <img src={img} alt="/" className="img-fluid"/>
+                                </a>
+                            </div>
+                        </Col>
+
+                        <Col
+                            lg={4}
+                            className="text-center"
+                        >
+                            <Link to="/">
+                                <img src={img2} alt="/" className="img-fluid"/>
+                            </Link>
+                            {/*<div className="text-center">Logo</div>*/}
+                        </Col>
 
 
 

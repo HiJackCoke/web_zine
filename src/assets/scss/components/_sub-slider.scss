@@ -361,6 +361,8 @@
 
   @include respond (large-mobile) {
     width: 240px !important;
+
+    height: 106px;
   }
 
   @include respond (extra-small-mobile) {

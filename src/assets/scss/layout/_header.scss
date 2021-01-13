@@ -1,5 +1,7 @@
 
 header {
+
+
   position: relative;
   &.topbar-shadow {
     &:before {
@@ -15,6 +17,17 @@ header {
       box-shadow: 0 2px 5px rgba($black, 0.2);
     }
   }
+  //&.is-sticky {
+  //  background-color: white;
+  //
+  //  position: fixed;
+  //  z-index: 999;
+  //  top: 0;
+  //  left: 0;
+  //
+  //  width: 100%;
+  //}
+
 }
 
 .header-content {
@@ -41,7 +54,7 @@ header {
           position: relative;
 
           svg {
-            font-size: 30px;
+            font-size: 35px;
 
             fill: $black--two;
           }

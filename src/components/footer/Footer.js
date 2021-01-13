@@ -31,7 +31,7 @@ const Footer = () => {
     return (
         <footer
             className="space-pt--50 space-pb--50"
-            style={{backgroundColor: "#D0BEE6"}}
+            style={{backgroundColor: "rgba(0, 0, 0, 0.3)"}}
         >
             <Container>
                 <Row>
@@ -47,7 +47,7 @@ const Footer = () => {
 
 
                                 <Col lg={9} md={9} xs={12}>
-                                    <div className="footer-postal">
+                                    <div className="footer-postal text-black-50">
                                         발행일 2021년 1월 5일 통권 제180호
                                         발행처 전쟁기념관 발행인 전쟁기념관장 이상철
                                         <br/>주소 (04353)서울시 용산구 이태원로29

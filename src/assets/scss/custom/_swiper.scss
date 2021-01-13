@@ -1,9 +1,14 @@
 
 .swiper-button-prev {
   background-image: url("../../images/arrow-l.png");
-
+  background-size: cover;
+  left: 0px;
+  height: 60px;
 }
 
 .swiper-button-next {
   background-image: url("../../images/arrow-r.png");
+  background-size: cover;
+  right: 0px;
+  height: 60px;
 }
