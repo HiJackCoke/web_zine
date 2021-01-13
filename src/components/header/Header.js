@@ -8,7 +8,7 @@ import {
 } from 'react-icons/io';
 
 
-import MenuOverlay from "./elements/MenuOverlay";
+// import MenuOverlay from "./elements/MenuOverlay";
 import MobileMenu from "./elements/MobileMenu";
 
 
@@ -19,7 +19,6 @@ import img from '../../assets/images/logo-black.png'
 const Header = () => {
 
 
-    const [ offCanvasSearch, setOffCanvasSearch ] = useState(false)
     const [ offCanvasMenu, setOffCanvasMenu ] = useState(false);
     const [ offCanvasMobileMenu, setOffCanvasMobileMenu ] = useState(false);
 

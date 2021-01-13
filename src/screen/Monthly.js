@@ -19,7 +19,10 @@ const Monthly = ({match}) => {
             광해군이 폐위되고 인조가 즉위한 1623년, 인조반정이 성공하면서 조정의 외교 정책에도 큰 변화가 이루어졌다.
             명과 후금 사이에서 실리적인 입장을 취한 광해군의 중립외교 정책 대신에 친명배금(親明排金) 정책이 외교의 기본 방향이 되었고, 이것은 신흥 군사
             강국 후금(後金)을 자극했다. 1627년의 정묘호란과 1636년의 병자호란은 인조와 서인 정권의 외교 실책이 빚은 혹독한 대가였다.
-            <br/> <br/> 글 신병주_건국대학교 사학과 교수
+            <div className="writer">
+                <br/> <br/> 글 신병주_건국대학교 사학과 교수
+            </div>
+
         </h5>
     )
 
@@ -176,11 +179,11 @@ const Monthly = ({match}) => {
 
                                             <span>{monthly.title}</span>
                                             <div className="monthly-grid-post__title">
-                                                <h3
+                                                <h2
                                                     className="mt-3"
                                                 >
                                                     {monthly.sub}
-                                                </h3>
+                                                </h2>
                                             </div>
 
                                             {monthly.summary

@@ -1,7 +1,7 @@
 import React from 'react'
 import {
-  IoIosPhonePortrait,
-  IoMdMail,
+  // IoIosPhonePortrait,
+  // IoMdMail,
   IoLogoYoutube,
   IoLogoFacebook,
   IoLogoInstagram,

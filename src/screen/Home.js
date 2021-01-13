@@ -3,7 +3,7 @@ import Layout from "../components/layout/Layout";
 import SliderMain from "../components/slider/SliderMain";
 import MonthlySlide from "../components/slider/HomeSlide/MonthlySlide";
 import SubSlide from "../components/slider/HomeSlide/SubSlide";
-import SpecialSlide from "../components/slider/HomeSlide/SpecialSlide";
+// import SpecialSlide from "../components/slider/HomeSlide/SpecialSlide";
 
 // #FFD1E8
 
