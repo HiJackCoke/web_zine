@@ -9,30 +9,28 @@ import SpecialSlide from "../components/slider/HomeSlide/SpecialSlide";
 
 const Home = () => {
     return (
-        <div
-            style={{ backgroundColor: "#FFD1E8" }}
-        >
-            <Layout>
-                <SliderMain
-                    spaceBottomClass="space-mb--r100"
-                />
-                <MonthlySlide
-                    spaceBottomClass="space-mb--r100"
-                />
-                <SubSlide
-                    spaceBottomClass="space-mb--r100"
-                />
+
+        <Layout>
+            <SliderMain
+                spaceBottomClass="space-mb--r100"
+            />
+            <MonthlySlide
+                spaceBottomClass="space-mb--r100"
+            />
+            <SubSlide
+                spaceBottomClass="space-mb--r100"
+            />
 
 
-                {/*<SubSlideTwo*/}
-                {/*    spaceBottomClass="space-mb--r100"*/}
-                {/*/>*/}
+            {/*<SubSlideTwo*/}
+            {/*    spaceBottomClass="space-mb--r100"*/}
+            {/*/>*/}
 
-                <SpecialSlide
-                    spaceBottomClass="space-mb--r100"
-                />
-            </Layout>
-        </div>
+            {/*<SpecialSlide*/}
+            {/*    spaceBottomClass="space-mb--r100"*/}
+            {/*/>*/}
+        </Layout>
+
     );
 };
 

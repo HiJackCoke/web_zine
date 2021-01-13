@@ -7,9 +7,10 @@ import {
     IoIosMenu
 } from 'react-icons/io';
 
-import SearchOverlay from "./elements/SearchOverlay";
+
 import MenuOverlay from "./elements/MenuOverlay";
 import MobileMenu from "./elements/MobileMenu";
+
 
 import img from '../../assets/images/logo-black.png'
 // import img2 from '../../assets/images/logo-center.png'
@@ -34,9 +35,6 @@ const Header = () => {
         <Fragment>
             <header
                 className="topbar-shadow"
-                style={{
-                    backgroundColor: "#D0BEE6"
-                }}
             >
                 <Container className="">
                     <div
@@ -71,6 +69,7 @@ const Header = () => {
                         {/*    </Link>*/}
                         {/*    /!*<div className="text-center">Logo</div>*!/*/}
                         {/*</Col>*/}
+
 
 
 
@@ -109,9 +108,6 @@ const Header = () => {
                                         <button
                                             onClick={() => {
                                                 setOffCanvasMenu(true)
-                                                document
-                                                    .querySelector("body")
-                                                    .classList.add("overflow-hidden");
                                             }}
                                         >
                                             <IoIosMenu />
@@ -131,15 +127,15 @@ const Header = () => {
                 </Container>
             </header>
 
-            <SearchOverlay
-                active={offCanvasSearch}
-                setActive={setOffCanvasSearch}
+            <MobileMenu
+                active={offCanvasMenu}
+                getActive={setOffCanvasMenu}
             />
 
-            <MenuOverlay
-                active={offCanvasMenu}
-                setActive={setOffCanvasMenu}
-            />
+            {/*<MenuOverlay*/}
+            {/*    active={offCanvasMenu}*/}
+            {/*    setActive={setOffCanvasMenu}*/}
+            {/*/>*/}
 
             <MobileMenu
                 active={offCanvasMobileMenu}

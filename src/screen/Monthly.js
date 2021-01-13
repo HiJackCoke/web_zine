@@ -17,8 +17,8 @@ const Monthly = ({match}) => {
     const summ2 = (
         <h5>
             광해군이 폐위되고 인조가 즉위한 1623년, 인조반정이 성공하면서 조정의 외교 정책에도 큰 변화가 이루어졌다.
-            명과 후금 사이에서 실리적인 입장을<br/> 취한 광해군의 중립외교 정책 대신에 친명배금(親明排金) 정책이 외교의 기본 방향이 되었고, 이것은 신흥 군사
-            강국 후금(後金)을 자극했다.<br/> 1627년의 정묘호란과 1636년의 병자호란은 인조와 서인 정권의 외교 실책이 빚은 혹독한 대가였다.
+            명과 후금 사이에서 실리적인 입장을 취한 광해군의 중립외교 정책 대신에 친명배금(親明排金) 정책이 외교의 기본 방향이 되었고, 이것은 신흥 군사
+            강국 후금(後金)을 자극했다. 1627년의 정묘호란과 1636년의 병자호란은 인조와 서인 정권의 외교 실책이 빚은 혹독한 대가였다.
             <br/> <br/> 글 신병주_건국대학교 사학과 교수
         </h5>
     )
@@ -161,68 +161,70 @@ const Monthly = ({match}) => {
     const monthly = Monthly.find((p) => p.id === match.params.id)
 
     return (
-        <div
-            style={{ backgroundColor: "#FFD1E8" }}
-        >
-            <Layout>
-                <div className="space-mb--r100 space-mt--r100">
-                    <Container>
-                        <Row>
-                            <Col lg={12}>
-                                <Row>
-                                    <Col>
-                                        <div
-                                            className="monthly-grid-post"
-                                        >
-                                            <div className="monthly-grid-post__title space-mb--r50">
-                                                <span>{monthly.title}</span>
+
+        <Layout>
+            <div className="space-mb--r100 space-mt--r100">
+                <Container>
+                    <Row>
+                        <Col lg={12}>
+                            <Row>
+                                <Col>
+                                    <div
+                                        className="monthly-grid-post"
+                                    >
+                                        <div className="monthly-grid-post__title space-mb--r50">
+
+                                            <span>{monthly.title}</span>
+                                            <div className="monthly-grid-post__title">
                                                 <h3
-                                                   className="mt-3"
+                                                    className="mt-3"
                                                 >
                                                     {monthly.sub}
                                                 </h3>
-                                                {monthly.summary
-                                                    ?
-                                                    <div className="monthly-grid-post__summary">
-                                                        {monthly.summary}
-                                                    </div>
-                                                    : ""
-                                                }
                                             </div>
-                                            {monthly.contents &&
-                                            monthly.contents.map((monthly, i) => (
-                                                <div key={i}>
-                                                    {monthly.images ?
-                                                        <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
-                                                            <img
-                                                                className="img-fluid"
-                                                                src={monthly.images}
-                                                                alt="/"
-                                                            />
-                                                        </div> : ""
-                                                    }
 
-                                                        <div className="monthly-grid-post__content">
-                                                            <h2>
-                                                                {monthly.htext}
-                                                            </h2>
-                                                            <p>
-                                                                {monthly.btext}
-                                                            </p>
-
-                                                        </div>
-
+                                            {monthly.summary
+                                                ?
+                                                <div className="monthly-grid-post__summary">
+                                                    {monthly.summary}
                                                 </div>
-                                            ))}
+                                                : ""
+                                            }
                                         </div>
-                                    </Col>
-                                </Row>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-            </Layout>
-        </div>
+                                        {monthly.contents &&
+                                        monthly.contents.map((monthly, i) => (
+                                            <div key={i}>
+                                                {monthly.images ?
+                                                    <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
+                                                        <img
+                                                            className="img-fluid"
+                                                            src={monthly.images}
+                                                            alt="/"
+                                                        />
+                                                    </div> : ""
+                                                }
+
+                                                    <div className="monthly-grid-post__content">
+                                                        <h2>
+                                                            {monthly.htext}
+                                                        </h2>
+                                                        <p>
+                                                            {monthly.btext}
+                                                        </p>
+
+                                                    </div>
+
+                                            </div>
+                                        ))}
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+        </Layout>
+
     );
 };
 

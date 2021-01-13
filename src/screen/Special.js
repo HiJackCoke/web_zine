@@ -137,67 +137,69 @@ const Special = ({match}) => {
     const special = Specials.find((p) => p.id === match.params.id)
 
     return (
-        <div
-            style={{ backgroundColor: "#FFD1E8" }}
-        >
-            <Layout>
-                <div className="space-mb--r100 space-mt--r100">
-                    <Container>
-                        <Row>
-                            <Col lg={12}>
-                                <Row>
-                                    <Col>
-                                        <div
-                                            className="monthly-grid-post"
-                                        >
-                                            <div className="monthly-grid-post__title space-mb--r50">
-                                                <span>{special.title}</span>
+
+        <Layout>
+            <div className="space-mb--r100 space-mt--r100">
+                <Container>
+                    <Row>
+                        <Col lg={12}>
+                            <Row>
+                                <Col>
+                                    <div
+                                        className="monthly-grid-post"
+                                    >
+                                        <div className="monthly-grid-post__title space-mb--r50">
+
+                                            <span>{special.title}</span>
+                                            <div className="monthly-grid-post__title">
                                                 <h3
                                                     className="mt-3"
                                                 >
                                                     {special.sub}
                                                 </h3>
-                                                {special.summary
-                                                    ?
-                                                    <div className="monthly-grid-post__summary">
-                                                        {special.summary}
-                                                    </div>
-                                                    : ""
-                                                }
                                             </div>
-                                            {special.contents &&
-                                            special.contents.map((special, i) => (
-                                                <div key={i}>
-                                                    {special.images ?
-                                                        <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
-                                                            <img
-                                                                className="img-fluid"
-                                                                src={special.images}
-                                                                alt="/"
-                                                            />
-                                                        </div> : ""
-                                                    }
 
-
-                                                    <div className="monthly-grid-post__content">
-                                                        <h2>
-                                                            {special.htext}
-                                                        </h2>
-                                                        <p className="post-excerpt">
-                                                            {special.btext}
-                                                        </p>
-                                                    </div>
+                                            {special.summary
+                                                ?
+                                                <div className="monthly-grid-post__summary">
+                                                    {special.summary}
                                                 </div>
-                                            ))}
+                                                : ""
+                                            }
                                         </div>
-                                    </Col>
-                                </Row>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-            </Layout>
-        </div>
+                                        {special.contents &&
+                                        special.contents.map((special, i) => (
+                                            <div key={i}>
+                                                {special.images ?
+                                                    <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
+                                                        <img
+                                                            className="img-fluid"
+                                                            src={special.images}
+                                                            alt="/"
+                                                        />
+                                                    </div> : ""
+                                                }
+
+
+                                                <div className="monthly-grid-post__content">
+                                                    <h2>
+                                                        {special.htext}
+                                                    </h2>
+                                                    <p className="post-excerpt">
+                                                        {special.btext}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+        </Layout>
+
     );
 };
 

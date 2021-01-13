@@ -10,18 +10,22 @@ import {
 const MobileMenuWidgets = () => {
   return (
     <div className="offcanvas-mobile-menu__widgets">
-      <div className="contact-widget space-mb--30">
-        <ul>
-          <li>
-            <IoIosPhonePortrait />
-            <a href="tel://027093114">02-709-3114</a>
-          </li>
-          <li>
-            <IoMdMail />
-            <a href="webzine@warmemo.or.kr">webzine@warmemo.or.kr</a>
-          </li>
-        </ul>
-      </div>
+      {/*<div className="contact-widget space-mb--30">*/}
+      {/*  <ul>*/}
+      {/*    <li>*/}
+      {/*      <IoIosPhonePortrait />*/}
+      {/*      <div style={{display: "inline-grid"}}>*/}
+      {/*        <a href="tel://027093226">02-709-3226</a>*/}
+      {/*        <a href="tel://027093114">02-709-3114</a>*/}
+      {/*      </div>*/}
+
+      {/*    </li>*/}
+      {/*    <li>*/}
+      {/*      <IoMdMail />*/}
+      {/*      <a href="webzine@warmemo.or.kr">webzine@warmemo.or.kr</a>*/}
+      {/*    </li>*/}
+      {/*  </ul>*/}
+      {/*</div>*/}
 
       <div className="social-widget">
         <a

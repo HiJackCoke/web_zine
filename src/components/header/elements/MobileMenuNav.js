@@ -111,14 +111,6 @@ const MobileMenuNav = ({getActiveStatus}) => {
                                 흥미로운 무기 개발사
                             </Link>
                         </li>
-                    </ul>
-                </li>
-
-                <li className="menu-item-has-children">
-                    <Link to="/">
-                        Special
-                    </Link>
-                    <ul className="mobile-sub-menu">
                         <li className="menu-item-has-children">
                             <Link to="/special/1">
                                 뉴스 브리핑
@@ -138,6 +130,31 @@ const MobileMenuNav = ({getActiveStatus}) => {
                         </li>
                     </ul>
                 </li>
+
+                {/*<li className="menu-item-has-children">*/}
+                {/*    <Link to="/">*/}
+                {/*        Special*/}
+                {/*    </Link>*/}
+                {/*    <ul className="mobile-sub-menu">*/}
+                {/*        <li className="menu-item-has-children">*/}
+                {/*            <Link to="/special/1">*/}
+                {/*                뉴스 브리핑*/}
+                {/*            </Link>*/}
+                {/*        </li>*/}
+
+                {/*        <li className="menu-item-has-children">*/}
+                {/*            <Link to="/special/2">*/}
+                {/*                기념관 이슈*/}
+                {/*            </Link>*/}
+                {/*        </li>*/}
+
+                {/*        <li className="menu-item-has-children">*/}
+                {/*            <Link to="/special/3">*/}
+                {/*                2021년 이달의 호국인물 선정*/}
+                {/*            </Link>*/}
+                {/*        </li>*/}
+                {/*    </ul>*/}
+                {/*</li>*/}
             </ul>
         </nav>
     );

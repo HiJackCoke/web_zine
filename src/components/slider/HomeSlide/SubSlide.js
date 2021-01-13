@@ -13,6 +13,9 @@ import img4 from "../../../assets/images/Sub/sub4.jpg";
 import img5 from "../../../assets/images/Sub/sub5.jpg";
 import img6 from "../../../assets/images/Sub/sub6.png";
 import sub7 from '../../../assets/images/Sub/sub7.JPG'
+import sub8 from '../../../assets/images/Spe/special1.JPG';
+import sub9 from '../../../assets/images/Spe/speical2.png';
+import sub10 from "../../../assets/images/Spe/special3.png";
 
 SwiperCore.use([Navigation])
 
@@ -63,6 +66,24 @@ const SubSlide = ({ spaceBottomClass }) => {
             "title": "흥미로운 무기 개발사",
             "desc": "대한민국 소총 연대기 - M1 소총부터 K2C1 자동소총까지"
         },
+        {
+            "id": "8",
+            "images": sub8,
+            "title": "뉴스 브리핑",
+            "desc": "헬기 동산 개막식 개최 / 전쟁기념관 가족친화 우수기관 획득 / 온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’"
+        },
+        {
+            "id": "9",
+            "images": sub9,
+            "title": "기념관 이슈",
+            "desc": "호국인물총서 2 『유방백세, 어둠 속에서도 눈감지 않은 사람들』 발간"
+        },
+        {
+            "id": "10",
+            "images": sub10,
+            "title": "2021년 이달 호국인물 선정",
+            "desc": ""
+        }
     ]
 
     return (
