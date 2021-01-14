@@ -368,9 +368,9 @@
   }
 
   @include respond (extra-small-mobile) {
-    width: 177px !important;
+    width: 182.5px !important;
 
-    height: 142px;
+    height: 76px;
   }
 
   @include respond (iphone-x) {
@@ -380,7 +380,7 @@
   @include respond (iphone-5) {
     width: 130px !important;
 
-    height: 162px;
+    height: 76px;
   }
 
   .name {
@@ -389,6 +389,13 @@
     font-weight: 500;
     line-height: 36px;
 
+    @media (max-width: 767px) {
+      font-size: 14px
+    }
+
+    @media (max-width: 320px) {
+      font-size: 13px
+    }
   }
 
   .subtext {
@@ -405,6 +412,14 @@
     transition: all 0.5s ease;
     transform: translateY(100%);
     letter-spacing: 0.03em;
+
+    @media (max-width: 767px) {
+      font-size: 12px
+    }
+
+    @media (max-width: 320px) {
+      font-size: 1px
+    }
   }
 }
 
