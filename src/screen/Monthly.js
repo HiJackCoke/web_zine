@@ -238,6 +238,7 @@ const Monthly = ({match}) => {
                                                     <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
                                                         <img
                                                             className="img-fluid"
+                                                            style={{width: "80%"}}
                                                             src={monthly.images}
                                                             alt="/"
                                                         />

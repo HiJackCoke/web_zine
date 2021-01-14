@@ -74,6 +74,11 @@ const Sub = ({match}) => {
                 </div>
             </div>
         ),
+        (
+            <div>
+                대한민국 소총 연대기 <br/> M1 소총부터 K2C1 자동소총까지
+            </div>
+        )
     ]
 
     const summ = [
@@ -694,8 +699,8 @@ const Sub = ({match}) => {
         },
         {
             "id": "7",
-            "title": " 대한민국 소총 연대기 M1 소총부터 K2C1 자동 소총까지",
-            "sub": " 대한민국 소총 연대기 M1 소총부터 K2C1 자동소총까지",
+            "title": "흥미로운 무기 개발사",
+            "sub": sub[5],
             "summary": summ[6],
             "contents": [
                 {

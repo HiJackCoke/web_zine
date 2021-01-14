@@ -9,7 +9,7 @@ import news3 from '../assets/images/Spe/special103.png'
 import news4 from '../assets/images/Spe/special104.jpg'
 import news5 from '../assets/images/Spe/special105.png'
 import news6 from '../assets/images/Spe/special106.png';
-import news7 from '../assets/images/Spe/special107.png'
+// import news7 from '../assets/images/Spe/special107.png'
 
 import tm from '../assets/images/Spe/special2.png';
 import tm2 from '../assets/images/Spe/special202.jpg';
@@ -21,15 +21,15 @@ import man from '../assets/images/Spe/special301.png'
 const Special = ({match}) => {
 
 
-    const sub = [
-        (
-            <div>
-                <div style={{color: "lightpink", fontWeight: "bold", marginTop: "10px"}}>
-                    헬기 동산 개막식 개최 등
-                </div>
-            </div>
-        )
-    ]
+    // const sub = [
+    //     (
+    //         <div>
+    //             <div style={{color: "lightpink", fontWeight: "bold", marginTop: "10px"}}>
+    //                 헬기 동산 개막식 개최
+    //             </div>
+    //         </div>
+    //     )
+    // ]
 
     const summ = [
         (
@@ -46,37 +46,37 @@ const Special = ({match}) => {
     const htext1 = [
         (
             <div style={{color: "lightpink"}}>
-                헬기 동산 개막식 개최
+                헬기 동산 개막식 개최 ①
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                전쟁기념관 가족친화 우수기관 획득
+                전쟁기념관 가족친화 우수기관 획득 ②
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’
+                온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’ ③
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                온라인 콘텐츠 {"<유물을 만나다>"}: 故 이건희 회장 기증 권총
+                온라인 콘텐츠 {"<유물을 만나다>"}: 故 이건희 회장 기증 권총 ④
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                이동전시모듈 ‘6·25전쟁과 무공훈장-가슴에 단 명예’ 순회전시
+                이동전시모듈 ‘6·25전쟁과 무공훈장-가슴에 단 명예’ 순회전시 ⑤
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                소중한 유물을 기증해주셔서 감사합니다(2020년 7~12월)
+                소중한 유물을 기증해주셔서 감사합니다(2020년 7~12월) ⑥
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                전쟁·군사 도서 및 기록물 기증받습니다
+                전쟁·군사 도서 및 기록물 기증받습니다 ⑦
             </div>
         ),
     ]
@@ -86,7 +86,7 @@ const Special = ({match}) => {
         {
             "id": "1",
             "title": "뉴/스/브/리/핑",
-            "sub": sub[0],
+            "sub": "",
             "summary": "",
             "contents": [
                 {
@@ -143,7 +143,7 @@ const Special = ({match}) => {
                 },
                 {
                     "id": "7",
-                    "images": news7,
+                    "images": "",
                     "htext": htext1[6],
                     "btext": "전쟁기념관은 전쟁·군사 관련 문화예술의 허브 역할을 위한 복합문화플랫폼 구축을 추진하고 있습니다. 전쟁·군사 주제를 다룬 다양한 분야의 국내외 도서와 기록물 등을 기증받고 있으니 많은 관심과 참여를 부탁드립니다.\n" +
                         "* 문의: 02-709-3227"
@@ -207,7 +207,7 @@ const Special = ({match}) => {
                                     <div
                                         className="monthly-grid-post"
                                     >
-                                        <div className="monthly-grid-post__title space-mb--r50">
+                                        <div className="monthly-grid-post__title">
 
                                             <span>{"MEMORIAL STORY + "}
                                                 <span style={{color: "lightpink"}}>
@@ -233,10 +233,22 @@ const Special = ({match}) => {
                                         {special.contents &&
                                         special.contents.map((special, i) => (
                                             <div key={i}>
+                                                <div
+                                                    className="monthly-grid-post__content"
+                                                    style={{letterSpacing: "-1px", marginBottom: "30px"}}
+                                                >
+                                                    <Container style={{width: "80%"}}>
+                                                        <h2 style={{fontSize: '32px', fontWeight: "bold"}}>
+                                                            {special.htext}
+                                                        </h2>
+                                                    </Container>
+                                                </div>
+
                                                 {special.images ?
-                                                    <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
+                                                    <div className="monthly-grid-post__image  text-center space-mb--r50 space-mt--r50">
                                                         <img
                                                             className="img-fluid"
+                                                            style={{width: "80%"}}
                                                             src={special.images}
                                                             alt="/"
                                                         />
@@ -248,12 +260,15 @@ const Special = ({match}) => {
                                                     className="monthly-grid-post__content"
                                                     style={{letterSpacing: "-1px"}}
                                                 >
-                                                    <h2>
-                                                        {special.htext}
-                                                    </h2>
-                                                    <p className="post-excerpt">
-                                                        {special.btext}
-                                                    </p>
+                                                    {/*<h2>*/}
+                                                    {/*    {special.htext}*/}
+                                                    {/*</h2>*/}
+                                                    <Container style={{width: "80%"}}>
+                                                        <p className="post-excerpt">
+                                                            {special.btext}
+                                                        </p>
+                                                    </Container>
+
                                                 </div>
                                             </div>
                                         ))}

@@ -48,14 +48,17 @@ const Footer = () => {
 
                                 <Col lg={9} md={9} xs={12}>
                                     <div className="footer-postal text-black-50">
-                                        <div className="font-weight-bold">
-                                            발행일 2021년 1월 5일 통권 제180호
-                                            발행처 전쟁기념관 발행인 전쟁기념관장 이상철
-                                        </div>
-                                        주소 (04353)서울시 용산구 이태원로29
-                                        기획·편집 학예부(082ran@daum.net) <br/>전화 02-709-3226
+                                        <span>발행일</span> 2021년 1월 5일 통권 제180호
+                                        <span> 발행처</span> 전쟁기념관 <span>발행인</span> 전쟁기념관장 이상철 <br/>
+                                        <span> 주소</span> (04353)서울시 용산구 이태원로29
+                                        <span> 기획·편집</span> 학예부(082ran@daum.net)
+                                        <br/>
+                                        <span> 전화</span> 02-709-3226
                                         제작 총괄 (주)한강문화(02-511-9369) <br/>
-                                        {"*<전쟁기념관>"}에 게재된 집필진의 글은 전쟁기념관의 공식 입장과 다를 수 있습니다.
+                                        <div style={{fontSize: "12px"}}>
+                                            {"*<전쟁기념관>"}에 게재된 집필진의 글은 전쟁기념관의 공식 입장과 다를 수 있습니다.
+                                        </div>
+
                                     </div>
                                 </Col>
                             </Row>

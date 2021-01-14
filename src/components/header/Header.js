@@ -86,11 +86,11 @@ const Header = () => {
                             <Link to="/">
 
                                <Row>
-                                   <Col className="header-content__logo__image"
+                                   <Col lg={6} className="header-content__logo__image"
                                        >
                                        <img src={img2} alt="/" className="img-fluid"/>
                                    </Col>
-                                   <Col>
+                                   <Col lg={4}>
                                        <div className="header-content__logo">
                                            2021 January <br/>
                                            <div style={{fontWeight: "bold"}}>
