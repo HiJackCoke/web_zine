@@ -14,6 +14,16 @@ import story4 from '../assets/images/Monthly/page/story4.png';
 
 const Monthly = ({match}) => {
 
+    const sub = [
+        (
+            <div>
+                새로운 패러다임을 선도하고
+                <br/>
+                변화와 혁신을 구현하는 전쟁기념관
+            </div>
+        )
+    ]
+
     const summ2 = (
         <h5 className="summ">
             광해군이 폐위되고 인조가 즉위한 1623년, 인조반정이 성공하면서 조정의 외교 정책에도 큰 변화가 이루어졌다.
@@ -117,7 +127,7 @@ const Monthly = ({match}) => {
         {
             "id": "1",
             "title": "신년사",
-            "sub": "새로운 패러다임을 선도하고 변화와 혁신을 구현하는 전쟁기념관",
+            "sub": sub[0],
             "summary": "",
             "contents": [
                 {
@@ -166,7 +176,7 @@ const Monthly = ({match}) => {
     return (
 
         <Layout>
-            <div className="space-mb--r100 space-mt--r100">
+            <div className="space-mb--r100">
                 <Container>
                     <Row>
                         <Col lg={12}>
@@ -179,17 +189,19 @@ const Monthly = ({match}) => {
 
                                             <span>{monthly.title}</span>
                                             <div className="monthly-grid-post__title">
-                                                <p
+                                                <h3
                                                     className="mt-3"
                                                 >
                                                     {monthly.sub}
-                                                </p>
+                                                </h3>
                                             </div>
 
                                             {monthly.summary
                                                 ?
-                                                <div className="monthly-grid-post__summary">
-                                                    {monthly.summary}
+                                                <div style={{textAlign: "-webkit-center"}}>
+                                                    <div className="monthly-grid-post__summary monthly-grid-post__summary__80">
+                                                        {monthly.summary}
+                                                    </div>
                                                 </div>
                                                 : ""
                                             }
@@ -207,7 +219,10 @@ const Monthly = ({match}) => {
                                                     </div> : ""
                                                 }
 
-                                                    <div className="monthly-grid-post__content">
+                                                    <div
+                                                        className="monthly-grid-post__content"
+                                                        style={{letterSpacing: "-1px"}}
+                                                    >
                                                         <h2>
                                                             {monthly.htext}
                                                         </h2>

@@ -51,7 +51,7 @@ const Header = () => {
 
     return (
         <Fragment>
-            <header className="topbar-shadow">
+            <header className="topbar-shadow" style={{backgroundColor: "#FFD1E8"}}>
             {/*<header*/}
             {/*    className={`topbar-shadow ${scroll > headerTop ? "is-sticky" : ""}`}*/}
             {/*>*/}

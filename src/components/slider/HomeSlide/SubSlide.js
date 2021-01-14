@@ -38,8 +38,6 @@ const SubSlide = ({ spaceBottomClass }) => {
         (
             // 3
             <div>
-                이벤트와 디자인 워크숍으로 북적~
-                <br/>
                 어린이박물관 온라인에 모여라!
             </div>
         ),

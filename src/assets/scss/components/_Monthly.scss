@@ -1,6 +1,7 @@
 .monthly-grid-post {
   &__title {
     text-align: center;
+    margin: 60px 0px;
 
     span {
       font-weight: bold;
@@ -23,17 +24,27 @@
   &__summary {
     line-height: 24px;
     color: black;
-    margin-top: 60px;
     border-bottom: 1px solid #777777;
     border-top: 1px solid #777777;
     padding: 30px 0px;
 
     .summ {
-      line-height: 1.2;
+      line-height: 1.5;
+      font-size: 18px;
     }
 
     .writer {
       font-size: 15px;
+
+      span {
+        font-size: 15px;
+        font-weight: bold;
+        border-bottom: none;
+      }
+    }
+
+    &__80 {
+      width: 80%;
     }
   }
 

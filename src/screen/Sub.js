@@ -43,13 +43,40 @@ import man from "../assets/images/Spe/special3.png";
 
 const Sub = ({match}) => {
 
+    const sub = [
+        (
+            <div>
+                영화 속에 담긴 병자호란
+                <div style={{color: "crimson", fontWeight: "bold", marginTop: "10px"}}>
+                    {"<남한산성>과 <최종병기 활>"}
+                </div>
+            </div>
+        )
+    ]
+
+    const htext1 = [
+        (
+            <div style={{color: "crimson"}}>
+                주화파와 척화파의 첨예한 대립, {"<남한산성>"}
+            </div>
+        ),
+        (
+            <div style={{color: "crimson"}}>
+                청으로 끌려간 백성들, {"<최종병기 활>"}
+            </div>
+        )
+    ]
+
     // id 1
     const summ1 = (
         <h5 className="summ">
             1636년 12월 청나라 군대가 압록강을 넘었다. 청은 빠르게 진격했으나 조선 조정은 이 사실을 뒤늦게 알아챘다. 이럴 때를 대비해 준비한 피난처 강화도로 떠나려 했지만, 이미 청은 오늘날의 서울시 은평구에 진입한 상태였다. 한강은 얼어붙어 강화도로 들어갈 배를 띄울 수도 없었다. 턱밑까지 쫓아온 청을 피해 인조가 선택한 곳은 남한산성이었다. 이조판서 최명길이 청과 만나 시간을 끄는 동안 인조는
             겨우 남한산성에 도착할 수 있었다. 47일간 이어진 병자호란의 시작이었다.
             <div className="writer">
-                <br/><br/> 글 편집실 〡 사진 영화 {"<남한산성>, <최종병기 활>"}
+                <br/><br/>
+                <span>글</span> 편집실 〡
+                <span>사진</span> 영화
+                {"<남한산성>, <최종병기 활>"}
             </div>
 
         </h5>
@@ -57,7 +84,7 @@ const Sub = ({match}) => {
     const btext1 = [
         (
             <div>
-                김훈 작가의 동명 소설을 원작으로 한 영화 {"<남한산성>"}은 추위와 굶 주림, 적의 거센 압박과 무리한 요구 등 선택의 기로에 놓인채 치열하게 조선의 앞날을 논했던 남한산성에서의 47일을 담았다. 나라와 백성을 위하는 충심은 같았으나 이를 지키고자 했던 신념이 달랐던 두 신하를 중심으로 이야기가 펼쳐진다. 순간의 치욕을 참고 청과 화 친을 맺고 후일을 도모해야 한다는 주화파 이조판서 최명길(이병헌 분)과, 끝까지 청에 맞서 싸워 대의를 지켜야 한다는 척화파 예조판서 김상헌(김윤석 분)의 첨예한 대립은 관객을 몰입시킨다.
+                김훈 작가의 동명 소설을 원작으로 한 영화 {"<남한산성>"}은 추위와 굶주림, 적의 거센 압박과 무리한 요구 등 선택의 기로에 놓인채 치열하게 조선의 앞날을 논했던 남한산성에서의 47일을 담았다. 나라와 백성을 위하는 충심은 같았으나 이를 지키고자 했던 신념이 달랐던 두 신하를 중심으로 이야기가 펼쳐진다. 순간의 치욕을 참고 청과 화 친을 맺고 후일을 도모해야 한다는 주화파 이조판서 최명길(이병헌 분)과, 끝까지 청에 맞서 싸워 대의를 지켜야 한다는 척화파 예조판서 김상헌(김윤석 분)의 첨예한 대립은 관객을 몰입시킨다.
                 <br/>
                 주화파는 청과 화친하여 전쟁을 피해야 한다고 주장했다. 세력을 키 워 침략한 청에 맞서는 것이 무모하다고 판단했다. 당시 조선은 임진왜란과 정묘호란을 거치며 국력이 약해진 상태였고 수적으로나 군사 력에서 모두 열세였기 때문이다. 척화파는 명나라와의 의리를 위해 청과끝까지싸울것을주장했다. 청에 고개 숙이는 것은 임진왜란 당시 원군을 보내 조선을 도운 명나라를 배신하는 것이라고 생각했 다. 또 남한산성의 지리적 요건을 이용해 삼남 지방의 근왕병들이 도 착할 때까지 버티면 승산이 있다고 판단했다. 치열한 설전이 오가는 동안 식량은 바닥났고 강추위에 많은 백성과 군사들이 추위와 굶주 림으로 목숨을 잃는 지경에 이르렀다.
                 <br/>
@@ -344,19 +371,19 @@ const Sub = ({match}) => {
         {
             "id": "1",
             "title": "전쟁과 문화",
-            "sub": "영화 속에 담긴 병자호란 <남한산성>과 <최종병기 활>",
+            "sub": sub[0],
             "summary": summ1,
             "contents": [
                 {
                     "id": "1",
                     "images": img1,
-                    "htext": "주화파와 척화파의 첨예한 대립, <남한산성>",
+                    "htext": htext1[0],
                     "btext": btext1[0]
                 },
                 {
                     "id": "2",
                     "images": img2,
-                    "htext": "청으로 끌려간 백성들, <최종병기 활>",
+                    "htext": htext1[1],
                     "btext": btext1[1]
                 }
             ]
@@ -526,7 +553,7 @@ const Sub = ({match}) => {
         {
             "id": "7",
             "title": " 대한민국 소총 연대기 M1 소총부터 K2C1 자동 소총까지",
-            "sub": "온라인 콘텐츠로 가까워지는 특별전",
+            "sub": " 대한민국 소총 연대기 M1 소총부터 K2C1 자동소총까지",
             "summary": summ7,
             "contents": [
                 {
@@ -671,7 +698,7 @@ const Sub = ({match}) => {
     return (
 
         <Layout>
-            <div className="space-mb--r100 space-mt--r100">
+            <div className="space-mb--r100 ">
                 <Container>
                     <Row>
                         <Col lg={12}>
@@ -682,7 +709,11 @@ const Sub = ({match}) => {
                                     >
                                         <div className="monthly-grid-post__title space-mb--r50">
 
-                                            <span>{inside.title}</span>
+                                            <span>{"MEMORIAL STORY + "}
+                                                <span style={{color: "crimson"}}>
+                                                      {inside.title}
+                                                </span>
+                                            </span>
                                             <div className="monthly-grid-post__title">
                                                 <h2
                                                     className="mt-3"
@@ -692,8 +723,12 @@ const Sub = ({match}) => {
                                             </div>
                                             {inside.summary
                                                 ?
-                                                <div className="monthly-grid-post__summary">
-                                                    {inside.summary}
+                                                <div style={{textAlign: "-webkit-center"}}>
+                                                    <div
+                                                        className="monthly-grid-post__summary monthly-grid-post__summary__80"
+                                                    >
+                                                        {inside.summary}
+                                                    </div>
                                                 </div>
                                                 : ""
                                             }
@@ -708,14 +743,17 @@ const Sub = ({match}) => {
                                                     >
                                                         <img
                                                             className="img-fluid"
+                                                            style={{width: "80%"}}
                                                             src={inside.images}
                                                             alt="/"
                                                         />
                                                     </div> : ""
                                                 }
 
-
-                                                <div className="monthly-grid-post__content">
+                                                <div
+                                                    className="monthly-grid-post__content"
+                                                    style={{letterSpacing: "-0.8px"}}
+                                                >
                                                     <h2>
                                                         {inside.htext}
                                                     </h2>

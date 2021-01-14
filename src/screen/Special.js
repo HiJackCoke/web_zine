@@ -34,7 +34,7 @@ const Special = ({match}) => {
         {
             "id": "1",
             "title": "뉴/스/브/리/핑",
-            "sub": "새로운 패러다임을 선도하고 변화와 혁신을 구현하는 전쟁기념관",
+            "sub": "헬기 동산 개막식 개최 등",
             "summary": "",
             "contents": [
                 {
@@ -146,7 +146,7 @@ const Special = ({match}) => {
     return (
 
         <Layout>
-            <div className="space-mb--r100 space-mt--r100">
+            <div className="space-mb--r100">
                 <Container>
                     <Row>
                         <Col lg={12}>
@@ -188,7 +188,10 @@ const Special = ({match}) => {
                                                 }
 
 
-                                                <div className="monthly-grid-post__content">
+                                                <div
+                                                    className="monthly-grid-post__content"
+                                                    style={{letterSpacing: "-1px"}}
+                                                >
                                                     <h2>
                                                         {special.htext}
                                                     </h2>

@@ -18,8 +18,6 @@ const MonthlySlide = ({ spaceBottomClass }) => {
         (
             // 1
             <div>
-                새로운 패러다임을 선도하고
-                <br/>
                 변화와 혁신을 구현하는 전쟁기념관
             </div>
         ),
