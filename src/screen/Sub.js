@@ -52,7 +52,7 @@ const Sub = ({match}) => {
         ),
         (
             <div>
-                이벤트와 디자인 워크숍으로 북적~ 어린이박물관 온라인에 모여라!
+                이벤트와 디자인 워크숍으로 북적~ <br/> 어린적이박물관 온라인에 모여라!
             </div>
         ),
         (
@@ -76,7 +76,11 @@ const Sub = ({match}) => {
         ),
         (
             <div>
-                대한민국 소총 연대기 <br/> M1 소총부터 K2C1 자동소총까지
+                대한민국 소총 연대기 <br/>
+                <div style={{color: "crimson", fontWeight: "bold", marginTop: "10px"}}>
+                    M1 소총부터 K2C1 자동소총까지
+                </div>
+
             </div>
         )
     ]
@@ -540,8 +544,8 @@ const Sub = ({match}) => {
         {
             "id": "2",
             "title": "기념관 이야기 1",
-            "sub": sub[1],
-            "summary": summ[1],
+            "sub": "",
+            "summary": "",
             "contents": [
                 {
                     "id": "1",
@@ -784,7 +788,7 @@ const Sub = ({match}) => {
                                                     >
                                                         <img
                                                             className="img-fluid"
-                                                            style={{width: "80%"}}
+                                                            style={{width: "60%"}}
                                                             src={inside.images}
                                                             alt="/"
                                                         />

@@ -140,7 +140,7 @@ const SubSlide = ({ spaceBottomClass }) => {
         >
             <Container>
                 <div style={{backgroundColor: "rgba(0, 0, 0, 0.15)"}}>
-                    <Row className="align-items-center">
+                    <Row className="">
                         <Col lg={3}>
                             <div className="sub-intro space-mb-mobile-only--30">
                                 <h2>MEMORIAL STORY</h2>

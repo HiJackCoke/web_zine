@@ -33,9 +33,9 @@ const Special = ({match}) => {
 
     const summ = [
         (
-            <h5 className="summ">
+            <h5 className="summ" style={{fontFamily: "anemone"}}>
                 호국인물총서 2
-                <br/>『유방백세(遺芳百世), 어둠 속에서도 눈감지 않은 사람들』 발간
+                <br/>유방백세 <span style={{fontFamily: "nanum-square", borderBottom: "none"}}>(遺芳百世)</span> , 어둠 속에서도 눈감지 않은 사람들 발간
                 <div className="writer">
                     <br/><br/> <span>글</span> 이재민_전쟁기념관 학예연구사
                 </div>
@@ -224,9 +224,16 @@ const Special = ({match}) => {
 
                                             {special.summary
                                                 ?
-                                                <div className="monthly-grid-post__summary">
-                                                    {special.summary}
+                                                <div style={{textAlign: "-webkit-center"}}>
+                                                    <div className="monthly-grid-post__summary monthly-grid-post__summary__80"
+                                                        style={{border: "none"}}
+                                                    >
+                                                        <div>
+                                                            {special.summary}
+                                                        </div>
+                                                    </div>
                                                 </div>
+
                                                 : ""
                                             }
                                         </div>
@@ -234,10 +241,10 @@ const Special = ({match}) => {
                                         special.contents.map((special, i) => (
                                             <div key={i}>
                                                 <div
-                                                    className="monthly-grid-post__content"
+                                                    className="monthly-grid-post__content monthly-grid-post__content__spe"
                                                     style={{letterSpacing: "-1px", marginBottom: "30px"}}
                                                 >
-                                                    <Container style={{width: "70%"}}>
+                                                    <Container style={{width: "60%"}}>
                                                         <h2 style={{fontSize: '32px', fontWeight: "bold"}}>
                                                             {special.htext}
                                                         </h2>
@@ -248,7 +255,7 @@ const Special = ({match}) => {
                                                     <div className="monthly-grid-post__image  text-center space-mb--r50 space-mt--r50">
                                                         <img
                                                             className="img-fluid"
-                                                            style={{width: "70%"}}
+                                                            style={{width: "60%"}}
                                                             src={special.images}
                                                             alt="/"
                                                         />
@@ -263,7 +270,7 @@ const Special = ({match}) => {
                                                     {/*<h2>*/}
                                                     {/*    {special.htext}*/}
                                                     {/*</h2>*/}
-                                                    <Container style={{width: "70%"}}>
+                                                    <Container style={{width: "60%"}}>
                                                         <p className="post-excerpt">
                                                             {special.btext}
                                                         </p>

@@ -214,11 +214,11 @@ const Monthly = ({match}) => {
                                                 </span>
                                             </span>
                                             <div className="monthly-grid-post__title">
-                                                <h3
+                                                <h2
                                                     className="mt-3"
                                                 >
                                                     {monthly.sub}
-                                                </h3>
+                                                </h2>
                                             </div>
 
                                             {monthly.summary
@@ -238,7 +238,7 @@ const Monthly = ({match}) => {
                                                     <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
                                                         <img
                                                             className="img-fluid"
-                                                            style={{width: "80%"}}
+                                                            style={{width: "60%"}}
                                                             src={monthly.images}
                                                             alt="/"
                                                         />
