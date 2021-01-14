@@ -80,10 +80,10 @@ const SliderMain = ({spaceBottomClass}) => {
                         watchSlidesVisibility
                         loop
                         spaceBetween={260}
-                        // effect="fade"
-                        // autoplay={{
-                        //     delay: 5000
-                        // }}
+                        effect="fade"
+                        autoplay={{
+                            delay: 5000
+                        }}
                         pagination
                         grabCursor={true}
                     >

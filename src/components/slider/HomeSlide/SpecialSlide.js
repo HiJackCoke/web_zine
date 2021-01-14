@@ -47,7 +47,7 @@ const SubSlideTwo = ({ spaceBottomClass }) => {
         {
             "id": "3",
             "images": img3,
-            "title": "2021년 이달 호국인물 선정",
+            "title": "2021년 이달의 호국인물 선정",
             "desc": ""
         }
     ]
@@ -69,6 +69,7 @@ const SubSlideTwo = ({ spaceBottomClass }) => {
                                 <Swiper
                                     slidesPerView={3}
                                     spaceBetween={30}
+                                    navigation
                                     breakpoints={{
                                         1024: {
                                             slidesPerView: 3

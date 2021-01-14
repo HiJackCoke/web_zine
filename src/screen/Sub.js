@@ -21,7 +21,7 @@ import story305 from '../assets/images/Sub/sub405.jpg'
 import war from '../assets/images/Sub/sub5.jpg'
 import war2 from '../assets/images/Sub/sub501.png'
 import war3 from '../assets/images/Sub/sub502.png'
-import war4 from '../assets/images/Sub/sub503.png'
+import war4 from '../assets/images/Sub/sub503.1.png'
 
 import mobile from '../assets/images/Sub/sub601.png';
 
@@ -131,7 +131,7 @@ const Sub = ({match}) => {
                 임진왜란을 경험하면서 조선의 국방 정책도 큰 변화가 이루어졌다. 기존 제승방략 체계의 단점을 절감한 조선은 평양성전투와 같은 명군과의 연합작전을 통해 일본과의 전투 경험이 풍부한 명군의 남병 전술을 도입하였다. 대부분 보병으로 구성되어 있었던 당시 명군은 조총과 호준포 등 가벼운 화기를 중심으로 무장하였다.
                 일본군에 대응하는 명군의 전술을 본 조선은 그 전술과 운용방식을 도입하여 군사제도를 재편하였다.
                 <div className="writer">
-                    최문주_전쟁기념관 학예연구사
+                    <br/><br/> 최문주_전쟁기념관 학예연구사
                 </div>
             </h5>
         ),

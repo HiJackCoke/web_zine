@@ -33,7 +33,7 @@ const Special = ({match}) => {
 
     const summ = [
         (
-            <h5 className="summ" style={{fontFamily: "anemone"}}>
+            <h5 className="summ" style={{fontFamily: "anemone", fontSize: "32px"}}>
                 호국인물총서 2
                 <br/>유방백세 <span style={{fontFamily: "nanum-square", borderBottom: "none"}}>(遺芳百世)</span> , 어둠 속에서도 눈감지 않은 사람들 발간
                 <div className="writer">
@@ -66,12 +66,12 @@ const Special = ({match}) => {
         ),
         (
             <div style={{color: "lightpink"}}>
-                ⑤ 이동전시모듈 ‘6·25전쟁과 무공훈장-가슴에 단 명예’ 순회전시
+                ⑤ 이동전시모듈 ‘6·25전쟁과 무공훈장-가슴에 단 <br/> 명예’ 순회전시
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                ⑥ 소중한 유물을 기증해주셔서 감사합니다(2020년 7~12월)
+                ⑥ 소중한 유물을 기증해주셔서 <br/> 감사합니다(2020년 7~12월)
             </div>
         ),
         (
@@ -244,7 +244,7 @@ const Special = ({match}) => {
                                                     className="monthly-grid-post__content monthly-grid-post__content__spe"
                                                     style={{letterSpacing: "-1px", marginBottom: "30px"}}
                                                 >
-                                                    <Container style={{width: "60%"}}>
+                                                    <Container style={{width: "70%"}}>
                                                         <h2 style={{fontSize: '32px', fontWeight: "bold"}}>
                                                             {special.htext}
                                                         </h2>
