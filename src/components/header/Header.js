@@ -73,8 +73,8 @@ const Header = () => {
                         <Col lg={4}>
                             <div className=" d-flex align-items-center space-pr--15">
 
-                                <a href="https://www.warmemo.or.kr/front/main.do#">
-                                    <img src={img} alt="/" className="img-fluid"/>
+                                <a href="https://www.warmemo.or.kr/front/main.do#" target="_blank" rel="noreferrer">
+                                    <img src={img} alt="/" className="img-fluid" style={{width: "90%"}}/>
                                 </a>
                             </div>
                         </Col>

@@ -44,13 +44,18 @@ header {
     padding: 5px 5px 5px 0px;
     line-height: 1.2;
 
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
+
     @media (max-width: 768px) {
 
       margin-left: -15px;
+      font-size: 16px;
     }
 
     @media (max-width: 425px) {
-      font-size: 10px;
+
       padding: 0px;
       margin-left: -15px;
     }
@@ -58,6 +63,7 @@ header {
     @media (max-width: 375px) {
       font-size: 6px;
       padding: 0px;
+
     }
 
     @media (max-width: 374px) {
@@ -69,7 +75,7 @@ header {
     &__image {
       align-self: center;
 
-      border-right: 1px solid black;
+      border-right: 1px solid darkorange;
 
       @media (max-width: 991px) {
         border-right: none;

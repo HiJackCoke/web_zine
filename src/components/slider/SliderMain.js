@@ -21,6 +21,16 @@ const SliderMain = ({spaceBottomClass}) => {
             >
                 MONTHLY STORY
             </span>
+        ),
+        (
+            <span
+                style={{
+                    fontWeight: "bold",
+                    fontSize: "22px",
+                }}
+            >
+                2021년, 전쟁기념관이 <br/> 새롭게 비상합니다
+            </span>
         )
     ]
 
@@ -34,7 +44,7 @@ const SliderMain = ({spaceBottomClass}) => {
             </div>
         ),
         (
-            <div>
+            <div style={{ color:"white", backgroundColor: "rgba(0, 0, 0, 0.4)" }}>
                 변화와 혁신을 통해 새로운 패러다임을 선도하고,
                 <br/>전쟁과 군사를 주제로 한 복합문화플랫폼 사업에 착수하며,
                 <br/>22개 유엔참전국과 함께하는 문화축제를 개최합니다.
@@ -53,7 +63,7 @@ const SliderMain = ({spaceBottomClass}) => {
         {
             "id": "2",
             "images": img2,
-            "title": "2021년, 전쟁기념관이 새롭게 비상합니다",
+            "title": title[1],
             "desc": desc[1]
         }
     ]

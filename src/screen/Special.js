@@ -46,37 +46,37 @@ const Special = ({match}) => {
     const htext1 = [
         (
             <div style={{color: "lightpink"}}>
-                헬기 동산 개막식 개최 ①
+                ① 헬기 동산 개막식 개최
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                전쟁기념관 가족친화 우수기관 획득 ②
+                ② 전쟁기념관 가족친화 우수기관 획득
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’ ③
+                ③ 온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                온라인 콘텐츠 {"<유물을 만나다>"}: 故 이건희 회장 기증 권총 ④
+                ④ 온라인 콘텐츠 {"<유물을 만나다>"}: 故 이건희 회장 기증 권총
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                이동전시모듈 ‘6·25전쟁과 무공훈장-가슴에 단 명예’ 순회전시 ⑤
+                ⑤ 이동전시모듈 ‘6·25전쟁과 무공훈장-가슴에 단 명예’ 순회전시
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                소중한 유물을 기증해주셔서 감사합니다(2020년 7~12월) ⑥
+                ⑥ 소중한 유물을 기증해주셔서 감사합니다(2020년 7~12월)
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                전쟁·군사 도서 및 기록물 기증받습니다 ⑦
+                ⑦ 전쟁·군사 도서 및 기록물 기증받습니다
             </div>
         ),
     ]
@@ -237,7 +237,7 @@ const Special = ({match}) => {
                                                     className="monthly-grid-post__content"
                                                     style={{letterSpacing: "-1px", marginBottom: "30px"}}
                                                 >
-                                                    <Container style={{width: "80%"}}>
+                                                    <Container style={{width: "70%"}}>
                                                         <h2 style={{fontSize: '32px', fontWeight: "bold"}}>
                                                             {special.htext}
                                                         </h2>
@@ -248,7 +248,7 @@ const Special = ({match}) => {
                                                     <div className="monthly-grid-post__image  text-center space-mb--r50 space-mt--r50">
                                                         <img
                                                             className="img-fluid"
-                                                            style={{width: "80%"}}
+                                                            style={{width: "70%"}}
                                                             src={special.images}
                                                             alt="/"
                                                         />
@@ -263,7 +263,7 @@ const Special = ({match}) => {
                                                     {/*<h2>*/}
                                                     {/*    {special.htext}*/}
                                                     {/*</h2>*/}
-                                                    <Container style={{width: "80%"}}>
+                                                    <Container style={{width: "70%"}}>
                                                         <p className="post-excerpt">
                                                             {special.btext}
                                                         </p>
