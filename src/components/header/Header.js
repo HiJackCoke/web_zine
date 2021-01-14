@@ -71,7 +71,7 @@ const Header = () => {
 
 
                         <Col lg={4}>
-                            <div className="header-content__logo d-flex align-items-center space-pr--15">
+                            <div className=" d-flex align-items-center space-pr--15">
 
                                 <a href="https://www.warmemo.or.kr/front/main.do#">
                                     <img src={img} alt="/" className="img-fluid"/>
@@ -86,17 +86,12 @@ const Header = () => {
                             <Link to="/">
 
                                <Row>
-                                   <Col>
+                                   <Col className="header-content__logo__image"
+                                       >
                                        <img src={img2} alt="/" className="img-fluid"/>
                                    </Col>
                                    <Col>
-                                       <div
-                                           style={{
-                                               alignSelf: "center",
-                                               borderLeft: "solid",
-                                               color: "black",
-                                               padding: "5px 5px 5px 0px",
-                                           }}>
+                                       <div className="header-content__logo">
                                            2021 January <br/>
                                            <div style={{fontWeight: "bold"}}>
                                                Vol.180

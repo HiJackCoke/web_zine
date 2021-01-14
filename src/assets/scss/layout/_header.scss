@@ -38,7 +38,51 @@ header {
   }
   //@include respond ()
   &__logo {
+    align-self: center;
+    border-left: solid;
+    color: black;
+    padding: 5px 5px 5px 0px;
+    line-height: 1.2;
 
+    @media (max-width: 768px) {
+
+      margin-left: -15px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 10px;
+      padding: 0px;
+      margin-left: -15px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 6px;
+      padding: 0px;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 10px;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    &__image {
+      align-self: center;
+
+
+
+      @media (max-width: 425px) {
+        padding: 0px 5px;
+      }
+
+      @media (max-width: 375px) {
+        padding: 0px 3px;
+      }
+
+      @media (max-width: 374px) {
+        padding: 0px 15px;
+      }
+    }
   }
 
   &__icons {
