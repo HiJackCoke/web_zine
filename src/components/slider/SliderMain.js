@@ -10,27 +10,51 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay])
 
 const SliderMain = ({spaceBottomClass}) => {
 
-    const desc2 = (
-        <div>
-            변화와 혁신을 통해 새로운 패러다임을 선도하고,
-            <br/>전쟁과 군사를 주제로 한 복합문화플랫폼 사업에 착수하며,
-            <br/>22개 유엔참전국과 함께하는 문화축제를 개최합니다.
-            <br/>여러분도 전쟁기념관과 함께 희망찬 2021년을 시작합시다!
-        </div>
-    )
+    const title = [
+        (
+            <span
+                style={{
+                    borderBottom: "2px solid",
+                    fontWeight: "bold",
+                    fontSize: "22px",
+                }}
+            >
+                MONTHLY STORY
+            </span>
+        )
+    ]
 
+    const desc = [
+        (
+            <div style={{fontSize: "26px"}}>
+                병자호란의 치욕이 주는 <br/>
+                <div style={{fontWeight: "bold", fontSize: "30px"}}>
+                    역사적 교훈
+                </div>
+            </div>
+        ),
+        (
+            <div>
+                변화와 혁신을 통해 새로운 패러다임을 선도하고,
+                <br/>전쟁과 군사를 주제로 한 복합문화플랫폼 사업에 착수하며,
+                <br/>22개 유엔참전국과 함께하는 문화축제를 개최합니다.
+                <br/>여러분도 전쟁기념관과 함께 희망찬 2021년을 시작합시다!
+            </div>
+        )
+
+    ]
     const Main = [
         {
             "id": "1",
             "images": img,
-
-
+            "title": title[0],
+            "desc": desc[0]
         },
         {
             "id": "2",
             "images": img2,
             "title": "2021년, 전쟁기념관이 새롭게 비상합니다",
-            "desc": desc2
+            "desc": desc[1]
         }
     ]
 

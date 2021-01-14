@@ -1,5 +1,5 @@
 import React, {useState, Fragment} from 'react';
-import {Container, Col} from 'react-bootstrap'
+import {Container, Col, Row} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import {
     // IoIosSearch,
@@ -84,7 +84,28 @@ const Header = () => {
                             className="text-center"
                         >
                             <Link to="/">
-                                <img src={img2} alt="/" className="img-fluid"/>
+
+                               <Row>
+                                   <Col>
+                                       <img src={img2} alt="/" className="img-fluid"/>
+                                   </Col>
+                                   <Col>
+                                       <div
+                                           style={{
+                                               alignSelf: "center",
+                                               borderLeft: "solid",
+                                               color: "black",
+                                               padding: "5px 5px 5px 0px",
+                                           }}>
+                                           2021 January <br/>
+                                           <div style={{fontWeight: "bold"}}>
+                                               Vol.180
+                                           </div>
+                                       </div>
+                                   </Col>
+
+                               </Row>
+
                             </Link>
                             {/*<div className="text-center">Logo</div>*/}
                         </Col>

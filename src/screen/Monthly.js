@@ -24,17 +24,38 @@ const Monthly = ({match}) => {
         )
     ]
 
-    const summ2 = (
-        <h5 className="summ">
-            광해군이 폐위되고 인조가 즉위한 1623년, 인조반정이 성공하면서 조정의 외교 정책에도 큰 변화가 이루어졌다.
-            명과 후금 사이에서 실리적인 입장을 취한 광해군의 중립외교 정책 대신에 친명배금(親明排金) 정책이 외교의 기본 방향이 되었고, 이것은 신흥 군사
-            강국 후금(後金)을 자극했다. 1627년의 정묘호란과 1636년의 병자호란은 인조와 서인 정권의 외교 실책이 빚은 혹독한 대가였다.
-            <div className="writer">
-                <br/> <br/> 글 신병주_건국대학교 사학과 교수
-            </div>
+    const summ = [
+        (
+            <h5 className="summ">
+                광해군이 폐위되고 인조가 즉위한 1623년, 인조반정이 성공하면서 조정의 외교 정책에도 큰 변화가 이루어졌다.
+                명과 후금 사이에서 실리적인 입장을 취한 광해군의 중립외교 정책 대신에 친명배금(親明排金) 정책이 외교의 기본 방향이 되었고, 이것은 신흥 군사
+                강국 후금(後金)을 자극했다. 1627년의 정묘호란과 1636년의 병자호란은 인조와 서인 정권의 외교 실책이 빚은 혹독한 대가였다.
+                <div className="writer">
+                    <br/><br/>
+                    <span>글</span> 신병주_건국대학교 사학과 교수
+                </div>
 
-        </h5>
-    )
+            </h5>
+        )
+    ]
+
+    const htext2 = [
+        (
+            <div style={{color: "darkblue"}}>
+                병자호란의 전초전, 정묘호란
+            </div>
+        ),
+        (
+            <div style={{color: "darkblue"}}>
+                1636년 12월 병자호란의 시작
+            </div>
+        ),
+        (
+            <div style={{color: "darkblue"}}>
+                삼전도의 굴욕과 병자호란의 교훈
+            </div>
+        )
+    ]
 
     const btext = (
         <p className="post-excerpt">
@@ -142,18 +163,18 @@ const Monthly = ({match}) => {
             "id": "2",
             "title": "story",
             "sub": "병자호란의 치욕이 주는 역사적 교훈",
-            "summary": summ2,
+            "summary": summ[0],
             "contents": [
                 {
                     "id": "1",
                     "images": story1,
-                    "htext": "병자호란의 전초전, 정묘호란",
+                    "htext": htext2[0],
                     "btext": btext2
                 },
                 {
                     "id": "2",
                     "images": story2,
-                    "htext": "1636년 12월 병자호란의 시작",
+                    "htext": htext2[1],
                     "btext": btext3
                 },
                 {
@@ -163,7 +184,7 @@ const Monthly = ({match}) => {
                 {
                     "id": "4",
                     "images": story4,
-                    "htext": "삼전도의 굴욕과 병자호란의 교훈",
+                    "htext": htext2[2],
                     "btext": btext4
                 }
             ]
@@ -187,7 +208,11 @@ const Monthly = ({match}) => {
                                     >
                                         <div className="monthly-grid-post__title space-mb--r50">
 
-                                            <span>{monthly.title}</span>
+                                            <span>{"MONTHLY STORY + "}
+                                                <span style={{color: "crimson"}}>
+                                                      {monthly.title}
+                                                </span>
+                                            </span>
                                             <div className="monthly-grid-post__title">
                                                 <h3
                                                     className="mt-3"
