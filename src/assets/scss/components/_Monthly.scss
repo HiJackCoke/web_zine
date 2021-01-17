@@ -1,3 +1,19 @@
+.sub-2-h {
+  font-size: 32px;
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
+}
+
+.sub-2-b {
+  width: 80%;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+}
+
 .monthly-grid-post {
   &__title {
 
@@ -27,6 +43,36 @@
       font-family: anemone;
       line-height: 1.4;
     }
+
+    @media (max-width: 425px) {
+      font-family: anemone;
+
+      text-align: center;
+      margin: 60px 0px;
+
+      span {
+        font-weight: bold;
+        line-height: 1;
+        color: #000;
+        font-size: 15px;
+        border-bottom: 1px solid #777777;
+
+      }
+
+      p {
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 0;
+        color: black;
+      }
+
+      h2, h3 {
+        font-family: anemone;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+    }
   }
 
   &__summary {
@@ -38,7 +84,11 @@
 
     .summ {
       line-height: 1.5;
-      font-size: 18px;
+      font-size: 32px;
+
+      @media (max-width: 425px) {
+        font-size: 20px;
+      }
     }
 
     .writer {
@@ -52,7 +102,10 @@
     }
 
     &__80 {
-      width: 80%;
+      @media (min-width: 1024px) {
+        width: 80%;
+      }
+
     }
   }
 
@@ -62,6 +115,13 @@
       img {
         width: 100%;
       }
+    }
+
+    .fluid {
+      @media (min-width: 1024px) {
+        width: 60%;
+      }
+
     }
   }
 
@@ -114,7 +174,21 @@
 
         //color: $grey--seven;
         color: $black--two;
+
+        @media (max-width: 425px) {
+          &.post-excerpt {
+            font-size: 15px;
+            line-height: 28px;
+
+            margin-bottom: 15px;
+
+            //color: $grey--seven;
+            color: $black--two;
+          }
+        }
       }
+
+
     }
 
     a {
@@ -179,6 +253,24 @@
     &__spe {
       h2 {
         font-family: anemone;
+
+        font-size: 32px;
+
+        @media (max-width: 425px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    @media (max-width: 425px) {
+
+      h2 {
+        font-size: 18px;
+        line-height: 36px;
+
+        margin-bottom: 15px;
+
+        color: $black--two;
       }
     }
   }

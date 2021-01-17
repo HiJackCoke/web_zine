@@ -33,7 +33,7 @@ const Special = ({match}) => {
 
     const summ = [
         (
-            <h5 className="summ" style={{fontFamily: "anemone", fontSize: "32px"}}>
+            <h5 className="summ" style={{fontFamily: "anemone"}}>
                 호국인물총서 2
                 <br/>유방백세 <span style={{fontFamily: "nanum-square", borderBottom: "none"}}>(遺芳百世)</span> , 어둠 속에서도 눈감지 않은 사람들 발간
                 <div className="writer">
@@ -245,8 +245,10 @@ const Special = ({match}) => {
                                                     className="monthly-grid-post__content monthly-grid-post__content__spe"
                                                     style={{letterSpacing: "-1px", marginBottom: "30px"}}
                                                 >
-                                                    <Container style={{width: "70%"}}>
-                                                        <h2 style={{fontSize: '32px', fontWeight: "bold"}}>
+                                                    <Container
+                                                        // style={{width: "70%"}}
+                                                    >
+                                                        <h2 style={{fontWeight: "bold"}}>
                                                             {special.htext}
                                                         </h2>
                                                     </Container>
@@ -255,8 +257,8 @@ const Special = ({match}) => {
                                                 {special.images ?
                                                     <div className="monthly-grid-post__image  text-center space-mb--r50 space-mt--r50">
                                                         <img
-                                                            className="img-fluid"
-                                                            style={{width: "60%"}}
+                                                            className="img-fluid fluid"
+                                                            // style={{width: "60%"}}
                                                             src={special.images}
                                                             alt="/"
                                                         />
@@ -271,7 +273,9 @@ const Special = ({match}) => {
                                                     {/*<h2>*/}
                                                     {/*    {special.htext}*/}
                                                     {/*</h2>*/}
-                                                    <Container style={{width: "60%"}}>
+                                                    <Container
+                                                        // style={{width: "60%"}}
+                                                    >
                                                         <p className="post-excerpt">
                                                             {special.btext}
                                                         </p>

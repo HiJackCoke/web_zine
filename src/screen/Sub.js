@@ -211,8 +211,7 @@ const Sub = ({match}) => {
         ),
         (
             <div
-                className="text-center pt-5"
-                style={{fontSize: "32px"}}
+                className="text-center pt-5 sub-2-h"
             >
                 전쟁기념관이 내 손안에 <br/>
                 <div style={{color: "darkturquoise"}}>
@@ -380,15 +379,17 @@ const Sub = ({match}) => {
         ),
         (
 
-            <div
-                className="text-center pt-4 pb-4 ml-5 mr-5"
-                style={{borderTop: "1px solid", borderBottom: "1px solid"}}
-            >
-                기술의 발달이 박물관 관람 풍경을 바꾸고 있다. 관람객들은 전시실에 방문하기 전 스마트폰 애플리케이션을 통해 전시자료를 미리 알아보기도 하고,
-                <br/>박물관에 가지 않고도 집에서 얼마든지 원하는 전시품을 감상할 수 있다.
-                전시실에서는 직접 애플리케이션에 탑재된 증강현실(AR) 체험 콘텐츠를 통해 더욱 흥미로운 전시 관람 경험이 가능하다.
-            </div>
+            <div style={{textAlign: "-webkit-center"}}>
+                <div
+                    className="text-center sub-2-b"
+                    style={{borderTop: "1px solid", borderBottom: "1px solid"}}
+                >
+                    기술의 발달이 박물관 관람 풍경을 바꾸고 있다. 관람객들은 전시실에 방문하기 전 스마트폰 애플리케이션을 통해 전시자료를 미리 알아보기도 하고,
+                    <br/>박물관에 가지 않고도 집에서 얼마든지 원하는 전시품을 감상할 수 있다.
+                    전시실에서는 직접 애플리케이션에 탑재된 증강현실(AR) 체험 콘텐츠를 통해 더욱 흥미로운 전시 관람 경험이 가능하다.
+                </div>
 
+            </div>
         )
     ]
 
@@ -835,8 +836,8 @@ const Sub = ({match}) => {
                                                         style={ inside.htext || inside.btext ? {} : {marginBottom: "-50px"}}
                                                     >
                                                         <img
-                                                            className="img-fluid"
-                                                            style={{width: "60%"}}
+                                                            className="img-fluid fluid"
+                                                            // style={{width: "60%"}}
                                                             src={inside.images}
                                                             alt="/"
                                                         />
