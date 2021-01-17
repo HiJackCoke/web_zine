@@ -19,7 +19,7 @@ const SliderMain = ({spaceBottomClass}) => {
                     fontSize: "22px",
                 }}
             >
-                MONTHLY STORY
+                {/*MONTHLY STORY*/}
             </span>
         ),
         (
@@ -37,14 +37,20 @@ const SliderMain = ({spaceBottomClass}) => {
     const desc = [
         (
             <div style={{fontSize: "26px"}}>
-                병자호란의 치욕이 주는 <br/>
-                <div style={{fontWeight: "bold", fontSize: "30px"}}>
-                    역사적 교훈
-                </div>
+                {/*병자호란의 치욕이 주는 <br/>*/}
+                {/*<div style={{fontWeight: "bold", fontSize: "30px"}}>*/}
+                {/*    역사적 교훈*/}
+                {/*</div>*/}
             </div>
         ),
         (
-            <div style={{ color:"white", backgroundColor: "rgba(0, 0, 0, 0.4)" }}>
+            // <div style={{ color:"white", backgroundColor: "rgba(0, 0, 0, 0.4)" }}>
+            //     변화와 혁신을 통해 새로운 패러다임을 선도하고,
+            //     <br/>전쟁과 군사를 주제로 한 복합문화플랫폼 사업에 착수하며,
+            //     <br/>22개 유엔참전국과 함께하는 문화축제를 개최합니다.
+            //     <br/>여러분도 전쟁기념관과 함께 희망찬 2021년을 시작합시다!
+            // </div>
+            <div style={{ color:"darkorange"}}>
                 변화와 혁신을 통해 새로운 패러다임을 선도하고,
                 <br/>전쟁과 군사를 주제로 한 복합문화플랫폼 사업에 착수하며,
                 <br/>22개 유엔참전국과 함께하는 문화축제를 개최합니다.

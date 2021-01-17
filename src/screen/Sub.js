@@ -6,9 +6,10 @@ import {Col, Container, Row} from "react-bootstrap";
 import img1 from "../assets/images/Sub/sub101.png";
 import img2 from "../assets/images/Sub/sub102.jpg";
 
-import img3 from "../assets/images/Sub/sub203.png";
-import img4 from '../assets/images/Sub/sub201.png';
+import img3 from "../assets/images/Sub/sub2.JPG";
+import img4 from '../assets/images/Sub/sub201.JPG';
 import img5 from '../assets/images/Sub/sub202.JPG';
+import img6 from '../assets/images/Sub/sub204.png'
 
 import story2 from '../assets/images/Sub/sub301.jpg';
 
@@ -82,6 +83,16 @@ const Sub = ({match}) => {
                 </div>
 
             </div>
+        ),
+        (
+            // id 2
+
+            <div>
+                기억을 기록하는 <br/>
+                <div style={{color: "orange", fontWeight: "bold", marginTop: "10px"}}>
+                    아/카/이/브
+                </div>
+            </div>
         )
     ]
 
@@ -153,6 +164,14 @@ const Sub = ({match}) => {
                     <br/><br/> <span>글</span>  고한빈_전쟁기념관 학예연구사
                 </div>
             </h5>
+        ),
+        (
+            <h5 className="summ">
+                우리는 전쟁·군사 역사를 기록한 다양한 유형의 자료를 통해 과거의 한 장면뿐 아니라 자료 속에 담겨 있는 사회상과 문화, 역사적 가치 등을 발견할 수 있다. 그 가치를 연구하고 인과관계를 밝혀가는 행위를 통해 시대를 연결하고 세대와 소통을 나눌 수 있는 것이다.
+                <div className="writer">
+                    <br/><br/> <span>글</span>  정단비_전쟁기념관 학예연구사
+                </div>
+            </h5>
         )
     ]
 
@@ -188,6 +207,17 @@ const Sub = ({match}) => {
         (
             <div style={{color: "deepskyblue"}}>
                 똑똑하고 흥미로운 전시 관람
+            </div>
+        ),
+        (
+            <div
+                className="text-center pt-5"
+                style={{fontSize: "32px"}}
+            >
+                전쟁기념관이 내 손안에 <br/>
+                <div style={{color: "darkturquoise"}}>
+                    전쟁·군사박물관 스마트 전시안내 서비스
+                </div>
             </div>
         )
     ]
@@ -347,6 +377,18 @@ const Sub = ({match}) => {
                 <br/>
                 전시안내 앱은 콘텐츠 체험 외에 나만의 전시 관람코스 만들기 서비스도 제공하고 있다. 방문 유형과 희망관람 시간, 관심 분야를 선택하면 1:1 맞춤형 관람코스를 제공받을 수 있으며, 월별·주제별 테마에 따라 전쟁기념 관 해설사가 추천하는 특화 주제 관람코스를 제공받을 수도 있다. 전시안 내 앱을 이용하려면 스마트폰 앱 스토어에서 ‘전쟁군사박물관’ 혹은 ‘전쟁 기념관’을 검색하여 ‘전쟁·군사박물관 전시안내’ 애플리케이션을 내려받아 사용하면 된다. 전시품 안내는 우리말과 영어로 서비스되어 외국인 관람 객도 이용할 수 있다.
             </div>
+        ),
+        (
+
+            <div
+                className="text-center pt-4 pb-4 ml-5 mr-5"
+                style={{borderTop: "1px solid", borderBottom: "1px solid"}}
+            >
+                기술의 발달이 박물관 관람 풍경을 바꾸고 있다. 관람객들은 전시실에 방문하기 전 스마트폰 애플리케이션을 통해 전시자료를 미리 알아보기도 하고,
+                <br/>박물관에 가지 않고도 집에서 얼마든지 원하는 전시품을 감상할 수 있다.
+                전시실에서는 직접 애플리케이션에 탑재된 증강현실(AR) 체험 콘텐츠를 통해 더욱 흥미로운 전시 관람 경험이 가능하다.
+            </div>
+
         )
     ]
 
@@ -544,8 +586,8 @@ const Sub = ({match}) => {
         {
             "id": "2",
             "title": "기념관 이야기 1",
-            "sub": "",
-            "summary": "",
+            "sub": sub[6],
+            "summary": summ[7],
             "contents": [
                 {
                     "id": "1",
@@ -555,7 +597,7 @@ const Sub = ({match}) => {
                 },
                 {
                     "id": "2",
-                    "images": "",
+                    "images": img4,
                     "htext": htext2[0],
                     "btext": btext2[1]
                 },
@@ -567,13 +609,19 @@ const Sub = ({match}) => {
                 },
                 {
                     "id": "4",
-                    "images": img4,
-                    "htext": htext2[2],
-                    "btext": btext2[3]
+                    "images": "",
+                    "htext": htext2[4],
+                    "btext": btext2[5]
                 },
                 {
                     "id": "5",
                     "images": img5,
+                    "htext": htext2[2],
+                    "btext": btext2[3]
+                },
+                {
+                    "id": "6",
+                    "images": img6,
                     "htext": htext2[3],
                     "btext": btext2[4]
                 }

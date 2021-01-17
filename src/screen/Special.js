@@ -7,7 +7,7 @@ import news from '../assets/images/Spe/special1.JPG'
 import news2 from '../assets/images/Spe/special102.jpg'
 import news3 from '../assets/images/Spe/special103.png'
 import news4 from '../assets/images/Spe/special104.jpg'
-import news5 from '../assets/images/Spe/special105.png'
+import news5 from '../assets/images/Spe/special105.jpeg'
 import news6 from '../assets/images/Spe/special106.png';
 // import news7 from '../assets/images/Spe/special107.png'
 
@@ -46,37 +46,38 @@ const Special = ({match}) => {
     const htext1 = [
         (
             <div style={{color: "lightpink"}}>
-                ① 헬기 동산 개막식 개최
+                <span style={{fontFamily: "nanum"}}> ① </span> 헬기 동산 개막식 개최
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                ② 전쟁기념관 가족친화 우수기관 획득
+                <span style={{fontFamily: "nanum"}}> ② </span> 전쟁기념관 가족친화 우수기관 획득
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                ③ 온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’
+                <span style={{fontFamily: "nanum"}}> ③ </span> 온라인 전시해설 콘텐츠 ‘죽음도 갈라놓지 못한 사랑’
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                ④ 온라인 콘텐츠 {"<유물을 만나다>"}: 故 이건희 회장 기증 권총
+                <span style={{fontFamily: "nanum"}}> ④ </span> 온라인 콘텐츠 {"<유물을 만나다>"}: <span style={{fontFamily: "nanum"}}>故</span> 이건희 회장 기증 권총
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                ⑤ 이동전시모듈 ‘6·25전쟁과 무공훈장-가슴에 단 <br/> 명예’ 순회전시
+                <span style={{fontFamily: "nanum"}}> ⑤ </span> 이동전시모듈
+                ‘6 <span style={{fontFamily: "nanum"}}> · </span> 25전쟁과 무공훈장-가슴에 단 <br/> 명예’ 순회전시
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                ⑥ 소중한 유물을 기증해주셔서 <br/> 감사합니다(2020년 7~12월)
+                <span style={{fontFamily: "nanum"}}> ⑥ </span> 소중한 유물을 기증해주셔서 <br/> 감사합니다(2020년 7~12월)
             </div>
         ),
         (
             <div style={{color: "lightpink"}}>
-                ⑦ 전쟁·군사 도서 및 기록물 기증받습니다
+                <span style={{fontFamily: "nanum"}}> ⑦ </span> 전쟁 <span style={{fontFamily: "nanum"}}> · </span> 군사 도서 및 기록물 기증받습니다
             </div>
         ),
     ]
