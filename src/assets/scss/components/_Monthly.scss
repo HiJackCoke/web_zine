@@ -89,10 +89,19 @@
       @media (max-width: 425px) {
         font-size: 20px;
       }
+
+      &__title {
+        font-size: 32px;
+
+        @media (max-width: 425px) {
+          font-size: 20px;
+        }
+      }
     }
 
     .writer {
       font-size: 15px;
+      text-align: -webkit-center;
 
       span {
         font-size: 15px;
