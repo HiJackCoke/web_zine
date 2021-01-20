@@ -11,9 +11,9 @@ import news5 from '../assets/images/Spe/special105.jpeg'
 import news6 from '../assets/images/Spe/special106.png';
 // import news7 from '../assets/images/Spe/special107.png'
 
-import tm from '../assets/images/Spe/special2.png';
-import tm2 from '../assets/images/Spe/special202.jpg';
-import tm3 from '../assets/images/Spe/special203.png';
+import tm from '../assets/images/Spe/special201.png';
+import tm2 from '../assets/images/Spe/special202.1.png';
+import tm3 from '../assets/images/Spe/special203.1.png';
 
 import man from '../assets/images/Spe/special301.png'
 
@@ -37,7 +37,7 @@ const Special = ({match}) => {
                 호국인물총서 2
                 <br/>유방백세 <span style={{fontFamily: "nanum-square", borderBottom: "none"}}>(遺芳百世)</span> , 어둠 속에서도 눈감지 않은 사람들 발간
                 <div className="writer">
-                    <br/><br/> <span>글</span> <span style={{fontFamily: "nanum-square", fontWeight: "normal"}}>이재민_전쟁기념관 학예연구사</span>
+                    <br/><br/> <span style={{fontFamily: "nanum-square"}}>글</span> <span style={{fontFamily: "nanum-square", fontWeight: "normal"}}>이재민_전쟁기념관 학예연구사</span>
                 </div>
             </h5>
         )

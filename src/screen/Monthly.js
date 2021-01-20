@@ -5,10 +5,10 @@ import {Col, Container, Row} from "react-bootstrap";
 
 import newImg from '../assets/images/Monthly/page/news.jpg'
 
-import story1 from "../assets/images/Monthly/page/story1.jpg";
-import story2 from '../assets/images/Monthly/page/story2.jpg'
-import story3 from '../assets/images/Monthly/page/story3.jpg'
-import story4 from '../assets/images/Monthly/page/story4.png';
+import story1 from "../assets/images/Monthly/page/story1.1.png";
+import story2 from '../assets/images/Monthly/page/story2.2.png'
+import story3 from '../assets/images/Monthly/page/story3.3.png'
+import story4 from '../assets/images/Monthly/page/story4.4.png';
 
 
 

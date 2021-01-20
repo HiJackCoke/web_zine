@@ -20,16 +20,16 @@ import story304 from '../assets/images/Sub/sub404.jpg'
 import story305 from '../assets/images/Sub/sub405.jpg'
 
 import war from '../assets/images/Sub/sub5.jpg'
-import war2 from '../assets/images/Sub/sub501.png'
-import war3 from '../assets/images/Sub/sub502.png'
+import war2 from '../assets/images/Sub/sub501.1.png'
+import war3 from '../assets/images/Sub/sub502.1.png'
 import war4 from '../assets/images/Sub/sub503.1.png'
 
 import mobile from '../assets/images/Sub/sub601.png';
 
 import gun1 from '../assets/images/Sub/sub7.JPG';
-import gun2 from '../assets/images/Sub/sub701.png';
-import gun3 from '../assets/images/Sub/sub702.jpg';
-import gun4 from '../assets/images/Sub/sub703.png';
+import gun2 from '../assets/images/Sub/sub701.1.png';
+import gun3 from '../assets/images/Sub/sub702.1.png';
+import gun4 from '../assets/images/Sub/sub703.1.png';
 
 
 const Sub = ({match}) => {
