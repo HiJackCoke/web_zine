@@ -41,7 +41,7 @@ const Footer = () => {
                         <div className="footer-copyright-text d-flex">
                             {/*&copy; {new Date().getFullYear() + "The War Memorial of Korea All rights reserved."}*/}
                             <Row>
-                                <Col lg={3} md={3} xs={12}>
+                                <Col lg={3} md={3} xs={12} className="footer-logo">
                                     <img src={img} alt="/" className="img-fluid"/>
                                 </Col>
 
