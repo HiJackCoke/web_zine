@@ -48,16 +48,18 @@ const Footer = () => {
 
                                 <Col lg={9} md={9} xs={12}>
                                     <div className="footer-postal text-black-50">
-                                        <span>발행일</span> 2021년 1월 5일 <span>통권</span> 제180호
-                                        <span> 발행처</span> 전쟁기념관 <span>발행인</span> 전쟁기념관장 이상철 <br/>
-                                        <span> 주소</span> (04353)서울시 용산구 이태원로29
-                                        <span> 기획·편집</span> 학예부(082ran@daum.net)
-                                        <br/>
-                                        <span> 전화</span> 02-709-3226
-                                        <span> 제작 총괄</span> (주)한강문화(02-511-9369) <br/>
-                                        <div style={{fontSize: "12px"}}>
-                                            {"*<전쟁기념관>"}에 게재된 집필진의 글은 전쟁기념관의 공식 입장과 다를 수 있습니다.
-                                        </div>
+                                        04353 서울특별시 용산구 이태원로 29 Tel : 02-709-3114 <br/>
+                                        © The War Memorial of Korea All rights reserved.
+                                        {/*<span>발행일</span> 2021년 1월 5일 <span>통권</span> 제180호*/}
+                                        {/*<span> 발행처</span> 전쟁기념관 <span>발행인</span> 전쟁기념관장 이상철 <br/>*/}
+                                        {/*<span> 주소</span> (04353)서울시 용산구 이태원로29*/}
+                                        {/*<span> 기획·편집</span> 학예부(082ran@daum.net)*/}
+                                        {/*<br/>*/}
+                                        {/*<span> 전화</span> 02-709-3226*/}
+                                        {/*<span> 제작 총괄</span> (주)한강문화(02-511-9369) <br/>*/}
+                                        {/*<div style={{fontSize: "12px"}}>*/}
+                                        {/*    {"*<전쟁기념관>"}에 게재된 집필진의 글은 전쟁기념관의 공식 입장과 다를 수 있습니다.*/}
+                                        {/*</div>*/}
 
                                     </div>
                                 </Col>
