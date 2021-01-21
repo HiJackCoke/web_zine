@@ -102,7 +102,7 @@ const SliderMain = ({spaceBottomClass}) => {
                                         style={{ backgroundImage: `url(${main.images})`}}
                                         key={i}
                                     >
-                                        <Container className="full h-100">
+                                        <Container className="full h-100" style={{display: "grid"}}>
                                             <Row className="align-items-center flex-column flex-lg-row justify-content-center">
                                             {/*<Row className="align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start h-100">*/}
                                                 <Col lg={6} className="order-2 order-lg-1">

@@ -160,32 +160,52 @@
 
     font-family: anemone;
 
-    position: fixed;
-    top: 65%;
-    left: 41%;
-
-    //margin: 60px 30px;
+    position: static;
+    margin-top: 200px;
     text-align: center;
 
-    @include respond(extra-large-mobile) {
-      position: static;
+    //position: fixed;
+    //top: 65%;
+    //left: 41%;
 
-      width: 100%;
+    //margin: 60px 30px;
 
-      text-align: center;
-
-      margin: 20px 0px;
-    }
-
-    @include respond(large-mobile) {
-      position: static;
-
-      width: 100%;
-
-      text-align: center;
-
-      margin: 10px 0px;
-    }
+    //
+    //@media (max-width: 768px) {
+    //  left: 36%;
+    //}
+    //
+    //@media (max-width: 425px) {
+    //  left: 25%;
+    //}
+    //
+    //@media (max-width: 375px) {
+    //  left: 21%;
+    //}
+    //
+    //@media (max-width: 325px) {
+    //  left: 15%;
+    //}
+    //
+    //@include respond(extra-large-mobile) {
+    //  //position: static;
+    //  //
+    //  //width: 100%;
+    //
+    //  text-align: center;
+    //
+    //  margin: 20px 0px;
+    //}
+    //
+    //@include respond(large-mobile) {
+    //  //position: static;
+    //  //
+    //  //width: 100%;
+    //
+    //  text-align: center;
+    //
+    //  margin: 10px 0px;
+    //}
 
     & > * {
       transition: all 1.0s ease 2s;
