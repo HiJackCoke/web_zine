@@ -7,7 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {trimText} from '../../../utils'
 
 import img from "../../../assets/images/Sub/sub1.jpg";
-import img2 from "../../../assets/images/Sub/sub2.png";
+import img2 from "../../../assets/images/Sub/sub2.1.jpg";
 import img3 from "../../../assets/images/Sub/sub3.jpg";
 import img4 from "../../../assets/images/Sub/sub4.jpg";
 import img5 from "../../../assets/images/Sub/sub5.jpg";

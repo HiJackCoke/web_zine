@@ -88,7 +88,7 @@ const SliderMain = ({spaceBottomClass}) => {
                         spaceBetween={260}
                         effect="fade"
                         autoplay={{
-                            delay: 5000
+                            delay: 10000
                         }}
                         pagination
                         grabCursor={true}
@@ -103,7 +103,7 @@ const SliderMain = ({spaceBottomClass}) => {
                                         key={i}
                                     >
                                         <Container className="full h-100">
-                                            <Row className="align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-end">
+                                            <Row className="align-items-center flex-column flex-lg-row justify-content-center">
                                             {/*<Row className="align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start h-100">*/}
                                                 <Col lg={6} className="order-2 order-lg-1">
                                                     <div className="main-slider__content">
@@ -112,8 +112,8 @@ const SliderMain = ({spaceBottomClass}) => {
                                                         >
                                                             {main.title}
                                                         </div>
-                                                        <div className="sub-title text-black">{main.desc}</div>
-                                                        <div className="slider-link">
+                                                        {/*<div className="sub-title text-black">{main.desc}</div>*/}
+                                                        {/*<div className="slider-link">*/}
                                                             {/*<Link*/}
                                                             {/*    href={single.url}*/}
                                                             {/*    as={process.env.PUBLIC_URL + single.url}*/}
@@ -122,7 +122,7 @@ const SliderMain = ({spaceBottomClass}) => {
                                                             {/*        shop now*/}
                                                             {/*    </a>*/}
                                                             {/*</Link>*/}
-                                                        </div>
+                                                        {/*</div>*/}
                                                     </div>
                                                 </Col>
                                             </Row>
