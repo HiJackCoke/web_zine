@@ -6,10 +6,10 @@ import {Col, Container, Row} from "react-bootstrap";
 import img1 from "../assets/images/Sub/sub101.png";
 import img2 from "../assets/images/Sub/sub102.jpg";
 
-import img3 from "../assets/images/Sub/sub2.JPG";
-import img4 from '../assets/images/Sub/sub201.JPG';
+
+import img4 from '../assets/images/Sub/sub201.1.jpg';
 import img5 from '../assets/images/Sub/sub202.JPG';
-import img6 from '../assets/images/Sub/sub204.png'
+import img6 from '../assets/images/Sub/sub204.1.png'
 
 import story2 from '../assets/images/Sub/sub301.jpg';
 
@@ -22,12 +22,12 @@ import story305 from '../assets/images/Sub/sub405.jpg'
 import war from '../assets/images/Sub/sub5.jpg'
 import war2 from '../assets/images/Sub/sub501.1.png'
 import war3 from '../assets/images/Sub/sub502.1.png'
-import war4 from '../assets/images/Sub/sub503.1.png'
+import war4 from '../assets/images/Sub/sub503.2.png'
 
 import mobile from '../assets/images/Sub/sub601.png';
 
 import gun1 from '../assets/images/Sub/sub7.JPG';
-import gun2 from '../assets/images/Sub/sub701.1.png';
+import gun2 from '../assets/images/Sub/sub701.2.jpg';
 import gun3 from '../assets/images/Sub/sub702.1.png';
 import gun4 from '../assets/images/Sub/sub703.1.png';
 
@@ -58,9 +58,8 @@ const Sub = ({match}) => {
         ),
         (
             <div>
-                기억을 기록하는
                 <div style={{color: "darkblue", fontWeight: "bold", marginTop: "10px"}}>
-                    온라인으로 찾아가는 {" "}
+                    온라인으로 찾아가는 <br/>
                     <span style={{border: "none", fontSize: "32px", color: "orange"}}>2021</span> {" "}
                     <span style={{border: "none", fontSize: "32px", color: "yellowgreen"}}>#</span>
                     전쟁기념관
@@ -212,10 +211,11 @@ const Sub = ({match}) => {
         (
             <div
                 className="text-center pt-5 sub-2-h"
+                style={{margin: "60px 0px", lineHeight: "1.4"}}
             >
                 전쟁기념관이 내 손안에 <br/>
                 <div style={{color: "darkturquoise"}}>
-                    전쟁·군사박물관 스마트 전시안내 서비스
+                    전쟁·군사박물관 스마트 <br/> 전시안내 서비스
                 </div>
             </div>
         )
@@ -278,7 +278,7 @@ const Sub = ({match}) => {
         ),
         (
             <div style={{color: "crimson"}}>
-                대한민국 역사 박물관의 특별전시
+                대한민국역사박물관의 특별전시
             </div>
         ),
         (
@@ -381,11 +381,11 @@ const Sub = ({match}) => {
 
             <div style={{textAlign: "-webkit-center"}}>
                 <div
-                    className="text-center sub-2-b"
-                    style={{borderTop: "1px solid", borderBottom: "1px solid"}}
+                    className="text-justify sub-2-b"
+                    style={{borderTop: "1px solid", borderBottom: "1px solid", padding: "30px 0px"}}
                 >
                     기술의 발달이 박물관 관람 풍경을 바꾸고 있다. 관람객들은 전시실에 방문하기 전 스마트폰 애플리케이션을 통해 전시자료를 미리 알아보기도 하고,
-                    <br/>박물관에 가지 않고도 집에서 얼마든지 원하는 전시품을 감상할 수 있다.
+                    박물관에 가지 않고도 집에서 얼마든지 원하는 전시품을 감상할 수 있다.
                     전시실에서는 직접 애플리케이션에 탑재된 증강현실(AR) 체험 콘텐츠를 통해 더욱 흥미로운 전시 관람 경험이 가능하다.
                 </div>
 
@@ -594,7 +594,7 @@ const Sub = ({match}) => {
             "contents": [
                 {
                     "id": "1",
-                    "images": img3,
+                    "images": "",
                     "htext": "",
                     "btext": btext2[0]
                 },
@@ -801,16 +801,16 @@ const Sub = ({match}) => {
                             <Row>
                                 <Col>
                                     <div
-                                        className="monthly-grid-post"
+                                        className="page-grid-post"
                                     >
-                                        <div className="monthly-grid-post__title space-mb--r50">
+                                        <div className="page-grid-post__title space-mb--r50">
 
                                             <span>{"MEMORIAL STORY + "}
                                                 <span style={{color: "crimson"}}>
                                                       {inside.title}
                                                 </span>
                                             </span>
-                                            <div className="monthly-grid-post__title">
+                                            <div className="page-grid-post__title">
                                                 <h2
                                                     className="mt-3"
                                                 >
@@ -823,7 +823,7 @@ const Sub = ({match}) => {
                                                     style={{textAlign: "-webkit-center"}}
                                                 >
                                                     <div
-                                                        className="monthly-grid-post__summary monthly-grid-post__summary__80"
+                                                        className="page-grid-post__summary page-grid-post__summary__80"
                                                         style={{textAlign: "justify"}}
                                                     >
                                                         {inside.summary}
@@ -837,7 +837,7 @@ const Sub = ({match}) => {
                                             <div key={i}>
                                                 {inside.images ?
                                                     <div
-                                                        className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100"
+                                                        className="page-grid-post__image text-center space-mb--r50 space-mt--r100"
                                                         style={ inside.htext || inside.btext ? {} : {marginBottom: "-50px"}}
                                                     >
                                                         <img
@@ -850,7 +850,7 @@ const Sub = ({match}) => {
                                                 }
 
                                                 <div
-                                                    className="monthly-grid-post__content"
+                                                    className="page-grid-post__content"
                                                     style={{letterSpacing: "-0.8px"}}
                                                 >
                                                     <h2>

@@ -21,11 +21,6 @@ const Home = () => {
                 spaceBottomClass="space-mb--r100"
             />
 
-
-            {/*<SubSlideTwo*/}
-            {/*    spaceBottomClass="space-mb--r100"*/}
-            {/*/>*/}
-
             <SpecialSlide
                 spaceBottomClass="space-mb--r100"
             />

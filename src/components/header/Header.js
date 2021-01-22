@@ -85,7 +85,7 @@ const Header = () => {
                         >
                             <Link to="/">
 
-                               <Row>
+                               <Row className="justify-content-center">
                                    <Col lg={6} className="header-content__logo__image"
                                        >
                                        <img src={img2} alt="/" className="img-fluid"/>

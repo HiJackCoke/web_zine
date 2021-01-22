@@ -213,16 +213,16 @@ const Special = ({match}) => {
                             <Row>
                                 <Col>
                                     <div
-                                        className="monthly-grid-post"
+                                        className="page-grid-post"
                                     >
-                                        <div className="monthly-grid-post__title">
+                                        <div className="page-grid-post__title">
 
                                             <span>{"MEMORIAL STORY + "}
                                                 <span style={{color: "lightpink"}}>
                                                       {special.title}
                                                 </span>
                                             </span>
-                                            <div className="monthly-grid-post__title">
+                                            <div className="page-grid-post__title">
                                                 <h3
                                                     className="mt-3"
                                                 >
@@ -233,7 +233,7 @@ const Special = ({match}) => {
                                             {special.summary
                                                 ?
                                                 <div style={{textAlign: "-webkit-center"}}>
-                                                    <div className="monthly-grid-post__summary monthly-grid-post__summary__80"
+                                                    <div className="page-grid-post__summary page-grid-post__summary__80"
                                                         style={{border: "none"}}
                                                     >
                                                         <div>
@@ -249,7 +249,7 @@ const Special = ({match}) => {
                                         special.contents.map((special, i) => (
                                             <div key={i}>
                                                 <div
-                                                    className="monthly-grid-post__content monthly-grid-post__content__spe"
+                                                    className="page-grid-post__content page-grid-post__content__spe"
                                                     style={{letterSpacing: "-1px", marginBottom: "30px"}}
                                                 >
                                                     <Container
@@ -262,7 +262,7 @@ const Special = ({match}) => {
                                                 </div>
 
                                                 {special.images ?
-                                                    <div className="monthly-grid-post__image  text-center space-mb--r50 space-mt--r50">
+                                                    <div className="page-grid-post__image  text-center space-mb--r50 space-mt--r50">
                                                         <img
                                                             className="img-fluid fluid"
                                                             // style={{width: "60%"}}
@@ -274,7 +274,7 @@ const Special = ({match}) => {
 
 
                                                 <div
-                                                    className="monthly-grid-post__content"
+                                                    className="page-grid-post__content"
                                                     style={{letterSpacing: "-1px"}}
                                                 >
                                                     {/*<h2>*/}

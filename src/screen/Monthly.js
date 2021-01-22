@@ -204,16 +204,16 @@ const Monthly = ({match}) => {
                             <Row>
                                 <Col>
                                     <div
-                                        className="monthly-grid-post"
+                                        className="page-grid-post"
                                     >
-                                        <div className="monthly-grid-post__title space-mb--r50">
+                                        <div className="page-grid-post__title space-mb--r50">
 
                                             <span>{"MONTHLY STORY + "}
                                                 <span style={{color: "crimson"}}>
                                                       {monthly.title}
                                                 </span>
                                             </span>
-                                            <div className="monthly-grid-post__title">
+                                            <div className="page-grid-post__title">
                                                 <h2
                                                     className="mt-3"
                                                 >
@@ -225,7 +225,7 @@ const Monthly = ({match}) => {
                                                 ?
                                                 <div style={{textAlign: "-webkit-center"}}>
                                                     <div
-                                                        className="monthly-grid-post__summary monthly-grid-post__summary__80"
+                                                        className="page-grid-post__summary page-grid-post__summary__80"
                                                         style={{textAlign: "justify"}}
                                                     >
                                                         {monthly.summary}
@@ -238,7 +238,7 @@ const Monthly = ({match}) => {
                                         monthly.contents.map((monthly, i) => (
                                             <div key={i}>
                                                 {monthly.images ?
-                                                    <div className="monthly-grid-post__image text-center space-mb--r50 space-mt--r100">
+                                                    <div className="page-grid-post__image text-center space-mb--r50 space-mt--r100">
                                                         <img
                                                             className="img-fluid fluid"
                                                             // style={{width: "60%"}}
@@ -249,7 +249,7 @@ const Monthly = ({match}) => {
                                                 }
 
                                                     <div
-                                                        className="monthly-grid-post__content"
+                                                        className="page-grid-post__content"
                                                         style={{letterSpacing: "-1px"}}
                                                     >
                                                         <h2>
